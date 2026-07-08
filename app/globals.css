@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-navy-900;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+  }
+
+  .dark body {
+    @apply bg-navy-950 text-slate-100;
+  }
+
+  /* Smooth focus rings */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-500/40 ring-offset-2;
+  }
+}
+
+@layer components {
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-2xl border border-slate-200/80 shadow-card;
+  }
+
+  .card-interactive {
+    @apply card hover:shadow-card-hover hover:border-slate-300 transition-[box-shadow,border-color] duration-200;
+  }
+
+  /* Button base */
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-xl transition-[background-color,box-shadow,border-color,color,opacity] duration-200 text-sm;
+    touch-action: manipulation;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800 px-6 py-3 shadow-sm hover:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-navy-700 border border-slate-300 hover:bg-slate-50 hover:border-slate-400 px-6 py-3;
+  }
+
+  .btn-ghost {
+    @apply btn text-navy-600 hover:bg-slate-100 px-4 py-2;
+  }
+
+  /* Form input */
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-slate-300 text-sm bg-white
+    focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500
+    placeholder:text-slate-400 transition-colors duration-200;
+  }
+
+  .input-error {
+    @apply border-red-400 focus:ring-red-500/20 focus:border-red-500;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+
+  .badge-brand {
+    @apply badge bg-brand-100 text-brand-700;
+  }
+
+  .badge-navy {
+    @apply badge bg-navy-100 text-navy-700;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 sm:py-20;
+  }
+
+  /* Container */
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-4 sm:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-5xl mx-auto px-4 sm:px-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-600 to-brand-800 bg-clip-text text-transparent;
+  }
+}
+
+@media print {
+  body {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
