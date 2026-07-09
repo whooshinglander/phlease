@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     const rawBuffer = await renderToBuffer(element as React.ReactElement)
     const buffer = await stampPageNumbers(Buffer.from(rawBuffer))
     const pdfBase64 = Buffer.from(buffer).toString('base64')
-    const filename = `SG-Tenancy-Agreement-PREVIEW.pdf`
+    const filename = `PH-Lease-Agreement-PREVIEW.pdf`
 
     const brevoRes = await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',

@@ -20,36 +20,36 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    q: 'Do I need to pay stamp duty on a tenancy renewal in Philippines?',
-    a: 'Yes. Each tenancy agreement — including a renewal — is a separate stampable document under the Stamp Duties Act. The rate is 0.4% of the total rent for the renewal term (for leases of 1 year or less), or 0.4% of the average annual rent (for renewals of 1–3 years). It must be paid to BIR within 14 days of signing the renewal agreement.',
+    q: 'Do I need to pay documentary stamp tax on a lease renewal in Philippines?',
+    a: 'Yes. A lease renewal is a new stampable document under the National Internal Revenue Code. DST is PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. It must be paid to the BIR within 5 days after the end of the month the document was signed.',
   },
   {
-    q: 'How much is stamp duty for a tenancy renewal?',
-    a: 'For a 1-year renewal at $3,000/month: total rent = $36,000, stamp duty = 0.4% × $36,000 = $144. For a 2-year renewal at $4,000/month: total rent = $96,000, average annual rent = $48,000, stamp duty = 0.4% × $48,000 = $192. The rate is the same as for a new tenancy agreement.',
+    q: 'How much is documentary stamp tax for a lease renewal?',
+    a: 'For a 1-year renewal at PHP 25,000/month: annual rent = PHP 300,000. DST = PHP 6.00 (first PHP 2,000) + PHP 2.00 × 298 = PHP 602. For a 2-year renewal at PHP 40,000/month: total rent = PHP 960,000, average annual rent = PHP 480,000. DST = PHP 6.00 + PHP 2.00 × 478 = PHP 962.',
   },
   {
-    q: 'Who pays the stamp duty on a tenancy renewal — landlord or tenant?',
-    a: 'BIR does not legally specify who pays. By Philippines convention, the tenant pays — this is what most tenancy agreements specify in the stamp duty clause. However, the parties can agree otherwise; some renewals shift the cost to the landlord as a negotiation lever.',
+    q: 'Who pays the documentary stamp tax — landlord or tenant?',
+    a: 'The NIRC does not specify who bears the cost. By convention in the Philippines, the tenant pays — most lease agreements specify this in the DST clause. However, parties can agree otherwise; some renewals split the cost or shift it to the landlord as a negotiation point.',
   },
   {
-    q: 'When is the stamp duty due on a renewal?',
-    a: 'Within 14 days of signing the renewal agreement, if signed in Philippines. Within 30 days if signed overseas. Late stamping incurs a penalty of ₱500 (if up to 3 months late) or 4× the duty (more than 3 months late). File and pay via BIR e-Stamping at mytax.iras.gov.sg.',
+    q: 'When is the documentary stamp tax due on a renewal?',
+    a: 'DST must be paid within 5 days after the end of the month the document was signed. File and pay via the BIR e-filing system (eBIRForms). Late payment incurs a penalty of 25% of the tax due, plus 12% interest per annum. If the document is not stamped, it may not be admissible as evidence in court.',
   },
   {
-    q: 'Is the stamp duty rate the same for residential renewals and condo renewals?',
-    a: 'Yes. Stamp duty on tenancy agreements is property-type-agnostic — the same 0.4% rate applies to residential rentals, private condos, landed property, and room rentals. The only thing that changes the duty is the rental amount and the lease length.',
+    q: 'Is the DST rate the same for residential and condo renewals?',
+    a: 'Yes. The DST rate is the same for all types of lease agreements — residential, condo, commercial, or room rental. The only factors that change the tax are the annual rental amount and the lease term.',
   },
   {
     q: 'Do I need to stamp the renewal if I am extending an existing lease without changes?',
-    a: 'Yes — even if rent and terms are unchanged, a renewal creates a new tenancy period and is a fresh stampable document. The only exception is if the original agreement contained an explicit "option to renew" clause that pre-stamped a defined renewal term, but this is uncommon.',
+    a: 'Yes — even if rent and terms are unchanged, a renewal creates a new lease period and is a separate stampable document. The only exception is if the original agreement contained an explicit option to renew clause that was already stamped for the renewal term, which is uncommon.',
   },
   {
-    q: 'How do I calculate stamp duty on a tenancy renewal with a rent increase?',
-    a: 'Use the new (increased) rent for the renewal term, not the old rent. For example: original rent was $3,000/month, renewal at $3,300/month for 1 year → total rent = $39,600, stamp duty = $158.40. Stamp duty is always based on the rent stated in the renewal agreement itself.',
+    q: 'How do I calculate DST on a lease renewal with a rent increase?',
+    a: 'Use the new (increased) rent for the renewal term, not the old rent. Example: original rent was PHP 25,000/month, renewal at PHP 28,000/month for 1 year → annual rent = PHP 336,000. DST = PHP 6.00 + PHP 2.00 × 334 = PHP 674. DST is always based on the rent stated in the renewal agreement.',
   },
   {
-    q: 'What happens if I forget to stamp a tenancy renewal?',
-    a: 'An unstamped renewal is not admissible as evidence in a Philippines court — meaning if there is a dispute, you cannot rely on the agreement. You can stamp it late but will incur penalties (capped at 4× the original duty). Stamp it within 14 days to avoid penalties.',
+    q: 'What happens if I forget to stamp a lease renewal?',
+    a: 'An unstamped renewal is not admissible as evidence in a Philippine court — meaning if there is a dispute, you cannot rely on the agreement. You can stamp it late but will incur a 25% penalty plus 12% interest per annum. Best to stamp within the prescribed period to avoid penalties.',
   },
 ]
 
@@ -185,7 +185,7 @@ export default function StampDutyRenewalPage() {
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-1">4. Pay via PayNow QR or eGIRO.</p>
+              <p className="font-semibold text-navy-800 mb-1">4. Pay via GCash or bank transfer.</p>
               <p className="text-navy-500 text-sm">
                 Receive the stamp certificate immediately by email. Attach the certificate to your renewal agreement.
               </p>

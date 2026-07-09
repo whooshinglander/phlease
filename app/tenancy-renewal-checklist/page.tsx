@@ -135,7 +135,7 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">4. Rent amount, payment day, payment method</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Monthly rent in PHP, the day it's due each month (1st, 5th, 15th — pick one), and the bank account (PayNow number or FAST/IBG details). State whether GST applies — only needed if landlord is GST-registered, which is rare for individuals.
+                Monthly rent in PHP, the day it's due each month (1st, 5th, 15th — pick one), and the bank account details. State whether VAT applies — only needed if landlord is VAT-registered, which is rare for individuals.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">

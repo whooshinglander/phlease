@@ -99,7 +99,7 @@ export default function RenewPreviewPage() {
       const a = document.createElement('a')
       a.href = url
       const address = (data.propertyAddress || 'tenancy').replace(/[^a-zA-Z0-9]/g, '-').slice(0, 40)
-      a.download = `SG-Tenancy-Renewal-Agreement-${address}.pdf`
+      a.download = `PH-Lease-Renewal-Agreement-${address}.pdf`
       a.click()
       URL.revokeObjectURL(url)
     } catch (err) {

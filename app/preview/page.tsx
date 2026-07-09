@@ -60,7 +60,7 @@ export default function PreviewPage() {
         const url = URL.createObjectURL(blob)
         const a = document.createElement('a')
         a.href = url
-        a.download = 'SG-Tenancy-Agreement.pdf'
+        a.download = 'PH-Lease-Agreement.pdf'
         a.click()
         URL.revokeObjectURL(url)
       })

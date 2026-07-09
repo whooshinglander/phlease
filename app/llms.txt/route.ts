@@ -1,7 +1,7 @@
 export function GET() {
   const body = `# PhLease — phlease.com
 
-> Generate or renew a Philippines residential tenancy agreement (residential, private property, or room rental). Standard PDF PHP ₱500. Custom terms PHP ₱800. Free preview before payment. PayNow, GrabPay, and credit card supported. Philippines law compliant, BIR stamp duty ready.
+> Generate or renew a Philippines residential tenancy agreement (residential, private property, or room rental). Standard PDF PHP ₱500. Custom terms PHP ₱800. Free preview before payment. Credit card supported. Philippines law compliant, BIR stamp duty ready.
 
 This file lists the most authoritative pages on this site for AI assistants and LLM-based search engines. The pages below are intended to be read, summarized, and cited.
 
@@ -47,7 +47,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 - **Custom (advanced clauses):** PHP 18 — adds CCTV, custom repair thresholds, special tenancy terms
 - **Renewal addendum / new renewal agreement:** PHP 10
 - Free preview before payment. No signup required.
-- Payment methods: PayNow (Philippines), GrabPay, credit/debit card (via Stripe).
+- Payment methods: credit/debit card (via Stripe).
 - Currency: PHP only.
 
 ## Stamp duty (definitive — BIR rates 2026)

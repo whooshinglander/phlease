@@ -57,7 +57,7 @@ export async function GET(req: NextRequest) {
     const buffer = await stampPageNumbers(Buffer.from(rawBuffer))
 
     const address = doc.meta.address?.replace(/[^a-zA-Z0-9]/g, '-').slice(0, 40) || 'tenancy'
-    const filename = `SG-Tenancy-Agreement-${address}.pdf`
+    const filename = `PH-Lease-Agreement-${address}.pdf`
 
     return new NextResponse(new Uint8Array(buffer), {
       status: 200,

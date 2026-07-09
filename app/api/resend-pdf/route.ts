@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
     const pdfBase64 = Buffer.from(buffer).toString('base64')
 
     const address = doc.meta.address?.replace(/[^a-zA-Z0-9]/g, '-').slice(0, 40) || 'tenancy'
-    const filename = `SG-Tenancy-Agreement-${address}.pdf`
+    const filename = `PH-Lease-Agreement-${address}.pdf`
     const price = tier === 'custom' ? '₱800' : '₱500'
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://phlease.com'
     const downloadLink = `${base}/download?token=${token}`

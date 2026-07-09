@@ -35,11 +35,11 @@ const p = (val: string | number | undefined | null | '', fallback: string): stri
 
 const fmtDate = (d: string) => {
   if (!d) return '[DATE]'
-  return new Date(d).toLocaleDateString('en-SG', { day: 'numeric', month: 'long', year: 'numeric' })
+  return new Date(d).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 const fmtMoney = (v: number | '') =>
-  v === '' ? '[AMOUNT]' : `PHP ${Number(v).toLocaleString('en-SG', { minimumFractionDigits: 2 })}`
+  v === '' ? '[AMOUNT]' : `PHP ${Number(v).toLocaleString('en-PH', { minimumFractionDigits: 2 })}`
 
 const handoverLabel = (h: TenancyFormData['handoverCondition']) => {
   if (h === 'furnished') return 'fully furnished'
@@ -116,47 +116,45 @@ export function generateContract(formData: TenancyFormData): ContractDocument {
   const sections: ContractSection[] = [
     {
       title: '1. Parties',
-      content: `This Tenancy Agreement ("Agreement") is entered into between:
+      content: `This Contract of Lease ("Agreement") is entered into between:
 
-LANDLORD: ${landlordPartyText}
+LESSOR: ${landlordPartyText}
 Correspondence Address: ${landlordAddr}
 
-TENANT: ${tenantPartyText}
+LESSEE: ${tenantPartyText}
 Correspondence Address: ${tenantAddr}`,
     },
     {
       title: '2. Property',
-      content: `The Landlord agrees to let and the Tenant agrees to take the following property ("Property") on the terms and conditions set out in this Agreement:
+      content: `The Lessor agrees to lease and the Lessee agrees to take the following property ("Property") on the terms and conditions set out in this Agreement:
 
 Property Address: ${fullAddress}
 Property Type: ${propTypeLabel}`,
     },
     {
-      title: '3. Tenancy Period',
-      content: `The tenancy shall commence on ${startDate} and expire on ${endDate}, unless sooner determined in accordance with the terms of this Agreement.
+      title: '3. Lease Period',
+      content: `The lease shall commence on ${startDate} and expire on ${endDate}, unless sooner terminated in accordance with the terms of this Agreement.
 
-${leaseRenewalOption && !skipTerms ? `Option to Renew: The Tenant shall have the option to renew this tenancy for a further term of ${renewalTermMonths || '[X]'} month(s) at a rent to be mutually agreed, provided the Tenant gives not less than two (2) months' written notice prior to the expiry of this Agreement and there is no existing breach of any condition herein.` : ''}`.trim(),
+${leaseRenewalOption && !skipTerms ? `Option to Renew: The Lessee shall have the option to renew this lease for a further term of ${renewalTermMonths || '[X]'} month(s) at a rent to be mutually agreed, provided the Lessee gives not less than two (2) months' written notice prior to the expiry of this Agreement and there is no existing breach of any condition herein.` : ''}`.trim(),
     },
     {
       title: '4. Rent',
       content: `The monthly rent for the Property is ${rent}, payable in advance on the ${rentPaymentDay || '1st'} day of each calendar month.
 
-The Tenant shall pay the first month's rent upon signing of this Agreement.
-${paymentBank || paymentAccountName || paymentAccountNo ? `\nSubsequent payments shall be made via direct bank transfer / GIRO to:\nBank: ${paymentBank || '[BANK]'}\nAccount Name: ${paymentAccountName || '[ACCOUNT NAME]'}\nAccount No: ${paymentAccountNo || '[ACCOUNT NO]'}` : ''}`.trim(),
+The Lessee shall pay the first month's rent upon signing of this Agreement.
+${paymentBank || paymentAccountName || paymentAccountNo ? `\nSubsequent payments shall be made via bank transfer to:\nBank: ${paymentBank || '[BANK]'}\nAccount Name: ${paymentAccountName || '[ACCOUNT NAME]'}\nAccount No: ${paymentAccountNo || '[ACCOUNT NO]'}` : ''}`.trim(),
     },
     {
       title: '5. Security Deposit',
-      content: `The Tenant shall pay a security deposit of ${deposit} upon signing of this Agreement.
+      content: `The Lessee shall pay a security deposit of ${deposit} upon signing of this Agreement.
 
-The security deposit shall be refunded to the Tenant within fourteen (14) days after the expiry or earlier termination of the tenancy, less any deductions for outstanding rent, utilities, or damage to the Property beyond fair wear and tear. This deposit shall not be utilised as set-off by the Tenant for any rent due and payable during the currency of this Agreement.
+The security deposit shall be refunded to the Lessee within thirty (30) days after the expiry or earlier termination of the lease, less any deductions for outstanding rent, utilities, or damage to the Property beyond normal wear and tear. The Lessor shall provide an itemized accounting of any deductions. This deposit shall not be used by the Lessee to offset any rent due during the term of this Agreement.
 
-Should this tenancy be terminated by the Tenant prematurely before the expiration of this tenancy (except as otherwise provided in this Agreement), the security deposit shall be forfeited to the Landlord without prejudice to the right of action of the Landlord for claim to losses and damages or otherwise in respect of any such breach or any antecedent breach.
-
-In the event of a sale or disposal of the Property by the Landlord, the Tenant consents to the transfer of the security deposit to the new owner(s) of the Property and hereby agrees to release the Landlord from all obligations in respect of the security deposit.`,
+In the event of early termination by the Lessee, the Lessor may claim actual damages suffered as a result of such breach, subject to proof. Any forfeiture of deposit shall be limited to the amount necessary to compensate the Lessor for actual losses.`,
     },
     {
-      title: '6. Stamp Duty',
-      content: `The Tenant shall be responsible for the stamp duty payable on this Agreement to the Inland Revenue Authority of Philippines (BIR). If this Agreement is executed in Philippines, it must be stamped within fourteen (14) days of the date of execution. If executed outside Philippines, it must be stamped within thirty (30) days of the date of receipt in Philippines. Stamp duty shall be calculated in accordance with the BIR schedule of rates applicable to residential tenancies.`,
+      title: '6. Documentary Stamp Tax',
+      content: `The Lessee shall be responsible for the documentary stamp tax (DST) payable on this Agreement to the Bureau of Internal Revenue (BIR). DST shall be computed in accordance with Section 196 of the National Internal Revenue Code: PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. DST must be paid within five (5) days after the end of the month this Agreement was executed.`,
     },
     {
       title: '7. Handover Condition',
@@ -198,7 +196,7 @@ Any approved alterations shall, at the Landlord's election, either be removed by
     },
     {
       title: '13. Assignment & Subletting',
-      content: `The Tenant shall not assign, sublet, or part with possession of the Property or any part thereof without the prior written consent of the Landlord.${propertyType === 'residential' ? '\n\nFor residential properties: Any subletting is subject to the approval of the Housing & Development Board (residential) in accordance with the residential subletting rules and regulations.' : ''}`,
+      content: `The Lessee shall not assign, sublet, or part with possession of the Property or any part thereof without the prior written consent of the Lessor, such consent not to be unreasonably withheld. Any unauthorized assignment or subletting shall be a ground for termination of this Agreement under Article 1649 of the Civil Code of the Philippines.`,
     },
     {
       title: '14. Access & Sale with Tenancy',
@@ -210,20 +208,16 @@ In the event of a prospective sale, the Property shall be sold subject to this T
     },
     {
       title: '15. Termination & Notice',
-      content: `Either party may terminate this Agreement by giving not less than ${!skipTerms && commencementDate && expiryDate ? (
-        Math.round((new Date(expiryDate).getTime() - new Date(commencementDate).getTime()) / (1000 * 60 * 60 * 24 * 30)) >= 24 ? 'two (2) months\'' : 'one (1) month\'s'
-      ) : 'one (1) month\'s'} written notice to the other party.
+      content: `This Agreement shall terminate on the expiry date stated in Clause 3 unless earlier terminated by mutual agreement or by breach. For month-to-month leases not covered by a fixed term, either party may terminate by giving fifteen (15) days' written notice to the other party under Article 1687 of the Civil Code.
 
-Upon expiry or earlier termination of this tenancy, the Tenant shall yield up the Property in good and tenantable repair and condition (fair wear and tear excepted), including:
-(a) dry cleaning of all curtains provided (if any);
-(b) general cleaning of the Property;
-(c) return of all locks, keys, access cards, and remote controls;
-(d) return of all furniture and fittings as per the inventory list (if applicable);
-(e) termination or transfer (with Landlord's prior written consent) of all internet, broadband, and cable television services.`,
+Upon expiry or earlier termination of this lease, the Lessee shall vacate the Property and return it in good condition (normal wear and tear excepted), including:
+(a) general cleaning of the Property;
+(b) return of all locks, keys, access cards, and remote controls;
+(c) return of all furniture and fittings as per the inventory list (if applicable).`,
     },
     {
       title: '16. Governing Law',
-      content: `This Agreement shall be governed by and construed in accordance with the laws of the Republic of Philippines. Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the Philippines courts.`,
+      content: `This Agreement shall be governed by and construed in accordance with the laws of the Republic of the Philippines. Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of the Philippines.`,
     },
   ]
 
@@ -275,17 +269,8 @@ Upon expiry or earlier termination of this tenancy, the Tenant shall yield up th
     })
   }
 
-  // residential-specific section
-  if (propertyType === 'residential' || (isRoom && formData.residentialApprovalObtained)) {
-    sections.splice(13, 0, {
-      title: '13A. residential Requirements',
-      content: `The Landlord confirms that residential approval for subletting has been obtained prior to the commencement of this tenancy. The Tenant acknowledges that the tenancy is subject to residential's prevailing subletting rules and regulations.
-
-The total number of occupants in the Property shall not exceed the maximum permissible occupancy as prescribed by residential.
-
-The Landlord shall comply with all residential reporting and renewal requirements for the duration of the subletting period.`,
-    })
-  }
+  // residential-specific section — removed for PH (no HDB equivalent)
+  // Section 13A slot preserved for future PH-specific clauses if needed
 
   // Diplomatic clause
   if (diplomaticClause) {
@@ -307,7 +292,7 @@ The Tenant shall serve such notice together with documentary evidence of such tr
     AIRCON_LANDLORD: `The Landlord shall be responsible for regular aircon servicing at least once every three (3) months throughout the tenancy period.`,
     NO_SMOKING: `Smoking is strictly prohibited within the Property and in any common areas directly associated with the Property.`,
     NO_PETS: `No pets or animals of any kind shall be kept or brought into the Property without the prior written consent of the Landlord.`,
-    PETS_ALLOWED: `The Tenant is permitted to keep the following pet(s) at the Property: ${petDescription || '[PET DESCRIPTION]'}. The Tenant shall be responsible for any damage caused by the pet(s), shall ensure the pet(s) do not cause nuisance to neighbours, and shall comply with all rules and regulations of the Animal & Veterinary Service (AVS) and other relevant government authorities.`,
+    PETS_ALLOWED: `The Tenant is permitted to keep the following pet(s) at the Property: ${petDescription || '[PET DESCRIPTION]'}. The Tenant shall be responsible for any damage caused by the pet(s), shall ensure the pet(s) do not cause nuisance to neighbours, and shall comply with all applicable local ordinances and regulations regarding pet ownership.`,
     LANDLORD_ACCESS: `The Landlord or the Landlord's agent shall give at least twenty-four (24) hours' notice before entering the Property, except in cases of emergency.`,
     MINOR_REPAIRS: `The Tenant shall be responsible for the cost of any minor repairs or replacements up to PHP ${minorRepairThreshold || 150}.00 per item per incident. Where the cost exceeds PHP ${minorRepairThreshold || 150}.00, the Tenant shall bear PHP ${minorRepairThreshold || 150}.00 and any excess shall be borne by the Landlord. For repairs above PHP ${minorRepairThreshold || 150}.00, the Landlord's prior approval must be obtained and the Landlord reserves the right to engage their own contractor. This clause shall not apply where the repair or replacement is necessitated by the Tenant's wilful act, default or neglect.`,
     NO_SUBLET: `The Tenant shall not sublet the Property or any part thereof, or allow any other person to occupy the Property, without the prior written consent of the Landlord.`,
@@ -317,7 +302,7 @@ The Tenant shall serve such notice together with documentary evidence of such tr
     GARDEN_MAINTENANCE: `The Tenant shall keep the garden and boundary fences and hedges (if any) of the Property in good order and condition.`,
     POOL_MAINTENANCE: `The Tenant shall take up a servicing contract with a certified maintenance contractor for the service and maintenance of the swimming pool (if any) at the Property. A copy of the servicing contract shall be provided to the Landlord.`,
     AUTO_GATE: `The Tenant shall take up a servicing contract with a certified maintenance contractor for the servicing of the auto-gate (if any) at the Property. A copy of the servicing contract shall be provided to the Landlord.`,
-    PURCHASE_CLAUSE: `In the event that the Tenant shall, during the subsistence of this Tenancy Agreement, exercise an Option to Purchase or enter into a Sale and Purchase Agreement in respect of any property in Philippines, the Tenant shall be entitled to terminate this Tenancy Agreement early by serving ${purchaseNoticeMonths || 2} month(s)' prior written notice to the Landlord together with documentary evidence of such purchase (including a copy of the Option to Purchase or Sale and Purchase Agreement duly executed). Upon the expiry of such notice, this Agreement shall cease and determine without further liability on the part of either party, save in respect of any antecedent breach. The security deposit shall be refunded to the Tenant within fourteen (14) days of the termination date, subject to deduction of any amounts lawfully due to the Landlord.`,
+    PURCHASE_CLAUSE: `In the event that the Lessee shall, during the subsistence of this Agreement, purchase a property in the Philippines, the Lessee shall be entitled to terminate this Agreement early by serving ${purchaseNoticeMonths || 2} month(s)' prior written notice to the Lessor together with documentary evidence of such purchase. Upon the expiry of such notice, this Agreement shall terminate without further liability on the part of either party, save in respect of any antecedent breach. The security deposit shall be refunded to the Lessee within thirty (30) days of the termination date, subject to deduction of any amounts lawfully due to the Lessor.`,
   }
 
   const customClauseLabels: Record<string, string> = {

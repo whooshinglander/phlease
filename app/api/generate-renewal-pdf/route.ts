@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     const buffer = await stampPageNumbers(Buffer.from(rawBuffer))
 
     const address = (formData.propertyAddress || 'tenancy').replace(/[^a-zA-Z0-9]/g, '-').slice(0, 40)
-    const filename = `SG-Tenancy-Renewal-Agreement-${address}.pdf`
+    const filename = `PH-Lease-Renewal-Agreement-${address}.pdf`
 
     const uint8 = new Uint8Array(buffer)
 

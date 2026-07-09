@@ -123,7 +123,7 @@ function SuccessContent() {
       if (!raw) throw new Error('Form data not found. Please use the permanent download link or contact support.')
       const formData = JSON.parse(raw)
       const apiEndpoint = isRenewal ? '/api/generate-renewal-pdf' : '/api/generate-pdf'
-      const defaultFilename = isRenewal ? 'SG-Tenancy-Renewal-Agreement.pdf' : 'SG-Tenancy-Agreement.pdf'
+      const defaultFilename = isRenewal ? 'PH-Lease-Renewal-Agreement.pdf' : 'PH-Lease-Agreement.pdf'
 
       const res = await fetch(apiEndpoint, {
         method: 'POST',

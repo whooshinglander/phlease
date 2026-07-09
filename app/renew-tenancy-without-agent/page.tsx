@@ -150,7 +150,7 @@ export default function RenewWithoutAgentPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">7. Update the bank if rent is paid via GIRO</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                If the tenant pays rent through a standing GIRO instruction and the rent amount is changing, the tenant needs to update their GIRO mandate at their bank with the new amount and end date. Some banks accept the new tenancy as supporting documentation. If rent is paid by FAST/PayNow each month, no bank step needed — the tenant just changes the transfer amount.
+                If the tenant pays rent through a standing GIRO instruction and the rent amount is changing, the tenant needs to update their GIRO mandate at their bank with the new amount and end date. Some banks accept the new tenancy as supporting documentation. If rent is paid by bank transfer each month, no bank step needed — the tenant just changes the transfer amount.
               </p>
             </div>
           </div>

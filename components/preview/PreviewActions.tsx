@@ -26,7 +26,7 @@ export default function PreviewActions({ hasCustomClauses, onEdit }: Props) {
           >
             <div className="text-left">
               <p className="text-base font-semibold leading-tight">Download my agreement</p>
-              <p className="text-xs text-brand-100 leading-tight mt-0.5">All required SG legal clauses included</p>
+              <p className="text-xs text-brand-100 leading-tight mt-0.5">All required PH legal clauses included</p>
             </div>
             <span className="text-xl font-bold ml-4 whitespace-nowrap">₱500</span>
           </button>
@@ -60,16 +60,6 @@ export default function PreviewActions({ hasCustomClauses, onEdit }: Props) {
           <span className="flex items-center gap-1.5">
             <span aria-hidden="true">💳</span>
             <span>Card</span>
-          </span>
-          <span className="text-navy-300">·</span>
-          <span className="flex items-center gap-1.5">
-            <span aria-hidden="true">📱</span>
-            <span>PayNow</span>
-          </span>
-          <span className="text-navy-300">·</span>
-          <span className="flex items-center gap-1.5">
-            <span aria-hidden="true">🟢</span>
-            <span>GrabPay</span>
           </span>
           <span className="text-navy-300 hidden sm:inline">·</span>
           <span className="hidden sm:flex items-center gap-1.5">
