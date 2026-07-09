@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Tenancy Renewal Letter Template Philippines — Landlord & Tenant Samples | PhLease',
   description: 'Free tenancy renewal letter templates for Philippines. Landlord-to-tenant, tenant-to-landlord, and counter-offer samples. Plain text you can copy.',
-  keywords: 'tenancy renewal letter template singapore, letter to renew tenancy, tenancy renewal notice template, landlord renewal letter sample, loi tenancy renewal',
-  alternates: { canonical: 'https://phlease.com/tenancy-renewal-letter-template-singapore' },
+  keywords: 'tenancy renewal letter template philippines, letter to renew tenancy, tenancy renewal notice template, landlord renewal letter sample, loi tenancy renewal',
+  alternates: { canonical: 'https://phlease.com/tenancy-renewal-letter-template' },
   openGraph: {
     title: 'Tenancy Renewal Letter Template Philippines — Landlord & Tenant Samples',
     description: 'Copy-and-edit renewal letter templates for Philippines landlords and tenants. Plain English, no fluff.',
-    url: 'https://phlease.com/tenancy-renewal-letter-template-singapore',
+    url: 'https://phlease.com/tenancy-renewal-letter-template',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Tenancy Renewal Letter Template Philippines — Landlord & Tenant Samples',
   description: 'Philippines tenancy renewal letter templates for landlords and tenants, plus a counter-offer sample. Plain text, ready to copy and edit.',
-  url: 'https://phlease.com/tenancy-renewal-letter-template-singapore',
+  url: 'https://phlease.com/tenancy-renewal-letter-template',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Renewal Letter' },
   ],
 }
@@ -254,7 +254,7 @@ Yours sincerely,
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 General renewal guide
               </Link>
             </div>

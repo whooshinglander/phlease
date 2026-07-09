@@ -69,10 +69,10 @@ export default function HomepageSEO() {
           <h2 className="text-xl font-bold text-navy-800 mb-5">Philippines Tenancy Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/tenancy-agreement-singapore', label: 'Tenancy Agreement Philippines', desc: 'Full guide: stamp duty, deposits, residential rules, diplomatic clause.' },
+              { href: '/lease-agreement', label: 'Tenancy Agreement Philippines', desc: 'Full guide: stamp duty, deposits, residential rules, diplomatic clause.' },
               { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential flat subletting rules, occupancy caps, and residential-specific clauses.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement Philippines', desc: 'Room rental terms, shared facilities, house rules.' },
-              { href: '/tenancy-renewal-singapore', label: 'Tenancy Renewal Philippines', desc: 'How to renew a tenancy agreement in Philippines. Checklist and FAQ.' },
+              { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'How to renew a tenancy agreement in Philippines. Checklist and FAQ.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a guided generator beats a blank Word template.' },
               { href: '/cea-tenancy-agreement-template', label: ' Tenancy Agreement Template', desc: ' regulates agents, not the lease — what a proper SG tenancy agreement needs.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'All common questions: stamp duty, deposits, diplomatic clause, and more.' },

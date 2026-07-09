@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Renew Tenancy Without an Agent' },
   ],
 }
@@ -104,7 +104,7 @@ export default function RenewWithoutAgentPage() {
             Renewing with a tenant you already know is the easiest case for going DIY. The relationship is settled, the unit condition is documented, the agreement is mostly a copy of the previous one with new dates and rent. The half-month commission, typically $1,500-$2,500, stays in your pocket.
           </p>
           <p className="text-navy-500 text-sm">
-            For the broader rules around renewals (notice, stamp duty, deposits), see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">tenancy renewal guide</Link>.
+            For the broader rules around renewals (notice, stamp duty, deposits), see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>.
           </p>
         </section>
 
@@ -120,7 +120,7 @@ export default function RenewWithoutAgentPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">2. Notify the tenant 60 days before expiry</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                A short message is fine. State the new rent, the new term length, and ask for a yes/no by a date 30 days out. Don't bury terms in small talk. If the tenant counters, negotiate plainly. Most renewal conversations resolve in 1-2 exchanges if both sides are reasonable. See the <Link href="/tenancy-renewal-notice-period-singapore" className="text-brand-700 hover:underline">notice period page</Link> if you're unsure on timing.
+                A short message is fine. State the new rent, the new term length, and ask for a yes/no by a date 30 days out. Don't bury terms in small talk. If the tenant counters, negotiate plainly. Most renewal conversations resolve in 1-2 exchanges if both sides are reasonable. See the <Link href="/tenancy-renewal-notice-period" className="text-brand-700 hover:underline">notice period page</Link> if you're unsure on timing.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -144,7 +144,7 @@ export default function RenewWithoutAgentPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">6. Stamp via BIR within 14 days</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Log in to <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a> with Singpass. Under e-Stamping, choose Lease/Tenancy Agreement, enter the dates, the monthly rent, and pay 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1-3 year lease). The certificate downloads as a PDF, attach it to the signed tenancy. Tenant typically pays unless your agreement says otherwise. See the <Link href="/stamp-duty-tenancy-renewal-singapore" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
+                Log in to <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Under e-Stamping, choose Lease/Tenancy Agreement, enter the dates, the monthly rent, and pay 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1-3 year lease). The certificate downloads as a PDF, attach it to the signed tenancy. Tenant typically pays unless your agreement says otherwise. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -197,7 +197,7 @@ export default function RenewWithoutAgentPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

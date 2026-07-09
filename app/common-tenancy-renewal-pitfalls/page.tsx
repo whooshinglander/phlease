@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Common Pitfalls' },
   ],
 }
@@ -104,7 +104,7 @@ export default function CommonPitfallsPage() {
             These are the failure modes we see most often. Most tenancy renewals go through cleanly, but when they break, they break in the same five ways. Each one is avoidable with about an hour of paperwork.
           </p>
           <p className="text-navy-500 text-sm">
-            For the clean walkthrough, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">general renewal guide</Link>.
+            For the clean walkthrough, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
           </p>
         </section>
 
@@ -139,7 +139,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Stamp within 14 days of signing via <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a>. Set a calendar reminder for the day after signing. The whole process takes ten minutes with Singpass. See the <Link href="/stamp-duty-tenancy-renewal-singapore" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
+              Stamp within 14 days of signing via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Set a calendar reminder for the day after signing. The whole process takes ten minutes. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
             </p>
           </div>
         </section>
@@ -175,7 +175,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              For any foreign tenant on a work pass, write a pass-expiry clause into the tenancy. Standard form: tenant gives 1–2 months notice if their pass is not renewed, deposit handled per the agreement, no further claim by either side. See the <Link href="/foreign-tenant-renewal-singapore" className="text-brand-700 hover:underline">foreign tenant renewal page</Link> for sample wording.
+              For any foreign tenant on a work pass, write a pass-expiry clause into the tenancy. Standard form: tenant gives 1–2 months notice if their pass is not renewed, deposit handled per the agreement, no further claim by either side. See the <Link href="/foreign-tenant-renewal" className="text-brand-700 hover:underline">foreign tenant renewal page</Link> for sample wording.
             </p>
           </div>
         </section>
@@ -208,7 +208,7 @@ export default function CommonPitfallsPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

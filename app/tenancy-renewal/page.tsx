@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Renew Tenancy Agreement Philippines — residential & Condo | PhLease',
   description: 'Renew your tenancy agreement in Philippines easily. Generate an updated residential or condo renewal contract in minutes. -compliant.',
-  keywords: 'tenancy renewal singapore, renew tenancy agreement singapore, residential rental renewal, residential rental flat renewal, extend tenancy agreement, tenancy renewal agreement singapore, tenancy renewal letter singapore, renew lease singapore',
-  alternates: { canonical: 'https://phlease.com/tenancy-renewal-singapore' },
+  keywords: 'tenancy renewal philippines, renew tenancy agreement philippines, residential rental renewal, residential rental flat renewal, extend tenancy agreement, tenancy renewal agreement philippines, tenancy renewal letter philippines, renew lease philippines',
+  alternates: { canonical: 'https://phlease.com/tenancy-renewal' },
   openGraph: {
     title: 'Renew Tenancy Agreement Philippines — residential & Condo | PhLease',
     description: 'Renew your tenancy agreement in Philippines easily. Generate an updated residential or condo renewal contract in minutes.',
-    url: 'https://phlease.com/tenancy-renewal-singapore',
+    url: 'https://phlease.com/tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }
@@ -64,7 +64,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Renew Tenancy Agreement Philippines — residential & Condo Guide 2026',
   description: 'How to renew a tenancy agreement in Philippines — notice periods, stamp duty, residential approval, rent negotiation, and renewal checklist.',
-  url: 'https://phlease.com/tenancy-renewal-singapore',
+  url: 'https://phlease.com/tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
 }
 
@@ -190,7 +190,7 @@ export default function TenancyRenewalPage() {
           <h2 className="text-lg font-bold text-navy-800 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/tenancy-agreement-singapore', label: 'Philippines Tenancy Agreement Guide', desc: 'New tenancy agreements — stamp duty, deposits, residential rules.' },
+              { href: '/lease-agreement', label: 'Philippines Tenancy Agreement Guide', desc: 'New tenancy agreements — stamp duty, deposits, residential rules.' },
               { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses and renewal requirements.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a generator beats a blank template.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'All common questions answered.' },

@@ -176,7 +176,7 @@ export default function TenancyAgreementPDFPage() {
             {[
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template Philippines', desc: 'Printable Word/PDF template' },
               { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses and requirements' },
-              { href: '/tenancy-renewal-singapore', label: 'Renew Your Tenancy Agreement', desc: 'How to renew and stamp a renewal' },
+              { href: '/tenancy-renewal', label: 'Renew Your Tenancy Agreement', desc: 'How to renew and stamp a renewal' },
               { href: '/faq', label: 'Tenancy FAQ', desc: 'Common questions answered' },
             ].map((l, i) => (
               <Link key={i} href={l.href} className="bg-white rounded-xl border border-slate-200 shadow-sm p-4 hover:border-brand-300 transition-colors">

@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Tenancy Renewal Notice Period in Philippines — How Much Notice You Actually Need | PhLease',
   description: 'How much notice landlords and tenants need to give for tenancy renewal in Philippines. The 2-month norm, what your contract says, what happens if no one gives notice.',
-  keywords: 'tenancy renewal notice period singapore, how much notice to renew tenancy, landlord notice tenancy renewal, tenant notice not to renew, tenancy notice period singapore',
-  alternates: { canonical: 'https://phlease.com/tenancy-renewal-notice-period-singapore' },
+  keywords: 'tenancy renewal notice period philippines, how much notice to renew tenancy, landlord notice tenancy renewal, tenant notice not to renew, tenancy notice period philippines',
+  alternates: { canonical: 'https://phlease.com/tenancy-renewal-notice-period' },
   openGraph: {
     title: 'Tenancy Renewal Notice Period in Philippines — How Much Notice You Actually Need',
     description: 'Notice period rules for tenancy renewal: 2-month norm, contract trumps everything, what happens if no notice is given.',
-    url: 'https://phlease.com/tenancy-renewal-notice-period-singapore',
+    url: 'https://phlease.com/tenancy-renewal-notice-period',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Tenancy Renewal Notice Period in Philippines — How Much Notice You Actually Need',
   description: 'Notice period rules for tenancy renewal in Philippines: contract first, 2-month norm, what happens if no notice is given, holdover, deposit risk.',
-  url: 'https://phlease.com/tenancy-renewal-notice-period-singapore',
+  url: 'https://phlease.com/tenancy-renewal-notice-period',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Notice Period' },
   ],
 }
@@ -104,7 +104,7 @@ export default function TenancyRenewalNoticePeriodPage() {
             Philippines has no statutory minimum notice period for residential tenancy renewal. What governs is your contract, and the practical norm of 2 months written notice before expiry. This page covers what your agreement should say, what the 2026 'written notice' standard actually means, the timeline both sides should be working to, and what happens if anyone misses the window.
           </p>
           <p className="text-navy-500 text-sm">
-            For the broader renewal walkthrough, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">general renewal guide</Link>.
+            For the broader renewal walkthrough, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
           </p>
         </section>
 
@@ -160,7 +160,7 @@ export default function TenancyRenewalNoticePeriodPage() {
                 <strong className="text-navy-800">Day 30 — Sign.</strong> Final renewal document signed by both parties. Either a short renewal addendum (if only dates and rent change) or a fresh new tenancy (if anything else moves). Most landlords sign a fresh new tenancy because the document trail is cleaner.
               </li>
               <li>
-                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via mytax.iras.gov.sg. Stamp duty must be paid within 14 days of signing, and the stamping needs to happen before the new tenancy commences. Same 0.4% rate as a new tenancy.
+                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via BIR eStamping. Stamp duty must be paid within 14 days of signing, and the stamping needs to happen before the new tenancy commences. Same 0.4% rate as a new tenancy.
               </li>
               <li>
                 <strong className="text-navy-800">Day 0 — New tenancy commences.</strong> Old tenancy ends, new one begins. Deposit either rolls over or gets topped up, rent payments continue under the new terms.
@@ -198,7 +198,7 @@ export default function TenancyRenewalNoticePeriodPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Renewal guide
               </Link>
             </div>

@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Private Property Renewal' },
   ],
 }
@@ -104,7 +104,7 @@ export default function PrivatePropertyRenewalPage() {
             Condo, executive condo, landed, GCB — all of these fall under "private property" for renewal purposes, and the rules are different from residential. There's no residential to ask permission from, but the MCST is its own thing, and if you're a foreign owner there's a tax piece you really don't want to skip. This page is the version for landlords renewing a private lease.
           </p>
           <p className="text-navy-500 text-sm">
-            For the general overview, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For residential units, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal page</Link> covers the approval flow.
+            For the general overview, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For residential units, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal page</Link> covers the approval flow.
           </p>
         </section>
 
@@ -120,7 +120,7 @@ export default function PrivatePropertyRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">BIR stamp duty, same rate</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                0.4% of total rent for a 1-year renewal, 0.4% of average annual rent for a longer one. File via <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a> within 14 days of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal-singapore" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
+                0.4% of total rent for a 1-year renewal, 0.4% of average annual rent for a longer one. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 14 days of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -199,7 +199,7 @@ export default function PrivatePropertyRenewalPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

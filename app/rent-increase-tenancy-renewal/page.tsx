@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026 | PhLease',
   description: 'How much can your landlord raise rent on renewal in Philippines? No rent control, pure negotiation. Benchmarks from , PropertyGuru, 99.co, and what 2026 actually looks like.',
-  keywords: 'rent increase tenancy renewal singapore, how much rent increase singapore, is my landlord allowed to increase rent, fair rent increase 2026, rent hike singapore, ura rental index',
-  alternates: { canonical: 'https://phlease.com/rent-increase-tenancy-renewal-singapore' },
+  keywords: 'rent increase tenancy renewal philippines, how much rent increase philippines, is my landlord allowed to increase rent, fair rent increase 2026, rent hike philippines, ura rental index',
+  alternates: { canonical: 'https://phlease.com/rent-increase-tenancy-renewal' },
   openGraph: {
     title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026',
     description: 'No rent control in Philippines. How to benchmark a fair increase, when negotiation works, and what 2026 numbers actually look like.',
-    url: 'https://phlease.com/rent-increase-tenancy-renewal-singapore',
+    url: 'https://phlease.com/rent-increase-tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026',
   description: 'Philippines has no rent control. How to benchmark a fair renewal increase using  Rental Index, PropertyGuru and 99.co, plus what 2026 numbers actually look like.',
-  url: 'https://phlease.com/rent-increase-tenancy-renewal-singapore',
+  url: 'https://phlease.com/rent-increase-tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Rent Increase on Renewal' },
   ],
 }
@@ -104,7 +104,7 @@ export default function RentIncreaseRenewalPage() {
             Renewal time, the landlord wants more rent, and you&apos;re trying to figure out if the number is fair. Philippines has no rent control, which means there is no legal answer. Only a market answer. This page walks through how to benchmark it, when negotiation actually works, and what 2026 numbers look like on the ground.
           </p>
           <p className="text-navy-500 text-sm">
-            For the full renewal process, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">tenancy renewal guide</Link>.
+            For the full renewal process, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>.
           </p>
         </section>
 
@@ -211,7 +211,7 @@ export default function RentIncreaseRenewalPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Generate the renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

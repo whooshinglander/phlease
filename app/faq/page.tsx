@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Philippines Tenancy Agreement FAQ — Stamp Duty, residential, Renewal',
   description: 'Answers to common questions about Philippines tenancy agreements — renewal of tenancy agreement, stamp duty for tenancy agreement Philippines,  template, residential room rental requirements, diplomatic clause, and more.',
-  keywords: 'renewal of tenancy agreement singapore, stamp duty for tenancy agreement singapore, singapore tenancy agreement faq, what is  tenancy agreement, how to renew residential tenancy, diplomatic clause singapore, residential room rental agreement requirements, residential tenancy stamp duty, tenancy deposit singapore, subletting residential rules',
+  keywords: 'renewal of tenancy agreement philippines, stamp duty for tenancy agreement philippines, philippines tenancy agreement faq, what is tenancy agreement, how to renew residential tenancy, diplomatic clause philippines, residential room rental agreement requirements, residential tenancy stamp duty, tenancy deposit philippines, subletting residential rules',
   alternates: {
     canonical: 'https://phlease.com/faq',
   },

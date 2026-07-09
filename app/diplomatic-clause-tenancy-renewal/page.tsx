@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Diplomatic Clause' },
   ],
 }
@@ -104,7 +104,7 @@ export default function DiplomaticClauseRenewalPage() {
             The diplomatic clause is the early-termination escape hatch that lets a foreign tenant break a Philippines lease if their work pass is cancelled or they're transferred out. It's standard in expat tenancies, but it's not free for the landlord. On renewal, it's worth deciding whether it stays in, comes out, or stays in at a higher rent.
           </p>
           <p className="text-navy-500 text-sm">
-            For the broader renewal walkthrough, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">general renewal guide</Link>.
+            For the broader renewal walkthrough, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
           </p>
         </section>
 
@@ -205,7 +205,7 @@ export default function DiplomaticClauseRenewalPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/foreign-tenant-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/foreign-tenant-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Foreign tenant renewal guide
               </Link>
             </div>

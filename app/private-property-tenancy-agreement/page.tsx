@@ -119,8 +119,8 @@ export default function residentialTenancyPage() {
             {[
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Free Philippines tenancy agreement template for residential, condo, and room rental.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement', desc: 'Room rental agreement for residential or private property.' },
-              { href: '/tenancy-renewal-singapore', label: 'Tenancy Renewal Philippines', desc: 'Renew your residential or condo tenancy agreement.' },
-              { href: '/tenancy-agreement-singapore', label: 'Tenancy Agreement Guide', desc: 'Complete guide to Philippines tenancy agreements.' },
+              { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'Renew your residential or condo tenancy agreement.' },
+              { href: '/lease-agreement', label: 'Tenancy Agreement Guide', desc: 'Complete guide to Philippines tenancy agreements.' },
             ].map((l, i) => (
               <Link key={i} href={l.href} className="bg-white rounded-xl border border-slate-200 shadow-sm p-4 hover:border-brand-300 transition-colors">
                 <p className="font-semibold text-navy-800 text-sm">{l.label}</p>

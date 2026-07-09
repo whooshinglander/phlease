@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'Stamp duty on the renewal — same as new?',
-    a: "Same rate. 0.4% of total rent for a 1-year renewal, or 0.4% of average annual rent for a 1–3 year renewal. Pay to BIR within 14 days of signing, via mytax.iras.gov.sg. The tenant typically pays unless your renewal agreement says otherwise.",
+    a: "Same rate. 0.4% of total rent for a 1-year renewal, or 0.4% of average annual rent for a 1–3 year renewal. Pay to BIR within 14 days of signing, via BIR eStamping. The tenant typically pays unless your renewal agreement says otherwise.",
   },
   {
     q: "I'm renewing a room rental, not the whole flat. Does residential care?",
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'residential Tenancy Renewal Guide' },
   ],
 }
@@ -104,7 +104,7 @@ export default function residentialRenewalGuidePage() {
             Most residential tenancies are 1 or 2 years, and most landlords renew with the same tenant if things have been smooth. The renewal itself is paperwork, not a re-negotiation, but a few residential-specific things trip people up. This page walks through what you actually have to do.
           </p>
           <p className="text-navy-500 text-sm">
-            For renewals on private property, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">general renewal guide</Link>.
+            For renewals on private property, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
           </p>
         </section>
 
@@ -126,7 +126,7 @@ export default function residentialRenewalGuidePage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">3. Stamp it with BIR within 14 days</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Stamp duty on the renewal is 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1–3 year lease). Same rate as a new tenancy — there is no discount for renewals. File via <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a> using Singpass. See the <Link href="/stamp-duty-tenancy-renewal-singapore" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
+                Stamp duty on the renewal is 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1–3 year lease). Same rate as a new tenancy — there is no discount for renewals. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function residentialRenewalGuidePage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

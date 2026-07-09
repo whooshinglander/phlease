@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026 | PhLease',
   description: 'Stamp duty on tenancy renewals in Philippines: BIR rate is 0.4% of total rent (or average annual rent for 1-3yr leases). Worked examples, who pays, when to file, and a calculator.',
-  keywords: 'stamp duty tenancy renewal singapore, iras stamp duty renewal, tenancy renewal stamp duty calculator, do i pay stamp duty on lease renewal, stamp duty residential renewal',
-  alternates: { canonical: 'https://phlease.com/stamp-duty-tenancy-renewal-singapore' },
+  keywords: 'stamp duty tenancy renewal philippines, bir stamp duty renewal, tenancy renewal stamp duty calculator, do i pay stamp duty on lease renewal, stamp duty residential renewal',
+  alternates: { canonical: 'https://phlease.com/stamp-duty-tenancy-renewal' },
   openGraph: {
     title: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026',
     description: 'Stamp duty applies to every tenancy renewal in Philippines. 0.4% of total rent. Worked examples for residential and condo renewals.',
-    url: 'https://phlease.com/stamp-duty-tenancy-renewal-singapore',
+    url: 'https://phlease.com/stamp-duty-tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026',
   description: 'Definitive guide to stamp duty on tenancy renewals in Philippines. 0.4% of total rent. Worked examples for residential and condo. When to file with BIR.',
-  url: 'https://phlease.com/stamp-duty-tenancy-renewal-singapore',
+  url: 'https://phlease.com/stamp-duty-tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Stamp Duty on Tenancy Renewal' },
   ],
 }
@@ -127,7 +127,7 @@ export default function StampDutyRenewalPage() {
               <li>✓ <strong>Tenant typically pays</strong> by Philippines convention (the renewal can specify otherwise).</li>
               <li>✓ <strong>14-day filing window</strong> from signing. Late stamping incurs penalty of ₱500 (≤3 months late) or 4× duty (&gt;3 months late).</li>
               <li>✓ <strong>Same rate for residential and condo</strong> — only rent and lease length change the duty.</li>
-              <li>✓ File via BIR e-Stamping at <a href="https://mytax.iras.gov.sg" className="text-brand-700 hover:underline" target="_blank" rel="noopener">mytax.iras.gov.sg</a>.</li>
+              <li>✓ File via BIR e-Stamping at <a href="https://www.bir.gov.ph" className="text-brand-700 hover:underline" target="_blank" rel="noopener">BIR eStamping</a>.</li>
             </ul>
           </div>
         </section>
@@ -175,7 +175,7 @@ export default function StampDutyRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-1">2. Log into BIR e-Stamping.</p>
               <p className="text-navy-500 text-sm">
-                Go to <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a>, log in with Singpass, select Stamp Duty → File Stamp Duty.
+                Go to <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>, log in, select Stamp Duty → File Stamp Duty.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -204,7 +204,7 @@ export default function StampDutyRenewalPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500 →
               </Link>
-              <Link href="/tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Read the renewal guide
               </Link>
             </div>

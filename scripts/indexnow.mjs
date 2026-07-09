@@ -3,7 +3,7 @@ const KEY = 'indexnow';
 
 const urls = [
   `${BASE}/`,
-  `${BASE}/tenancy-agreement-singapore`,
+  `${BASE}/lease-agreement`,
   `${BASE}/renew`,
   `${BASE}/room-rental-agreement`,
   `${BASE}/tenancy-agreement-template`,

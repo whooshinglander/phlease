@@ -6,7 +6,7 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Security Deposit on Tenancy Renewal in Philippines — Carry Over, Top Up, or Refund? | PhLease',
   description: 'How the security deposit works when you renew a tenancy in Philippines: when it carries over, when you top up, when you refund, and how to document it cleanly.',
-  keywords: 'security deposit renewal singapore, tenancy deposit refund renewal, deposit topup rent increase, 1 month vs 2 months deposit singapore',
+  keywords: 'security deposit renewal philippines, tenancy deposit refund renewal, deposit topup rent increase, 1 month vs 2 months deposit philippines',
   alternates: { canonical: 'https://phlease.com/security-deposit-tenancy-renewal' },
   openGraph: {
     title: 'Security Deposit on Tenancy Renewal in Philippines — Carry Over, Top Up, or Refund?',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Security Deposit on Renewal' },
   ],
 }
@@ -104,7 +104,7 @@ export default function SecurityDepositRenewalPage() {
             In Philippines, deposits are usually 1 month for a 1-year lease and 2 months for a 2-year lease. When you renew, the question is what happens to that money. Most of the time it just keeps sitting with the landlord, but there are three real scenarios — carryover, top-up, partial refund — and each one needs a single clause in the renewal to keep things clean.
           </p>
           <p className="text-navy-500 text-sm">
-            For the wider renewal flow, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For rent changes, see the <Link href="/rent-increase-tenancy-renewal-singapore" className="text-brand-700 hover:underline">rent increase page</Link>.
+            For the wider renewal flow, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For rent changes, see the <Link href="/rent-increase-tenancy-renewal" className="text-brand-700 hover:underline">rent increase page</Link>.
           </p>
         </section>
 
@@ -201,7 +201,7 @@ export default function SecurityDepositRenewalPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Renewal guide
               </Link>
             </div>

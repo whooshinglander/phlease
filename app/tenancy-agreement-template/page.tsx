@@ -175,8 +175,8 @@ export default function TenancyTemplatePage() {
             {[
               { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses, subletting approval, and occupancy rules.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement', desc: 'Room rentals in residential or private property — house rules included.' },
-              { href: '/tenancy-renewal-singapore', label: 'Tenancy Renewal Philippines', desc: 'Renew an existing tenancy agreement quickly.' },
-              { href: '/tenancy-agreement-singapore', label: 'Tenancy Agreement Guide', desc: 'Complete guide to Philippines tenancy agreements.' },
+              { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'Renew an existing tenancy agreement quickly.' },
+              { href: '/lease-agreement', label: 'Tenancy Agreement Guide', desc: 'Complete guide to Philippines tenancy agreements.' },
             ].map((l, i) => (
               <Link key={i} href={l.href} className="bg-white rounded-xl border border-slate-200 shadow-sm p-4 hover:border-brand-300 transition-colors">
                 <p className="font-semibold text-navy-800 text-sm">{l.label}</p>

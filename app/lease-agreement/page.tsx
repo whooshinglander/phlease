@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Tenancy Agreement Philippines — Free Preview, PDF ₱500',
   description: 'Generate a Philippines tenancy agreement in 5 minutes — residential, condo, landed or room rental. -compliant, free to preview, clean PDF from ₱500. No sign-up.',
-  keywords: 'tenancy agreement singapore pdf, tenancy agreement singapore, singapore tenancy agreement pdf, rental agreement singapore pdf, singapore rental agreement,  tenancy agreement, residential rental agreement, lease agreement singapore, tenancy contract singapore',
-  alternates: { canonical: 'https://phlease.com/tenancy-agreement-singapore' },
+  keywords: 'tenancy agreement philippines pdf, tenancy agreement philippines, philippines tenancy agreement pdf, rental agreement philippines pdf, philippines rental agreement,  tenancy agreement, residential rental agreement, lease agreement philippines, tenancy contract philippines',
+  alternates: { canonical: 'https://phlease.com/lease-agreement' },
   openGraph: {
     title: 'Tenancy Agreement Philippines — Free Preview, PDF ₱500',
     description: 'Generate a Philippines tenancy agreement PDF online. residential, condo, landed, room rental — -compliant. Free to preview, download from ₱500.',
-    url: 'https://phlease.com/tenancy-agreement-singapore',
+    url: 'https://phlease.com/lease-agreement',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Tenancy Agreement Philippines — Complete Guide 2026',
   description: 'Everything landlords and tenants in Philippines need to know about tenancy agreements — stamp duty, deposits, residential rules, diplomatic clause, and how to generate one online.',
-  url: 'https://phlease.com/tenancy-agreement-singapore',
+  url: 'https://phlease.com/lease-agreement',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
 }
 
@@ -215,7 +215,7 @@ export default function TenancyAgreementPhilippinesPage() {
               { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement Guide', desc: 'residential-specific clauses, approval requirements, and occupancy rules.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement Guide', desc: 'Room rentals, shared facilities, and residential room rules.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a generator beats a blank template.' },
-              { href: '/tenancy-renewal-singapore', label: 'Tenancy Renewal Philippines', desc: 'How to renew a tenancy agreement in Philippines.' },
+              { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'How to renew a tenancy agreement in Philippines.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'Stamp duty, deposits, diplomatic clause, and more.' },
             ].map((l, i) => (
               <Link key={i} href={l.href} className="bg-white rounded-xl border border-slate-200 shadow-sm p-4 hover:border-brand-300 transition-colors">

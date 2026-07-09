@@ -6,7 +6,7 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Tenancy Renewal Checklist Philippines — What to Include in Your Agreement | PhLease',
   description: 'The sections every Philippines tenancy renewal needs, the ones you should add, and the ones nice to have. Stamp duty, witnesses, e-signatures, addendums covered.',
-  keywords: 'tenancy renewal checklist singapore, what to include renewal agreement, renewal contract template singapore, lease renewal checklist',
+  keywords: 'tenancy renewal checklist philippines, what to include renewal agreement, renewal contract template philippines, lease renewal checklist',
   alternates: { canonical: 'https://phlease.com/tenancy-renewal-checklist' },
   openGraph: {
     title: 'Tenancy Renewal Checklist Philippines — What to Include in Your Agreement',
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'What does BIR stamp duty actually require the document to contain?',
-    a: "For e-stamping via mytax.iras.gov.sg, BIR needs: full names + IDs of both parties, property address, lease start and end dates, rent amount, and any other consideration (e.g., advance rent or premium). The system asks for these explicitly during e-stamping. If your renewal agreement is missing any of them, you'll have to pull data from somewhere else to fill the form — which means your agreement isn't doing its job. The seven required sections above cover everything BIR asks for.",
+    a: "For e-stamping via BIR eStamping, BIR needs: full names + IDs of both parties, property address, lease start and end dates, rent amount, and any other consideration (e.g., advance rent or premium). The system asks for these explicitly during e-stamping. If your renewal agreement is missing any of them, you'll have to pull data from somewhere else to fill the form — which means your agreement isn't doing its job. The seven required sections above cover everything BIR asks for.",
   },
   {
     q: 'Is an addendum valid without re-signing the original tenancy?',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Renewal Checklist' },
   ],
 }
@@ -153,7 +153,7 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">7. Stamp duty acknowledgment</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                One line stating who pays BIR stamp duty. The tenant pays by default in Philippines unless the agreement says otherwise. Stamp duty must be paid within 14 days of signing — see the <Link href="/stamp-duty-tenancy-renewal-singapore" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
+                One line stating who pays BIR stamp duty. The tenant pays by default in Philippines unless the agreement says otherwise. Stamp duty must be paid within 14 days of signing — see the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function TenancyRenewalChecklistPage() {
           <h2 className="text-2xl font-bold text-navy-800 mb-4">Don't forget</h2>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">BIR stamping within 14 days.</strong> From signing date, not start date. File via <a href="https://mytax.iras.gov.sg" target="_blank" rel="noopener" className="text-brand-700 hover:underline">mytax.iras.gov.sg</a> with Singpass. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
+              <li><strong className="text-navy-800">BIR stamping within 14 days.</strong> From signing date, not start date. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
               <li><strong className="text-navy-800">residential approval if applicable.</strong> If the renewal extends past your current residential subletting approval window, re-apply via the residential portal before the new tenancy starts. Room rentals don't need separate approval but still count toward the occupancy cap.</li>
               <li><strong className="text-navy-800">One signed copy each side, plus one for stamping.</strong> Three originals total — landlord keeps one, tenant keeps one, the third goes through BIR e-stamping. With e-signatures, this just means saving three identical PDFs.</li>
               <li><strong className="text-navy-800">Witnesses usually not required.</strong> Philippines tenancies are valid with just landlord and tenant signatures. If your template has witness lines, you can leave them blank or remove them — neither affects enforceability.</li>
@@ -216,7 +216,7 @@ export default function TenancyRenewalChecklistPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Renewal guide
               </Link>
             </div>

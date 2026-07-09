@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Renew or Find a New Tenant? The Philippines Landlord Math | PhLease',
   description: "Vacancy weeks, agent commission, condition risk. The dollar math behind renewing vs finding a new tenant in Philippines, with residential and condo worked examples.",
-  keywords: 'landlord renew or find new tenant, tenant retention vs new tenant singapore, vacancy cost rental singapore, landlord renewal economics',
-  alternates: { canonical: 'https://phlease.com/landlord-renewal-vs-find-new-tenant-singapore' },
+  keywords: 'landlord renew or find new tenant, tenant retention vs new tenant philippines, vacancy cost rental philippines, landlord renewal economics',
+  alternates: { canonical: 'https://phlease.com/landlord-renewal-vs-find-new-tenant' },
   openGraph: {
     title: 'Renew or Find a New Tenant? The Philippines Landlord Math',
     description: 'The dollar math behind renewing vs finding a new tenant. residential and condo worked examples.',
-    url: 'https://phlease.com/landlord-renewal-vs-find-new-tenant-singapore',
+    url: 'https://phlease.com/landlord-renewal-vs-find-new-tenant',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Renew or Find a New Tenant? The Philippines Landlord Math',
   description: 'The dollar math behind renewing vs finding a new tenant in Philippines. Vacancy cost, agent commission split, deposit risk, condition reset, tax implications.',
-  url: 'https://phlease.com/landlord-renewal-vs-find-new-tenant-singapore',
+  url: 'https://phlease.com/landlord-renewal-vs-find-new-tenant',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Renew vs Find New' },
   ],
 }
@@ -104,7 +104,7 @@ export default function RenewVsFindNewPage() {
             Every Philippines landlord runs this calculation at the end of a lease. The temptation is to chase a higher rent with a fresh tenant. The reality is that the cost of getting there, in vacancy weeks and agent commission, eats most of the gain. Here's the math, with residential and condo worked examples.
           </p>
           <p className="text-navy-500 text-sm">
-            For the renewal paperwork itself, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">general renewal guide</Link>.
+            For the renewal paperwork itself, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
           </p>
         </section>
 
@@ -219,7 +219,7 @@ export default function RenewVsFindNewPage() {
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">
                 Start renewal — ₱500
               </Link>
-              <Link href="/stamp-duty-tenancy-renewal-singapore" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
+              <Link href="/stamp-duty-tenancy-renewal" className="inline-block bg-white text-navy-700 border border-slate-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-50 transition-colors">
                 Stamp duty calculator
               </Link>
             </div>

@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Foreign Tenant Renewal in Philippines — Pass Expiry, ICA Updates, What to Sign | PhLease',
   description: 'Renewing a tenancy for an EP, S Pass, WP, or DP holder in Philippines. Pass expiry alignment, diplomatic clause, ICA address update, mid-term pass denial. Plain English.',
-  keywords: 'foreign tenant renewal singapore, expat tenancy renewal, ep holder rent renewal, work permit tenancy renewal, ica renewal tenant',
-  alternates: { canonical: 'https://phlease.com/foreign-tenant-renewal-singapore' },
+  keywords: 'foreign tenant renewal philippines, expat tenancy renewal, ep holder rent renewal, work permit tenancy renewal, ica renewal tenant',
+  alternates: { canonical: 'https://phlease.com/foreign-tenant-renewal' },
   openGraph: {
     title: 'Foreign Tenant Renewal in Philippines — Pass Expiry, ICA Updates, What to Sign',
     description: 'Renewing for EP/S Pass/WP/DP tenants: pass alignment, diplomatic clause, ICA 28-day rule.',
-    url: 'https://phlease.com/foreign-tenant-renewal-singapore',
+    url: 'https://phlease.com/foreign-tenant-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Foreign Tenant Renewal in Philippines — Pass Expiry, ICA Updates, What to Sign',
   description: 'Renewing a tenancy for foreign tenants in Philippines: pass expiry alignment, diplomatic clause, ICA 28-day rule, mid-term pass denial, DP/STVP/LTVP holders.',
-  url: 'https://phlease.com/foreign-tenant-renewal-singapore',
+  url: 'https://phlease.com/foreign-tenant-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Foreign Tenant Renewal' },
   ],
 }
@@ -104,7 +104,7 @@ export default function ForeignTenantRenewalPage() {
             Renewing for an Employment Pass, S Pass, Work Permit, or Dependent's Pass holder is mostly the same as for a Philippinesan tenant. The differences are pass expiry alignment, the diplomatic clause, and the ICA 28-day address-update rule. Get those three right and the rest is just paperwork.
           </p>
           <p className="text-navy-500 text-sm">
-            For the general renewal flow, see the <Link href="/tenancy-renewal-singapore" className="text-brand-700 hover:underline">renewal guide</Link>. For the clause itself, see the <Link href="/diplomatic-clause-tenancy-renewal" className="text-brand-700 hover:underline">diplomatic clause page</Link>.
+            For the general renewal flow, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">renewal guide</Link>. For the clause itself, see the <Link href="/diplomatic-clause-tenancy-renewal" className="text-brand-700 hover:underline">diplomatic clause page</Link>.
           </p>
         </section>
 
@@ -169,7 +169,7 @@ export default function ForeignTenantRenewalPage() {
             Practical points:
           </p>
           <ul className="space-y-2 text-navy-600 text-sm mb-4 pl-5 list-disc">
-            <li>The update is free and can be done via the ICA e-Service using Singpass or the tenant's pass credentials.</li>
+            <li>The update is free and can be done via the ICA e-Service using the tenant's pass credentials.</li>
             <li>The tenant needs proof of address — a stamped tenancy agreement is the cleanest evidence, which is why getting BIR stamping done early matters.</li>
             <li>Failure to update is a breach under the Immigration Act and can affect future pass renewals or PR applications.</li>
             <li>As landlord you don't file the ICA update for them, but pointing it out (especially for first-time tenants in Philippines) avoids problems later.</li>

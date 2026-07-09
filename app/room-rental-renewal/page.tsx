@@ -6,14 +6,14 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Room Rental Renewal Philippines — residential Master & Common Room',
   description: 'How room rental renewal works in Philippines: residential occupancy cap, master vs common room rent ranges, shared facilities, house rules. Plain English, no fluff.',
-  keywords: 'room rental renewal singapore, renew room rental residential, common room renewal, master bedroom rental renewal, residential room renewal',
-  alternates: { canonical: 'https://phlease.com/room-rental-renewal-singapore' },
+  keywords: 'room rental renewal philippines, renew room rental philippines, common room renewal, master bedroom rental renewal, philippines room renewal',
+  alternates: { canonical: 'https://phlease.com/room-rental-renewal' },
   openGraph: {
     title: 'Room Rental Renewal in Philippines — Master & Common Room Specifics',
     description: 'Room renewal: residential cap, master vs common rent, shared facilities, house rules. Plain English.',
-    url: 'https://phlease.com/room-rental-renewal-singapore',
+    url: 'https://phlease.com/room-rental-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -68,7 +68,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Room Rental Renewal in Philippines — Master & Common Room Specifics',
   description: 'Room rental renewal walkthrough: residential occupancy cap, master vs common room rent ranges, shared facilities, house rules, when to switch to whole-flat.',
-  url: 'https://phlease.com/room-rental-renewal-singapore',
+  url: 'https://phlease.com/room-rental-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
   dateModified: '2026-05-04',
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal-singapore' },
+    { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
     { '@type': 'ListItem', position: 3, name: 'Room Rental Renewal' },
   ],
 }
