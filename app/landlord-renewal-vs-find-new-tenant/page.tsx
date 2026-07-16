@@ -5,12 +5,12 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Renew or Find a New Tenant? The Philippines Landlord Math | PhLease',
-  description: "Vacancy weeks, agent commission, condition risk. The dollar math behind renewing vs finding a new tenant in Philippines, with residential and condo worked examples.",
+  description: "Vacancy weeks, agent commission, condition risk. The dollar math behind renewing vs finding a new tenant in Philippines, with condo and house & lot worked examples.",
   keywords: 'landlord renew or find new tenant, tenant retention vs new tenant philippines, vacancy cost rental philippines, landlord renewal economics',
   alternates: { canonical: 'https://phlease.com/landlord-renewal-vs-find-new-tenant' },
   openGraph: {
     title: 'Renew or Find a New Tenant? The Philippines Landlord Math',
-    description: 'The dollar math behind renewing vs finding a new tenant. residential and condo worked examples.',
+    description: 'The dollar math behind renewing vs finding a new tenant. Condo and house & lot worked examples.',
     url: 'https://phlease.com/landlord-renewal-vs-find-new-tenant',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -29,15 +29,15 @@ const FAQS = [
   },
   {
     q: "What rent increase do I need to break even on switching tenants?",
-    a: "Take your vacancy cost plus commission, divide by 12. For a $3,000 residential with 3 weeks vacancy ($2,250) plus half-month commission ($1,500), that's $3,750 total, or $312/month. So the new tenant has to pay $312 more per month just to match what you'd earn renewing the existing tenant at the same rent. That's a 10.4% rent increase, before accounting for risk. If the market rent has moved up by less than that, renewal wins on math alone.",
+    a: "Take your vacancy cost plus commission, divide by 12. For a ₱25,000 condo with 3 weeks vacancy (₱18,750) plus half-month commission (₱12,500), that's ₱31,250 total, or ₱2,604/month. So the new tenant has to pay ₱2,604 more per month just to match what you'd earn renewing the existing tenant at the same rent. That's a 10.4% rent increase, before accounting for risk. If the market rent has moved up by less than that, renewal wins on math alone.",
   },
   {
-    q: "MOM and ICA implications when changing tenants",
-    a: "If your current tenant is a foreign worker, you have no MOM or ICA filing duty as the landlord. The tenant's employer handles work pass administration. What does change: you should refresh the new tenant's pass details (EP/S Pass/WP number, expiry) in the new tenancy, and re-check the FIN expiry against the lease end date. If you rent to a non-pass-holder foreigner illegally, MOM penalties fall on you. Verify pass validity at every change of tenant, not just at the start of the original lease.",
+    q: "BI and visa considerations when changing tenants",
+    a: "If your current tenant is a foreign worker, you have no Bureau of Immigration filing duty as the landlord. The tenant's employer handles visa administration. What does change: you should refresh the new tenant's visa details (9G / 47(a)(2) / SRRV number, expiry) in the new tenancy, and re-check the visa expiry against the lease end date. If you rent to a foreigner without valid immigration status, penalties could apply. Verify visa validity at every change of tenant, not just at the start of the original lease.",
   },
   {
     q: "Deposit dispute risk: is a new tenant riskier?",
-    a: "Yes, mildly. With a returning tenant you already know how they treat the unit and you've handled their handover behaviour once. A new tenant is unknown — you'll discover their cleaning standards, willingness to fix small damage, and dispute style only at the end of their lease. The Small Claims Tribunal sees more new-tenant deposit disputes than renewal-tenant disputes simply because new tenancies are where the unfamiliarity sits. Not a reason to refuse new tenants, but factor a small risk premium into the math.",
+    a: "Yes, mildly. With a returning tenant you already know how they treat the unit and you've handled their handover behaviour once. A new tenant is unknown — you'll discover their cleaning standards, willingness to fix small damage, and dispute style only at the end of their lease. Barangay conciliation and small claims court see more new-tenant deposit disputes than renewal-tenant disputes simply because new tenancies are where the unfamiliarity sits. Not a reason to refuse new tenants, but factor a small risk premium into the math.",
   },
   {
     q: "If the current tenant has trashed the unit, is finding new still worth it at lower rent?",
@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     q: "When does the current tenant deserve a discount on renewal?",
-    a: "Long tenure (3+ years), perfect payment history, no complaints from neighbours, and they handle small fixes themselves. That tenant is worth 5 to 10% below market rate to keep, because the alternative is vacancy plus commission plus the unknown risk of someone worse. The math: a $3,000/mo residential tenant who's been there 4 years with zero hassle is probably worth holding at $2,800 rather than chasing $3,200 with a new face. Good tenants are an asset. Price them accordingly.",
+    a: "Long tenure (3+ years), perfect payment history, no complaints from neighbours, and they handle small fixes themselves. That tenant is worth 5 to 10% below market rate to keep, because the alternative is vacancy plus commission plus the unknown risk of someone worse. The math: a ₱25,000/mo condo tenant who's been there 4 years with zero hassle is probably worth holding at ₱23,000 rather than chasing ₱27,000 with a new face. Good tenants are an asset. Price them accordingly.",
   },
 ]
 
@@ -101,7 +101,7 @@ export default function RenewVsFindNewPage() {
             Renew or Find a New Tenant? The Math Usually Favours Renewal
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Every Philippines landlord runs this calculation at the end of a lease. The temptation is to chase a higher rent with a fresh tenant. The reality is that the cost of getting there, in vacancy weeks and agent commission, eats most of the gain. Here's the math, with residential and condo worked examples.
+            Every Philippines landlord runs this calculation at the end of a lease. The temptation is to chase a higher rent with a fresh tenant. The reality is that the cost of getting there, in vacancy weeks and agent commission, eats most of the gain. Here's the math, with condo and house & lot worked examples.
           </p>
           <p className="text-navy-500 text-sm">
             For the renewal paperwork itself, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">general renewal guide</Link>.
@@ -118,25 +118,25 @@ export default function RenewVsFindNewPage() {
               <thead className="bg-slate-50 text-navy-800">
                 <tr>
                   <th className="text-left p-4 font-semibold">Scenario</th>
-                  <th className="text-left p-4 font-semibold">Residential ($3,000/mo)</th>
-                  <th className="text-left p-4 font-semibold">Condo ($5,000/mo)</th>
+                  <th className="text-left p-4 font-semibold">Condo (₱25,000/mo)</th>
+                  <th className="text-left p-4 font-semibold">House & Lot (₱40,000/mo)</th>
                 </tr>
               </thead>
               <tbody className="text-navy-600">
                 <tr className="border-t border-slate-200">
                   <td className="p-4">3 weeks vacancy</td>
-                  <td className="p-4">$2,250</td>
-                  <td className="p-4">$3,750</td>
+                  <td className="p-4">₱18,750</td>
+                  <td className="p-4">₱30,000</td>
                 </tr>
                 <tr className="border-t border-slate-200">
                   <td className="p-4">Half-month new-tenant commission (landlord side)</td>
-                  <td className="p-4">$1,500</td>
-                  <td className="p-4">$2,500</td>
+                  <td className="p-4">₱12,500</td>
+                  <td className="p-4">₱20,000</td>
                 </tr>
                 <tr className="border-t border-slate-200 bg-slate-50">
                   <td className="p-4 font-semibold text-navy-800">Total switching cost</td>
-                  <td className="p-4 font-semibold text-navy-800">$3,750</td>
-                  <td className="p-4 font-semibold text-navy-800">$6,250</td>
+                  <td className="p-4 font-semibold text-navy-800">₱31,250</td>
+                  <td className="p-4 font-semibold text-navy-800">₱50,000</td>
                 </tr>
                 <tr className="border-t border-slate-200">
                   <td className="p-4">As % of annual rent</td>
@@ -145,8 +145,8 @@ export default function RenewVsFindNewPage() {
                 </tr>
                 <tr className="border-t border-slate-200">
                   <td className="p-4">Renewal commission (half month)</td>
-                  <td className="p-4">$1,500</td>
-                  <td className="p-4">$2,500</td>
+                  <td className="p-4">₱12,500</td>
+                  <td className="p-4">₱20,000</td>
                 </tr>
               </tbody>
             </table>
@@ -165,13 +165,13 @@ export default function RenewVsFindNewPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">Market rent has moved up materially</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                If comparable units in your block or condo are now letting at 12 to 15% above your current rent, and your tenant won't accept the increase on renewal, switching is rational. Check the  SRX rental index for your district plus actual recent transactions on PropertyGuru. Don't rely on agent estimates alone, they're optimistic by trade. The increase has to clear 10.4% on the math and another 2 to 3% as a risk premium on the unknown new tenant. Call it a 13% threshold.
+                If comparable units in your block or condo are now letting at 12 to 15% above your current rent, and your tenant won't accept the increase on renewal, switching is rational. Check actual recent listings on Lamudi.com.ph, Property24.com.ph, and RentPad.ph. Don't rely on agent estimates alone, they're optimistic by trade. The increase has to clear 10.4% on the math and another 2 to 3% as a risk premium on the unknown new tenant. Call it a 13% threshold.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">Current tenant has been bad</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Late payments, complaints from neighbours, damage you've had to chase. If you're already managing a problem tenant, the cost of switching is partially offset by the cost of continuing to manage them. A bad tenant at $3,000 is worse than vacancy followed by an unknown tenant at $3,000. Cut and reset.
+                Late payments, complaints from neighbours, damage you've had to chase. If you're already managing a problem tenant, the cost of switching is partially offset by the cost of continuing to manage them. A bad tenant at ₱25,000 is worse than vacancy followed by an unknown tenant at ₱25,000. Cut and reset.
               </p>
             </div>
           </div>
@@ -183,16 +183,16 @@ export default function RenewVsFindNewPage() {
             If your tenant pays on time, doesn't complain, and treats the unit reasonably, renewing at flat rent or even a small concession is usually the highest-return move. The math:
           </p>
           <ul className="space-y-2 text-navy-600 text-sm mb-4 pl-5 list-disc">
-            <li>Renewal commission of half a month: $1,500 on a $3,000 residential, $2,500 on a $5,000 condo.</li>
+            <li>Renewal commission of half a month: ₱12,500 on a ₱25,000 condo, ₱20,000 on a ₱40,000 house & lot.</li>
             <li>Zero vacancy weeks. The tenant signs the renewal and stays.</li>
             <li>No marketing cost, no viewings to coordinate, no LOI back-and-forth.</li>
             <li>Known quantity. You already know how they treat the unit at handover.</li>
           </ul>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Compare to switching: $3,750 cost on the residential, $6,250 on the condo, plus risk. Renewal saves $2,250 to $3,750 even if the rent stays exactly flat. If you can negotiate a small increase (say 3 to 5%) the renewal is the obvious winner.
+            Compare to switching: ₱31,250 cost on the condo, ₱50,000 on the house & lot, plus risk. Renewal saves ₱18,750 to ₱30,000 even if the rent stays exactly flat. If you can negotiate a small increase (say 3 to 5%) the renewal is the obvious winner.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            Reality check: most landlords overestimate the rent they'll get from a new tenant and underestimate how long the unit will sit empty. The two errors compound. A "₱5000 more per month" pitch from your agent often turns into 6 weeks vacancy and a tenant at the same rent you would have got from your current one.
+            Reality check: most landlords overestimate the rent they'll get from a new tenant and underestimate how long the unit will sit empty. The two errors compound. A "₱5,000 more per month" pitch from your agent often turns into 6 weeks vacancy and a tenant at the same rent you would have got from your current one.
           </p>
         </section>
 
@@ -202,7 +202,7 @@ export default function RenewVsFindNewPage() {
             Different scenario. The current tenant has let condition slide. Walls scuffed, fittings damaged, kitchen needs deep cleaning, and they've refused to pay for repairs (or the cost exceeds the deposit). Renewing them locks in further deterioration over the next 12 to 24 months. Letting them out, refurbishing, and finding new can be net positive even at lower rent.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Run the numbers concretely. Say refurb costs $4,000 (paint, minor repairs, professional clean). Vacancy adds another $2,250. Commission $1,500. Total switch + reset cost: $7,750 on the residential. If you re-let at $2,850 (5% below current), you lose $150/month. But you've reset the baseline, removed a problematic tenant, and the next tenant inherits a clean unit with a clear inventory list. Over 24 months, the lost rent is $3,600, well under the avoided continued-damage cost from keeping the bad tenant.
+            Run the numbers concretely. Say refurb costs ₱30,000 (paint, minor repairs, professional clean). Vacancy adds another ₱18,750. Commission ₱12,500. Total switch + reset cost: ₱61,250 on the condo. If you re-let at ₱23,000 (8% below current), you lose ₱2,000/month. But you've reset the baseline, removed a problematic tenant, and the next tenant inherits a clean unit with a clear inventory list. Over 24 months, the lost rent is ₱48,000, well under the avoided continued-damage cost from keeping the bad tenant.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
             Caveat: only if the current tenant won't fund the repairs. If they will, renew, deduct from deposit, and move on with cleaner expectations written into the new tenancy.

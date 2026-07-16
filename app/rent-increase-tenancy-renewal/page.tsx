@@ -5,8 +5,8 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026 | PhLease',
-  description: 'How much can your landlord raise rent on renewal in Philippines? No rent control, pure negotiation. Benchmarks from , PropertyGuru, 99.co, and what 2026 actually looks like.',
-  keywords: 'rent increase tenancy renewal philippines, how much rent increase philippines, is my landlord allowed to increase rent, fair rent increase 2026, rent hike philippines, ura rental index',
+  description: 'How much can your landlord raise rent on renewal in Philippines? Rent Control Act caps, market benchmarks from Lamudi and Property24.ph, and what 2026 actually looks like.',
+  keywords: 'rent increase tenancy renewal philippines, how much rent increase philippines, is my landlord allowed to increase rent, fair rent increase 2026, rent hike philippines, philippines rental index',
   alternates: { canonical: 'https://phlease.com/rent-increase-tenancy-renewal' },
   openGraph: {
     title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'What if the landlord refuses to negotiate at all?',
-    a: "Then it's a take-it-or-leave-it. Your options are pay the new rate, walk, or go to small claims if you believe the landlord breached the existing agreement (rare in renewal disputes — the existing lease usually just expires cleanly). The Small Claims Tribunals handle tenancy disputes up to $20,000 (₱500,000 if both parties agree), but they handle deposit and damage disputes, not 'my landlord raised rent too much.' There's no body in Philippines that adjudicates 'fair rent.'",
+    a: "Then it's a take-it-or-leave-it. Your options are pay the new rate, walk, or negotiate. For units covered by the Rent Control Act (RA 9653 — monthly rent ≤₱10,000), annual increases are capped at 7%. For all other units, there's no cap — it's pure negotiation. If you believe the landlord breached the existing agreement, you can file a complaint with the barangay (mandatory conciliation) or pursue the case in regular courts. There's no government body in Philippines that adjudicates 'fair rent' for uncapped units.",
   },
   {
     q: 'What tools do I use to check market trend?',
@@ -117,7 +117,7 @@ export default function RentIncreaseRenewalPage() {
             What this means in practice: when your existing tenancy ends, the landlord can ask for whatever number they want. You can accept, counter, or walk. The only thing they cannot do is raise the rent during your fixed-term lease (unless your contract specifically allows it, which most don&apos;t).
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            The Small Claims Tribunals handle tenancy disputes for damage, deposit return, and breaches up to $20,000. They do not adjudicate &quot;is this rent fair.&quot; MAS doesn&apos;t regulate rents either, despite the occasional confusion. There is no government rent dispute service. It&apos;s pure negotiation.
+            Barangay conciliation is the first step for any tenancy dispute in the Philippines. If unresolved, the case can go to the regular courts. The small claims court handles money claims up to ₱1,000,000 but does not adjudicate "is this rent fair." The Rent Control Act (RA 9653) caps increases at 7% for units ≤₱10,000/month; everything else is pure negotiation. There is no government rent dispute service for uncapped units.
           </p>
         </section>
 
@@ -147,7 +147,7 @@ export default function RentIncreaseRenewalPage() {
             </div>
           </div>
           <p className="text-navy-500 text-sm leading-relaxed mt-4">
-            Hawker-cost-of-living check — if you&apos;re telling yourself &quot;rent only went up 5% so I can absorb it,&quot; remember CPI ran 3-4% over the same period. A 5% rent bump on a $4,500 condo is $225/month, roughly 45 hawker meals. The number matters in absolute dollars, not just percentage.
+            Cost-of-living check — if you&apos;re telling yourself &quot;rent only went up 5% so I can absorb it,&quot; remember CPI ran 3-4% over the same period. A 5% rent bump on a ₱25,000 condo is ₱1,250/month. The number matters in absolute pesos, not just percentage.
           </p>
         </section>
 
@@ -175,7 +175,7 @@ export default function RentIncreaseRenewalPage() {
             </ul>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed">
-            The vacancy math: a $4,500/month unit empty for 3 weeks costs the landlord roughly $3,400 in lost rent, plus half-month agent commission of $2,250 = about $5,650 to find a new tenant. That&apos;s 10.5% of annual rent. So if the landlord is asking for an 8% increase and you&apos;re a known good tenant, the rational play for them is often to take 4-5% and keep you. Make this math explicit when you negotiate. Don&apos;t be aggressive about it; just write it down.
+            The vacancy math: a ₱25,000/month unit empty for 3 weeks costs the landlord roughly ₱18,750 in lost rent, plus half-month agent commission of ₱12,500 = about ₱31,250 to find a new tenant. That&apos;s 10.4% of annual rent. So if the landlord is asking for an 8% increase and you&apos;re a known good tenant, the rational play for them is often to take 4-5% and keep you. Make this math explicit when you negotiate. Don&apos;t be aggressive about it; just write it down.
           </p>
         </section>
 
@@ -194,7 +194,7 @@ export default function RentIncreaseRenewalPage() {
             </ul>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed mb-3">
-            Concrete numbers — a 4-room residential in a mature estate currently rents around $3,500-$4,200/month, depending on condition. A 2-bedroom condo in OCR is in the $4,000-$5,500 range. RCR 2-beds run $5,500-$7,500. CCR can be $7,000-₱500,000+ depending on building. If your renewal pushes you past the top of the equivalent range, ask why.
+            Concrete numbers — a 2-bedroom condo in Makati or BGC currently rents around ₱25,000-₱45,000/month, depending on building age and size. A 1-bedroom in a mid-range development runs ₱15,000-₱25,000. A house &amp; lot in a suburban subdivision is ₱20,000-₱40,000. Premium developments in Rockwell or Fort Bonifacio can go ₱50,000-₱150,000+. If your renewal pushes you past the top of the equivalent range, ask why.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
             One thing to be honest about: if you signed your lease in 2020 or 2021 and you&apos;re renewing now, you probably got a great deal during COVID, and the renewal is correcting back to market. That&apos;s not your landlord being greedy. That&apos;s the calendar.

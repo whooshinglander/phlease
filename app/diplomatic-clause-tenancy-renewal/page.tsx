@@ -5,8 +5,8 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Diplomatic Clause in Philippines Tenancy Renewals — Keep, Drop, or Modify | PhLease',
-  description: 'What the diplomatic clause actually says, who qualifies (EP/S Pass/WP), the standard 12+2 structure, and how to think about it on renewal. Plain English for landlords and tenants.',
-  keywords: 'diplomatic clause singapore, diplomatic clause tenancy renewal, early termination tenancy expat singapore, 12 month diplomatic clause, diplomatic clause expat tenant',
+  description: 'What the diplomatic clause actually says, who qualifies (9G visa / SRRV), the standard 12+2 structure, and how to think about it on renewal. Plain English for landlords and tenants.',
+  keywords: 'diplomatic clause philippines, diplomatic clause tenancy renewal, early termination tenancy expat philippines, 12 month diplomatic clause, diplomatic clause expat tenant',
   alternates: { canonical: 'https://phlease.com/diplomatic-clause-tenancy-renewal' },
   openGraph: {
     title: 'Diplomatic Clause in Philippines Tenancy Renewals — Keep, Drop, or Modify',
@@ -41,11 +41,11 @@ const FAQS = [
   },
   {
     q: 'What proof does a tenant need to invoke the diplomatic clause?',
-    a: "Usually a termination letter from the employer, a transfer letter, or a copy of the cancelled work pass / IPA rejection. Some leases also accept a notice of non-renewal from MOM. The clause should specify what counts as acceptable proof, and the tenant has to give written notice with that documentation attached. Without proper proof, the landlord can refuse to release them and treat it as a normal early termination (forfeit deposit, claim rent for unfilled period).",
+    a: "Usually a termination letter from the employer, a transfer letter, or a copy of the cancelled visa / visa rejection. Some leases also accept a notice of non-renewal from the Bureau of Immigration. The clause should specify what counts as acceptable proof, and the tenant has to give written notice with that documentation attached. Without proper proof, the landlord can refuse to release them and treat it as a normal early termination (forfeit deposit, claim rent for unfilled period).",
   },
   {
     q: 'Can the landlord charge higher rent in exchange for keeping the diplomatic clause on renewal?',
-    a: "Yes, and this is fairly common. A diplomatic clause is real downside risk for the landlord — they can lose 6-8 months of rent if the tenant invokes it after month 12. To price that in, some landlords add $50-200/month to the renewal rent if the clause stays, or offer a discount of similar size if the tenant agrees to drop it. There's no rule about how much, just whatever the two parties accept.",
+    a: "Yes, and this is fairly common. A diplomatic clause is real downside risk for the landlord — they can lose 6-8 months of rent if the tenant invokes it after month 12. To price that in, some landlords add ₱2,500-10,000/month to the renewal rent if the clause stays, or offer a discount of similar size if the tenant agrees to drop it. There's no rule about how much, just whatever the two parties accept.",
   },
   {
     q: 'How does the diplomatic clause interact with the standard 2-month notice period?',
@@ -115,7 +115,7 @@ export default function DiplomaticClauseRenewalPage() {
           </p>
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 mb-4">
             <p className="text-navy-700 text-sm leading-relaxed italic">
-              "Provided that the Tenant has occupied the Premises for a continuous period of not less than twelve (12) months from the commencement date, and the Tenant or his/her spouse is required by their employer to leave Philippines, or the Tenant's Employment Pass / S Pass / Work Permit is not renewed or is cancelled by the Ministry of Manpower for reasons not attributable to the Tenant, the Tenant may terminate this tenancy by giving the Landlord not less than two (2) months written notice in advance, supported by documentary proof. The security deposit shall be refunded in full less any deductions for damage or unpaid rent."
+              "Provided that the Tenant has occupied the Premises for a continuous period of not less than twelve (12) months from the commencement date, and the Tenant or his/her spouse is required by their employer to leave the Philippines, or the Tenant's work visa (9G / 47(a)(2) / SRRV) is not renewed or is cancelled by the Bureau of Immigration for reasons not attributable to the Tenant, the Tenant may terminate this tenancy by giving the Landlord not less than two (2) months written notice in advance, supported by documentary proof. The security deposit shall be refunded in full less any deductions for damage or unpaid rent."
             </p>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed">
@@ -130,11 +130,11 @@ export default function DiplomaticClauseRenewalPage() {
           </p>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">Employment Pass (EP) holders.</strong> The most common case. EP renewal is at MOM's discretion, and a non-renewal would force the holder to leave within 30 days.</li>
-              <li><strong className="text-navy-800">S Pass holders.</strong> Same logic as EP. Pass tied to a specific employer; cancellation means the right to stay ends.</li>
-              <li><strong className="text-navy-800">Work Permit (WP) holders.</strong> Less common as residential tenants, but the clause applies the same way if the WP is cancelled.</li>
-              <li><strong className="text-navy-800">Dependent Pass (DP) holders.</strong> If the spouse on the main pass loses theirs, the DP gets cancelled too. A trailing spouse can invoke the clause based on the main holder's situation.</li>
-              <li><strong className="text-navy-800">Filipinos and PRs.</strong> Don't qualify. They can't be forced out of Philippines, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
+              <li><strong className="text-navy-800">9G work visa holders.</strong> The most common case. 9G visa renewal is at the Bureau of Immigration's discretion, and a non-renewal would force the holder to leave within 30 days.</li>
+              <li><strong className="text-navy-800">47(a)(2) visa holders.</strong> Same logic as 9G. Visa tied to a specific employer; cancellation means the right to stay ends.</li>
+              <li><strong className="text-navy-800">SRRV and other temporary visa holders.</strong> Less common as residential tenants, but the clause applies the same way if the visa is cancelled.</li>
+              <li><strong className="text-navy-800">Dependent visa holders.</strong> If the spouse on the main visa loses theirs, the dependent visa gets cancelled too. A trailing spouse can invoke the clause based on the main holder's situation.</li>
+              <li><strong className="text-navy-800">Filipinos and permanent residents.</strong> Don't qualify. They can't be forced out of the Philippines, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
             </ul>
           </div>
         </section>
@@ -166,7 +166,7 @@ export default function DiplomaticClauseRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">Keep it but reprice</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Add $50-200/month to the renewal rent in exchange for the clause staying. This is honest pricing of the risk, and most tenants understand it once it's framed plainly. Document the rent split clearly so the tenant knows the trade-off they're agreeing to.
+                Add ₱2,500-10,000/month to the renewal rent in exchange for the clause staying. This is honest pricing of the risk, and most tenants understand it once it's framed plainly. Document the rent split clearly so the tenant knows the trade-off they're agreeing to.
               </p>
             </div>
           </div>
@@ -178,17 +178,17 @@ export default function DiplomaticClauseRenewalPage() {
             A live diplomatic clause is a real financial risk that doesn't show up until it's invoked. Run the numbers on a typical case:
           </p>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-4">
-            <p className="text-navy-700 text-sm font-semibold mb-3">Worked example — $4,500/month condo, 2-year renewal</p>
+            <p className="text-navy-700 text-sm font-semibold mb-3">Worked example — ₱25,000/month condo, 2-year renewal</p>
             <ul className="space-y-2 text-navy-600 text-sm">
               <li>Tenant invokes diplomatic clause at month 14 (2 months into renewal)</li>
               <li>Lease ends at month 16 instead of running to month 24 → 8 months of rent lost from this lease</li>
-              <li>Re-letting cost: half-month agent commission ($2,250) plus 3 weeks vacancy ($3,375) = $5,625</li>
-              <li>Replacement rent may be lower if market softened → potential additional $200-500/month gap</li>
-              <li>Total downside in a bad scenario: easily $8,000-12,000</li>
+              <li>Re-letting cost: half-month agent commission (₱12,500) plus 3 weeks vacancy (₱18,750) = ₱31,250</li>
+              <li>Replacement rent may be lower if market softened → potential additional ₱1,000-3,000/month gap</li>
+              <li>Total downside in a bad scenario: easily ₱45,000-65,000</li>
             </ul>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            That's why the $50-200/month rent uplift for keeping the clause active isn't arbitrary. At ₱5000/month over 24 months, that's $2,400 of extra rent priced in against a low-probability but high-cost event. It's insurance pricing, basically.
+            That's why the ₱2,500–10,000/month rent uplift for keeping the clause active isn't arbitrary. At ₱5,000/month over 24 months, that's ₱120,000 of extra rent priced in against a low-probability but high-cost event. It's insurance pricing, basically.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
             For tenants, the calculation is the opposite — the clause is worth more than the rent uplift if there's any meaningful chance of a transfer or pass non-renewal. Most expats keep paying for it through year 2 and 3 of their stay.

@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'My original lease was 2 years with 2 months deposit. Renewal is 1 year. What happens to the deposit?',
-    a: "Common outcome: the landlord refunds 1 month of deposit and keeps 1 month, since 1-year leases conventionally carry 1 month deposit. So if the rent is $4,000/month, the landlord returns $4,000 to the tenant and continues holding $4,000. Both parties sign off on the new amount in the renewal agreement. If both parties want to keep 2 months deposit on the 1-year renewal (extra security), that's also fine — write it in.",
+    a: "Common outcome: the landlord refunds 1 month of deposit and keeps 1 month, since 1-year leases conventionally carry 1 month deposit. So if the rent is ₱25,000/month, the landlord returns ₱25,000 to the tenant and continues holding ₱25,000. Both parties sign off on the new amount in the renewal agreement. If both parties want to keep 2 months deposit on the 1-year renewal (extra security), that's also fine — write it in.",
   },
   {
     q: 'Does the landlord have to pay interest on the security deposit?',
@@ -41,7 +41,7 @@ const FAQS = [
   },
   {
     q: 'What if there is a deposit dispute at the end of the renewal term?',
-    a: "If the landlord withholds part of the deposit and the tenant disputes it, the route is the Small Claims Tribunal (SCT) for amounts up to $20,000 (or ₱500,000 if both parties agree in writing). Filing fee is small (₱500–₱500 depending on amount). No lawyers allowed at SCT — both parties represent themselves. Most deposit disputes settle there. Keep your inventory list, photos at handover, and receipts for any deductions — that's what the SCT will look at.",
+    a: "If the landlord withholds part of the deposit and the tenant disputes it, the route is barangay conciliation first (mandatory), then small claims court for amounts up to ₱1,000,000. Filing fee is minimal. No lawyers allowed in small claims court — both parties represent themselves. Most deposit disputes settle at the barangay level. Keep your inventory list, photos at handover, and receipts for any deductions — that's what the court will look at.",
   },
   {
     q: 'How should we document the deposit at renewal — handover-wise?',
@@ -131,19 +131,19 @@ export default function SecurityDepositRenewalPage() {
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">Example 1 — 1-year renewal, $3,000 → $3,300</p>
+              <p className="font-semibold text-navy-800 mb-2">Example 1 — 1-year renewal, ₱25,000 → ₱28,000</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Original deposit: 1 month at $3,000 = <strong>$3,000</strong> held.<br />
-                New deposit at 1 month at $3,300 = <strong>$3,300</strong>.<br />
-                Top-up: <strong>₱5000</strong>, paid by the tenant on or before the renewal start date.
+                Original deposit: 1 month at ₱25,000 = <strong>₱25,000</strong> held.<br />
+                New deposit at 1 month at ₱28,000 = <strong>₱28,000</strong>.<br />
+                Top-up: <strong>₱3,000</strong>, paid by the tenant on or before the renewal start date.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">Example 2 — 2-year renewal, $4,500 → $5,000</p>
+              <p className="font-semibold text-navy-800 mb-2">Example 2 — 2-year renewal, ₱35,000 → ₱40,000</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Original deposit: 2 months at $4,500 = <strong>$9,000</strong> held.<br />
-                New deposit at 2 months at $5,000 = <strong>₱500,000</strong>.<br />
-                Top-up: <strong>$1,000</strong>.
+                Original deposit: 2 months at ₱35,000 = <strong>₱70,000</strong> held.<br />
+                New deposit at 2 months at ₱40,000 = <strong>₱80,000</strong>.<br />
+                Top-up: <strong>₱10,000</strong>.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -163,9 +163,9 @@ export default function SecurityDepositRenewalPage() {
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 mb-4">
             <p className="font-semibold text-navy-800 mb-2">Worked example</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Rent $4,000/month. Original 2-year lease deposit: 2 months = <strong>$8,000</strong> held by landlord.<br />
-              Renewal: 1 year, deposit at 1 month = <strong>$4,000</strong>.<br />
-              Landlord refunds <strong>$4,000</strong> to tenant on or before the renewal start. Landlord keeps the other <strong>$4,000</strong> as the new deposit.
+              Rent ₱25,000/month. Original 2-year lease deposit: 2 months = <strong>₱50,000</strong> held by landlord.<br />
+              Renewal: 1 year, deposit at 1 month = <strong>₱25,000</strong>.<br />
+              Landlord refunds <strong>₱25,000</strong> to tenant on or before the renewal start. Landlord keeps the other <strong>₱25,000</strong> as the new deposit.
             </p>
           </div>
           <p className="text-navy-600 text-sm leading-relaxed">
