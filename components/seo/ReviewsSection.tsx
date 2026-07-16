@@ -1,7 +1,7 @@
 const REVIEWS = [
   {
     name: 'Wei Liang T.',
-    role: 'residential Landlord, Tampines',
+    role: 'Residential Landlord, Tampines',
     rating: 5,
     text: 'Renting out my 4-room residential for the first time. Agent quoted me $250 just to draft the TA. Used this instead — took about 15 minutes, added aircon servicing and a utility cap, downloaded the PDF. Tenant signed without any issues.',
     date: 'Jan 2026',

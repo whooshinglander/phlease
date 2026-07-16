@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Handshake renewals, late stamping, missed residential approval, pass expiry, deposit disputes. What it costs and how to avoid.',
     url: 'https://phlease.com/common-tenancy-renewal-pitfalls',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -25,11 +25,11 @@ const FAQS = [
   },
   {
     q: 'What happens if I stamp my renewal late with BIR?',
-    a: "BIR charges a penalty of ₱500 or the duty amount (whichever is greater) if you're up to 3 months late, and up to 4× the duty if you're more than 3 months late. The bigger problem is enforceability: an unstamped tenancy can't be admitted as evidence in Philippines courts. If you ever have to sue for unpaid rent or damage, you have to stamp and pay the penalty before the case proceeds. Stamp within 14 days of signing and this is a non-issue.",
+    a: "BIR charges a penalty of ₱500 or the duty amount (whichever is greater) if you're up to 3 months late, and up to 4× the duty if you're more than 3 months late. The bigger problem is enforceability: an unstamped tenancy can't be admitted as evidence in Philippines courts. If you ever have to sue for unpaid rent or damage, you have to stamp and pay the penalty before the case proceeds. Stamp within 5 days after the end of the month of signing and this is a non-issue.",
   },
   {
-    q: "I forgot to renew my residential subletting approval before the new tenancy started. What happens?",
-    a: "residential takes subletting compliance seriously. If they discover an unapproved sublet during your renewal period, you can be fined and a black mark goes on your subletting record, which affects future applications. In some cases residential has terminated subletting approval entirely. The fix if you've already missed it: apply now, disclose the gap honestly, and get the agreement stamped. Don't try to backdate anything. residential cross-checks tenancy stamping with BIR records.",
+    q: "I forgot to renew my Residential subletting approval before the new tenancy started. What happens?",
+    a: "In the Philippines, there is no central housing authority tracking subletting. However, condominium corporations may have rules about tenant registration. Check your condo's bylaws and register the tenant if required. Ensure the lease agreement is properly stamped with the BIR.",
   },
   {
     q: 'My tenant refuses to do a walk-through at the end of the renewal and is now disputing deposit deductions. What now?',
@@ -121,7 +121,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Sign a renewal. Either a short addendum or a fresh tenancy. Stamp with BIR within 14 days. The total cost of doing this is the stamp duty (0.4% of total rent) plus 30 minutes of admin. Skipping it has a non-zero chance of costing thousands.
+              Sign a renewal. Either a short addendum or a fresh tenancy. Stamp with BIR within 5 days after the end of the month of signing. The total cost of doing this is the stamp duty (0.4% of total rent) plus 30 minutes of admin. Skipping it has a non-zero chance of costing thousands.
             </p>
           </div>
         </section>
@@ -139,7 +139,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Stamp within 14 days of signing via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Set a calendar reminder for the day after signing. The whole process takes ten minutes. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
+              Stamp within 5 days after the end of the month of signing via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Set a calendar reminder for the day after signing. The whole process takes ten minutes. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
             </p>
           </div>
         </section>
@@ -153,11 +153,11 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              residential conducted a routine check, flagged the unapproved sublet, and issued a financial penalty. A black mark went on the landlord's subletting record, which complicated the next approval application. In severe or repeat cases, residential has revoked subletting approval entirely. Cost here: a few hundred dollars in penalty and a meaningfully harder conversation with residential on the next renewal.
+              Residential conducted a routine check, flagged the unapproved sublet, and issued a financial penalty. A black mark went on the landlord's subletting record, which complicated the next approval application. In severe or repeat cases, Residential has revoked subletting approval entirely. Cost here: a few hundred dollars in penalty and a meaningfully harder conversation with Residential on the next renewal.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Pull up the residential approval letter. Note the end date. If your renewal extends past it, re-apply for subletting approval through the residential portal before the new tenancy starts. Approval usually comes through in a few working days. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal guide</Link> for the full sequence.
+              Pull up the Residential approval letter. Note the end date. If your renewal extends past it, re-apply for subletting approval through the Residential portal before the new tenancy starts. Approval usually comes through in a few working days. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal guide</Link> for the full sequence.
             </p>
           </div>
         </section>

@@ -38,7 +38,7 @@ function fmtDateFormal(d: string): string {
   if (!d) return '[DATE]'
   const dt = new Date(d + 'T00:00:00')
   const day = dt.getDate()
-  const month = dt.toLocaleDateString('en-SG', { month: 'long' }).toUpperCase()
+  const month = dt.toLocaleDateString('en-PH', { month: 'long' }).toUpperCase()
   const year = dt.getFullYear()
   return `${ordinal(day)} ${month} ${year}`
 }
@@ -62,7 +62,7 @@ function numToWords(n: number): string {
   if (n < 1000) return ONES[Math.floor(n / 100)] + ' HUNDRED' + (n % 100 ? ' AND ' + numToWords(n % 100) : '')
   if (n < 10000) return ONES[Math.floor(n / 1000)] + ' THOUSAND' + (n % 1000 ? ' ' + numToWords(n % 1000) : '')
   if (n < 100000) return numToWords(Math.floor(n / 1000)) + ' THOUSAND' + (n % 1000 ? ' ' + numToWords(n % 1000) : '')
-  return n.toLocaleString('en-SG')
+  return n.toLocaleString('en-PH')
 }
 
 function amountWords(n: number | ''): string {
@@ -161,7 +161,7 @@ export default function RenewPreviewPage() {
       content: rent ? (
         <p>
           The monthly rent, inclusive of maintenance and service charge shall be Philippines Dollars{' '}
-          <strong>{amountWords(rent)} (₱{rent.toLocaleString('en-SG')}/-)</strong>, and payable in advance
+          <strong>{amountWords(rent)} (₱{rent.toLocaleString('en-PH')}/-)</strong>, and payable in advance
           on the <strong>{ordinal(Number(paymentDay))}</strong> day of each month for the duration of the Term.
         </p>
       ) : (
@@ -177,7 +177,7 @@ export default function RenewPreviewPage() {
           <p>
             The security deposit for this extension shall be{' '}
             {deposit
-              ? <><strong>{amountWords(deposit)} (₱{deposit.toLocaleString('en-SG')}/-)</strong>.</>
+              ? <><strong>{amountWords(deposit)} (₱{deposit.toLocaleString('en-PH')}/-)</strong>.</>
               : <span>unchanged as per the original Agreement.</span>
             }
           </p>

@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'After the letter is sent and accepted, how soon should the actual agreement follow?',
-    a: "Aim for 2 to 4 weeks. The letter sets the headline terms, but the binding tenancy agreement still needs to be drafted, reviewed by both sides, signed, and stamped with BIR within 14 days of signing. Don't let it drag past a month — the closer you get to the current tenancy end date, the more pressure you're under, and any small disagreement on a clause can blow up the deal.",
+    a: "Aim for 2 to 4 weeks. The letter sets the headline terms, but the binding tenancy agreement still needs to be drafted, reviewed by both sides, signed, and stamped with BIR within 5 days after the end of the month of signing. Don't let it drag past a month — the closer you get to the current tenancy end date, the more pressure you're under, and any small disagreement on a clause can blow up the deal.",
   },
   {
     q: 'What if the tenant accepts in the letter, then refuses to sign the actual agreement?',
@@ -145,7 +145,7 @@ I am writing regarding the tenancy of the above property, which is due to expire
 2. Monthly rent: ₱3,200, payable on the 1st of each month by bank transfer.
 3. Security deposit: existing deposit of ₱3,000 to be carried forward, with a top-up of ₱200 to match the new monthly rent.
 4. All other clauses (diplomatic clause, utilities, occupants) to remain as per the current tenancy agreement.
-5. Signing of the new tenancy agreement to take place by [15 June 2026], with stamping completed within 14 days of signing.
+5. Signing of the new tenancy agreement to take place by [15 June 2026], with stamping completed within 5 days after the end of the month of signing.
 
 Kindly confirm by [25 May 2026] whether these terms are acceptable, or let me know if you'd like to discuss any adjustments. Once we are aligned, I will arrange for the new tenancy agreement to be drawn up.
 
@@ -238,7 +238,7 @@ Yours sincerely,
             <ul className="space-y-3 text-navy-600 text-sm">
               <li><strong className="text-navy-800">Both sides agree on terms.</strong> Reply to the letter (email is fine) confirming acceptance.</li>
               <li><strong className="text-navy-800">Draft the renewal agreement.</strong> The actual binding document, with full clauses, signed by both parties.</li>
-              <li><strong className="text-navy-800">Stamp with BIR within 14 days.</strong> 0.4% of total rent for a 1-year renewal, or 0.4% of average annual rent for a 1 to 3 year renewal.</li>
+              <li><strong className="text-navy-800">Stamp with BIR within 5 days after the end of the month of signing.</strong> PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess</li>
               <li><strong className="text-navy-800">Keep all the paperwork.</strong> The letter thread, the signed agreement, the BIR stamp certificate. Three documents, one folder, done.</li>
             </ul>
           </div>

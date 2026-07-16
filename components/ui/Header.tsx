@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const NAV_LINKS = [
   { href: '/faq', label: 'FAQ' },
-  { href: '/residential-tenancy-agreement', label: 'residential Guide' },
+  { href: '/residential-tenancy-agreement', label: 'Residential Guide' },
   { href: '/room-rental-agreement', label: 'Room Rental' },
   { href: '/renew', label: 'Renew' },
 ]
@@ -43,7 +43,7 @@ export default function Header() {
               PhLease
             </span>
             <p className="text-2xs text-navy-500 hidden sm:block font-medium">
-              Philippines Residential Rental Agreements
+              Philippines Lease Agreements
             </p>
           </div>
         </Link>

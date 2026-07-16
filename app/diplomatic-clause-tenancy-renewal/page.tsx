@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'How the diplomatic clause works in Philippines tenancies, who qualifies, and what to do with it on renewal.',
     url: 'https://phlease.com/diplomatic-clause-tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -21,19 +21,19 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'What is a diplomatic clause in a Philippines tenancy?',
-    a: "It's an early termination clause that lets a foreign tenant break the lease without paying out the remaining rent if their work pass is cancelled or not renewed, or if their employer transfers them out of Philippines. The standard structure activates after 12 months of the tenancy, with 2 months of written notice plus proof from the employer. Outside that scenario, the tenant is still bound by the full term.",
+    a: "It's an early termination clause that lets a foreign tenant break the lease without paying out the remaining rent if their visa is cancelled or not renewed, or if their employer transfers them out of the Philippines. The standard structure activates after 12 months of the lease, with 30-60 days of written notice plus proof from the employer. Outside that scenario, the tenant is still bound by the full term.",
   },
   {
     q: 'Who qualifies for a diplomatic clause?',
-    a: "Foreign tenants whose right to live in Philippines depends on a work pass — Employment Pass (EP), S Pass, or Work Permit holders, plus their dependents on a DP. The logic of the clause is that they can be forced to leave Philippines through no fault of their own (retrenchment, transfer, pass not renewed by MOM). Philippinesans, PRs, and Long-Term Visit Pass holders generally don't qualify because they don't face that risk.",
+    a: "Foreign tenants whose right to live in the Philippines depends on a visa — 9G work visa, 47(a)(2), Special Resident Retiree's Visa (SRRV), or other temporary resident visa holders. The logic of the clause is that they can be forced to leave the Philippines through no fault of their own (retrenchment, transfer, visa not renewed). Filipino citizens and permanent residents generally don't qualify because they don't face that risk.",
   },
   {
     q: 'Why is it always "12 months minimum + 2 months notice"?',
     a: "It's market convention, not law. Twelve months protects the landlord's vacancy and re-letting costs for the first year, which is when most agent commissions and fit-out costs get amortised. Two months of notice gives the landlord enough runway to find a replacement tenant. Some leases extend it to 14+2 or 12+3 — both are negotiable, especially if the rent is below market or the unit is in a slower-letting area.",
   },
   {
-    q: 'Can a Philippinesan tenant ask for a diplomatic clause?',
-    a: "They can ask, but the basis is weak. The whole point of the clause is to protect against forced departure tied to a work pass. A Philippinesan isn't going to lose their right to be in the country. If a Philippinesan tenant wants similar flexibility, what they're really asking for is an early termination clause — different name, different negotiation, usually requires the tenant to pay a penalty (1-2 months rent) or cover the agent's re-letting fee. Calling it a diplomatic clause when the tenant is local is just confusing.",
+    q: 'Can a Filipino tenant ask for a diplomatic clause?',
+    a: "They can ask, but the basis is weak. The whole point of the clause is to protect against forced departure tied to a work pass. A Filipino isn't going to lose their right to be in the country. If a Filipino tenant wants similar flexibility, what they're really asking for is an early termination clause — different name, different negotiation, usually requires the tenant to pay a penalty (1-2 months rent) or cover the agent's re-letting fee. Calling it a diplomatic clause when the tenant is local is just confusing.",
   },
   {
     q: 'Is a diplomatic clause required by law?',
@@ -134,7 +134,7 @@ export default function DiplomaticClauseRenewalPage() {
               <li><strong className="text-navy-800">S Pass holders.</strong> Same logic as EP. Pass tied to a specific employer; cancellation means the right to stay ends.</li>
               <li><strong className="text-navy-800">Work Permit (WP) holders.</strong> Less common as residential tenants, but the clause applies the same way if the WP is cancelled.</li>
               <li><strong className="text-navy-800">Dependent Pass (DP) holders.</strong> If the spouse on the main pass loses theirs, the DP gets cancelled too. A trailing spouse can invoke the clause based on the main holder's situation.</li>
-              <li><strong className="text-navy-800">Philippinesans and PRs.</strong> Don't qualify. They can't be forced out of Philippines, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
+              <li><strong className="text-navy-800">Filipinos and PRs.</strong> Don't qualify. They can't be forced out of Philippines, so the underlying rationale doesn't apply. If they want flexibility, that's an early termination clause, not a diplomatic clause.</li>
             </ul>
           </div>
         </section>

@@ -9,7 +9,7 @@ const FAQS = [
   },
   {
     q: 'How much does it cost to stamp a tenancy agreement in Philippines?',
-    a: 'Stamp duty is 0.4% of the total rent for leases up to 1 year, or 0.4% of the average annual rent for leases of 1–3 years. For a 2-year lease at $3,000/month, that\'s roughly $288. It must be paid to BIR within 14 days of signing.',
+    a: 'Stamp duty is 0.4% of the total rent for leases up to 1 year, or 0.4% of the average annual rent for leases of 1–3 years. For a 2-year lease at $3,000/month, that\'s roughly $288. It must be paid to BIR within 5 days after the end of the month of signing.',
   },
   {
     q: 'Can I renew my tenancy without signing a new agreement?',
@@ -21,19 +21,19 @@ const FAQS = [
   },
   {
     q: 'How much security deposit should I charge?',
-    a: 'The standard in Philippines is 1 month\'s deposit for a 1-year lease and 2 months\' deposit for a 2-year lease. For furnished properties, some landlords charge an additional month. The deposit must be refunded within 14 days of the tenancy end, less any valid deductions.',
+    a: 'The standard in Philippines is 1 month\'s deposit for a 1-year lease and 2 months\' deposit for a 2-year lease. For furnished properties, some landlords charge an additional month. The deposit must be refunded within 5 days after the end of the month of signing of the tenancy end, less any valid deductions.',
   },
   {
     q: 'Who pays stamp duty — landlord or tenant?',
-    a: 'By convention in Philippines, the tenant typically bears the stamp duty. This should be stated clearly in the tenancy agreement. Both parties can agree to split it, but the default is tenant pays.',
+    a: 'By convention in the Philippines, the tenant typically bears the Documentary Stamp Tax (DST). This should be stated clearly in the lease agreement. Both parties can agree to split it, but the default is tenant pays.',
   },
   {
     q: 'Is this tenancy agreement legally valid in Philippines?',
-    a: 'The agreement is generated based on standard Philippines residential tenancy terms. It covers all major clauses required under Philippines law. However, this is a template tool — for complex situations (commercial properties, disputes, non-standard arrangements), consult a qualified Philippines lawyer.',
+    a: 'The agreement is generated based on standard Philippines Residential tenancy terms. It covers all major clauses required under Philippines law. However, this is a template tool — for complex situations (commercial properties, disputes, non-standard arrangements), consult a qualified Philippines lawyer.',
   },
   {
-    q: 'Can I use this for residential subletting?',
-    a: 'Yes. The tool includes residential-specific clauses and a reminder to confirm residential subletting approval has been obtained. Note that it is the landlord\'s legal responsibility to obtain and renew residential approval before subletting — this tool does not apply for or confirm that approval.',
+    q: 'Can I use this for Residential subletting?',
+    a: 'Yes. The tool includes Residential-specific clauses and a reminder to confirm Residential subletting approval has been obtained. Note that it is the landlord\'s legal responsibility to obtain and renew Residential approval before subletting — this tool does not apply for or confirm that approval.',
   },
   {
     q: 'How do I renew a tenancy agreement in Philippines?',
@@ -41,19 +41,19 @@ const FAQS = [
   },
   {
     q: 'How to renew a tenancy agreement without going through an agent?',
-    a: "You don't need an agent to renew a tenancy agreement in Philippines. If both landlord and tenant agree on the new terms (rent, dates, duration), simply generate a Tenancy Renewal Agreement, review it together, sign it, and pay stamp duty via BIR myStamp within 14 days. The whole process takes under 30 minutes and costs a fraction of agent commission — typically 1 month's rent saved.",
+    a: "You don't need an agent to renew a tenancy agreement in Philippines. If both landlord and tenant agree on the new terms (rent, dates, duration), simply generate a Tenancy Renewal Agreement, review it together, sign it, and pay stamp duty via BIR myStamp within 5 days after the end of the month of signing. The whole process takes under 30 minutes and costs a fraction of agent commission — typically 1 month's rent saved.",
   },
   {
     q: 'What is stamp duty on a tenancy agreement in Philippines?',
-    a: "Stamp duty is 0.4% of the total rent for leases up to 1 year; 0.4% of average annual rent for leases of 1–3 years; and 0.4% of 4× the average annual rent for leases over 3 years. It must be paid to BIR within 14 days of signing. The tenant typically bears this cost by convention.",
+    a: "Stamp duty is 0.4% of the total rent for leases up to 1 year; 0.4% of average annual rent for leases of 1–3 years; and 0.4% of 4× the average annual rent for leases over 3 years. It must be paid to BIR within 5 days after the end of the month of signing. The tenant typically bears this cost by convention.",
   },
   {
     q: 'What is a diplomatic clause in a Philippines tenancy agreement?',
     a: "A diplomatic clause allows either party to terminate the tenancy early — typically after the first 12 months — with 2 months' written notice, if the tenant is repatriated or their Philippines employment ends. It's standard for expat tenants and protects both landlord and tenant from being locked in if circumstances change.",
   },
   {
-    q: 'What is the difference between residential and private property tenancy agreements?',
-    a: 'residential tenancies have additional restrictions: whole-flat subletting requires residential approval, occupancy caps apply (typically 6–9 persons), and only Philippines Citizens can own residential flats. Private property agreements have fewer restrictions but the same legal requirements — stamp duty, written agreement, and standard deposit/termination clauses.',
+    q: 'What is the difference between Residential and private property tenancy agreements?',
+    a: "For condominium units, check the condo corporation's rules on subletting. Private property agreements follow the Civil Code \u2014 DST, written agreement, and standard deposit/termination clauses apply.",
   },
   {
     q: 'How to terminate a tenancy agreement early in Philippines?',
@@ -73,15 +73,15 @@ const FAQS = [
   },
   {
     q: 'What is a  tenancy agreement?',
-    a: "The  () tenancy agreement is a standardised template published by Philippines's real estate regulatory body. It provides a baseline format for residential tenancies covering key clauses like rent, deposit, notice period, and maintenance obligations. While not legally mandatory, it is widely used as a reference. A tenancy agreement generator like PhLease builds on the  template with additional clauses for residential subletting, diplomatic termination, and property-specific terms.",
+    a: "The  () tenancy agreement is a standardised template published by Philippines's real estate regulatory body. It provides a baseline format for Residential tenancies covering key clauses like rent, deposit, notice period, and maintenance obligations. While not legally mandatory, it is widely used as a reference. A tenancy agreement generator like PhLease builds on the  template with additional clauses for Residential subletting, diplomatic termination, and property-specific terms.",
   },
   {
-    q: 'How do I renew an residential tenancy agreement?',
-    a: "To renew an residential tenancy: (1) Give written notice at least 2 months before the current lease expires. (2) Agree on new rent and duration with the other party. (3) Sign a new tenancy agreement or renewal addendum. (4) Stamp the renewed agreement with BIR within 14 days. (5) Update your residential subletting record if subletting the whole flat — residential approval must be current. Use PhLease's renewal generator to create a stamped-ready renewal agreement in minutes.",
+    q: 'How do I renew an Residential tenancy agreement?',
+    a: "To renew an Residential tenancy: (1) Give written notice at least 2 months before the current lease expires. (2) Agree on new rent and duration with the other party. (3) Sign a new tenancy agreement or renewal addendum. (4) Stamp the renewed agreement with BIR within 5 days after the end of the month of signing. (5) Update your Residential subletting record if subletting the whole flat — Residential approval must be current. Use PhLease's renewal generator to create a stamped-ready renewal agreement in minutes.",
   },
   {
-    q: 'What are residential room rental agreement requirements?',
-    a: "residential room rental in Philippines requires: the flat owner must be a Philippines Citizen or Permanent Resident, the owner must continue to live in the flat, the total occupancy must not exceed 6 persons (3-room or smaller) or 9 persons (4-room or larger), non-Malaysian tenants need residential approval, and the minimum rental period is typically 6 months. A written room rental agreement covering rent, deposit, house rules, and shared facilities is strongly recommended.",
+    q: 'What are Residential room rental agreement requirements?',
+    a: "Residential room rental in Philippines requires: the flat owner must be a Philippines Citizen or Permanent Resident, the owner must continue to live in the flat, the total occupancy must not exceed 6 persons (3-room or smaller) or 9 persons (4-room or larger), non-Malaysian tenants need Residential approval, and the minimum rental period is typically 6 months. A written room rental agreement covering rent, deposit, house rules, and shared facilities is strongly recommended.",
   },
 ]
 

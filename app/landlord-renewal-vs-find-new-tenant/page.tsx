@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'How long does it actually take to find a new tenant in Philippines?',
-    a: "Two to four weeks is the realistic range for a properly priced unit in a normal market. residential flats in mature estates and condos near MRT stations sit at the shorter end. Older walk-ups, units with awkward layouts, or anything priced 5%+ above the  SRX median tend to drag past a month. Budget 3 weeks of vacancy as the planning baseline. If your unit is luxury (above $8,000/month) or in a slow segment, plan for 6 to 8 weeks.",
+    a: "Two to four weeks is the realistic range for a properly priced unit in a normal market. Condo units in prime locations (Makati, BGC, Ortigas) and apartments near transport hubs sit at the shorter end. Older walk-ups, units with awkward layouts, or anything priced above market tend to drag past a month. Budget 3 weeks of vacancy as the planning baseline.",
   },
   {
     q: 'What does the agent commission split look like for new vs renewal?',
-    a: "Industry norm: full one-month commission split between landlord agent and tenant agent for a new tenancy (so the landlord typically pays half a month if there are co-broke agents on both sides, or one full month if a single agent represents both ends). For a renewal, the convention is half a month, paid by the landlord. Some agents waive the renewal commission entirely if the original deal was theirs and the tenant didn't move. Always confirm in writing before the renewal is signed.",
+    a: "Industry norm in the Philippines: one-month commission for a new lease (shared between landlord's and tenant's agents if co-broke, or one full month if a single agent represents both). For a renewal, the convention is half a month, paid by the landlord. Some agents waive the renewal commission entirely if the original deal was theirs and the tenant didn't move. Always confirm in writing before the renewal is signed.",
   },
   {
     q: "What rent increase do I need to break even on switching tenants?",
@@ -118,7 +118,7 @@ export default function RenewVsFindNewPage() {
               <thead className="bg-slate-50 text-navy-800">
                 <tr>
                   <th className="text-left p-4 font-semibold">Scenario</th>
-                  <th className="text-left p-4 font-semibold">residential ($3,000/mo)</th>
+                  <th className="text-left p-4 font-semibold">Residential ($3,000/mo)</th>
                   <th className="text-left p-4 font-semibold">Condo ($5,000/mo)</th>
                 </tr>
               </thead>

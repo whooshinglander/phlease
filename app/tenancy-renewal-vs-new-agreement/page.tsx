@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Same property, same tenant = renewal. Material changes = fresh agreement. Here\'s the test.',
     url: 'https://phlease.com/tenancy-renewal-vs-new-agreement',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "My existing agreement has a 'right to renew' clause. Do I still sign anything?",
-    a: "Yes. A right-to-renew clause means the tenant can require you to renew at agreed terms — but the renewal itself is a separate signed and stamped document. The clause sets the terms; the renewal agreement implements them. Even with a right-to-renew clause, both sides sign a renewal addendum or fresh tenancy and stamp it within 14 days.",
+    a: "Yes. A right-to-renew clause means the tenant can require you to renew at agreed terms — but the renewal itself is a separate signed and stamped document. The clause sets the terms; the renewal agreement implements them. Even with a right-to-renew clause, both sides sign a renewal addendum or fresh tenancy and stamp it within 5 days after the end of the month of signing.",
   },
   {
     q: 'I want to change the rent significantly on renewal. Renewal or new?',
@@ -45,11 +45,11 @@ const FAQS = [
   },
   {
     q: "If we already exceeded the original tenancy end date and I'm just continuing month-to-month, am I in renewal territory?",
-    a: "You're in periodic-tenancy territory by default — month-to-month, terminable on short notice, and the original fixed-term protections have lapsed. Best practice is to immediately sign a backdated renewal (or fresh agreement) so you're back inside a fixed term. BIR still wants stamp duty on the renewed term within 14 days of signing.",
+    a: "You're in periodic-tenancy territory by default — month-to-month, terminable on short notice, and the original fixed-term protections have lapsed. Best practice is to immediately sign a backdated renewal (or fresh agreement) so you're back inside a fixed term. BIR still wants stamp duty on the renewed term within 5 days after the end of the month of signing.",
   },
   {
     q: 'Can the renewal cover a different property?',
-    a: "No. A renewal is for the same property. If you're moving to a different unit (same building or otherwise), that's a new tenancy by definition, not a renewal. The agreement should describe the new property and you start over with stamp duty, deposit, and residential approval (if applicable) for the new address.",
+    a: "No. A renewal is for the same property. If you're moving to a different unit (same building or otherwise), that's a new lease by definition, not a renewal. The agreement should describe the new property and you start over with DST, deposit, and any applicable condo registration for the new address.",
   },
 ]
 

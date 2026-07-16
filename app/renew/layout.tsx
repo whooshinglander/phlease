@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Generate a Philippines tenancy renewal agreement in minutes. residential rental renewal or private property. Free to preview, from ₱500.',
     url: 'https://phlease.com/renew',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
   twitter: {

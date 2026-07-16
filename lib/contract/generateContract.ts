@@ -70,10 +70,10 @@ export function generateContract(formData: TenancyFormData): ContractDocument {
   ].filter(Boolean).join(', ')
 
   const landlord = p(landlordName, 'LANDLORD NAME')
-  const landlordId = p(landlordNric, 'LANDLORD NRIC/FIN')
+  const landlordId = p(landlordNric, 'LANDLORD Government ID')
   const landlordAddr = p(landlordAddress, 'LANDLORD ADDRESS')
   const tenant = p(tenantName, 'TENANT NAME')
-  const tenantId = p(tenantNric, 'TENANT NRIC/FIN/PASSPORT')
+  const tenantId = p(tenantNric, 'TENANT Government ID/PASSPORT')
   const tenantAddr = p(tenantAddress, 'TENANT ADDRESS')
   const rent = fmtMoney(skipTerms ? '' : monthlyRent)
   const deposit = fmtMoney(skipTerms ? '' : securityDeposit)
@@ -81,7 +81,7 @@ export function generateContract(formData: TenancyFormData): ContractDocument {
   const endDate = fmtDate(skipTerms ? '' : expiryDate)
   const isRoom = propertyType === 'room'
   const roomTypeLabel: Record<string, string> = { common: 'Common Room', master: 'Master Bedroom', ensuite: 'En-Suite Room', other: 'Room' }
-  const propTypeLabel = propertyType === 'residential' ? 'residential Flat' : isRoom ? `Room Rental (${roomTypeLabel[formData.roomType] || 'Room'})` : 'Private Residential Property'
+  const propTypeLabel = propertyType === 'residential' ? 'Residential Flat' : isRoom ? `Room Rental (${roomTypeLabel[formData.roomType] || 'Room'})` : 'Private Residential Property'
 
   // Build landlord list
   const allLandlords: { name: string; nric: string }[] = [{ name: landlord, nric: landlordId }]
@@ -95,7 +95,7 @@ export function generateContract(formData: TenancyFormData): ContractDocument {
   }
 
   const landlordPartyText = allLandlords
-    .map(l => `${l.name} (NRIC/FIN: ${l.nric})`)
+    .map(l => `${l.name} (Government ID: ${l.nric})`)
     .join('\n')
 
   // Build tenant list
@@ -110,7 +110,7 @@ export function generateContract(formData: TenancyFormData): ContractDocument {
   }
 
   const tenantPartyText = allTenants
-    .map(t => `${t.name} (NRIC/FIN/Passport: ${t.id})`)
+    .map(t => `${t.name} (Government-Issued ID/Passport: ${t.id})`)
     .join('\n')
 
   const sections: ContractSection[] = [
@@ -261,7 +261,7 @@ Upon expiry or earlier termination of this lease, the Lessee shall vacate the Pr
   // Authorised Occupants (if any listed)
   if (formData.occupants && formData.occupants.length > 0) {
     const occupantList = formData.occupants
-      .map(o => `${o.name} (NRIC/FIN/Passport: ${o.nric}) — ${o.relation}`)
+      .map(o => `${o.name} (Government-Issued ID/Passport: ${o.nric}) — ${o.relation}`)
       .join('\n')
     sections.push({
       title: `${sections.length + 1}. Authorised Occupants`,

@@ -5,15 +5,15 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Tenancy Agreement Template Philippines — Free Download',
-  description: 'Download a free Philippines tenancy agreement template. Covers residential, condo, room rental. -compliant, editable Word/PDF format.',
+  description: 'Download a free Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable Word/PDF format.',
   keywords: 'tenancy agreement template Philippines free download, Philippines tenancy agreement template, rental agreement template Philippines, free tenancy agreement template Philippines,  tenancy agreement template, tenancy agreement Philippines download, residential tenancy agreement template',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-template' },
   openGraph: {
     title: 'Tenancy Agreement Template Philippines — Free Download',
-    description: 'Download a free Philippines tenancy agreement template. Covers residential, condo, room rental. -compliant, editable format.',
+    description: 'Download a free Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable format.',
     url: 'https://phlease.com/tenancy-agreement-template',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }
@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'What is the difference between residential and private property tenancy agreements?',
-    a: "residential tenancies have additional restrictions: whole-flat subletting requires residential approval, occupancy caps apply (max 6 or 9 persons depending on flat type), and only Philippines Citizens can own residential flats. Private property agreements have fewer restrictions but the same legal requirements apply — stamp duty to BIR, written agreement, and standard clauses for deposits and termination.",
+    a: "For condominium units, check the condo corporation's rules on subletting and tenant registration. For apartments under the Rent Control Act (RA 9653), deposit limits and rent increase caps apply. Private property agreements follow the Civil Code and standard practice — DST to BIR, written agreement, and standard clauses for deposits and termination.",
   },
   {
     q: 'How do I fill in a Philippines tenancy agreement template?',
@@ -54,7 +54,7 @@ const faqSchema = {
 const comparison = [
   { feature: 'Customised to your property', template: false, generator: true },
   { feature: 'Guided step-by-step form', template: false, generator: true },
-  { feature: 'residential-specific clauses', template: false, generator: true },
+  { feature: 'Residential-specific clauses', template: false, generator: true },
   { feature: 'Diplomatic clause auto-included', template: false, generator: true },
   { feature: 'Free to use', template: true, generator: true },
   { feature: 'Printable PDF output', template: true, generator: true },
@@ -93,13 +93,13 @@ export default function TenancyTemplatePage() {
           </div>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm divide-y divide-slate-100 mb-6">
             {[
-              { label: 'Parties', value: 'Full legal names and NRIC/FIN/passport numbers of landlord and tenant' },
+              { label: 'Parties', value: 'Full legal names and government-issued ID/passport numbers of landlord and tenant' },
               { label: 'Property address', value: 'Full address including unit number and postal code' },
               { label: 'Rent amount', value: 'Monthly rent, payment date, and accepted payment methods' },
               { label: 'Security deposit', value: "1 month's rent (1-year lease) or 2 months' rent (2-year lease)" },
               { label: 'Tenancy duration', value: 'Start date, end date, and any option to renew' },
               { label: 'Diplomatic clause', value: 'Early termination rights for expat tenants on repatriation or job loss' },
-              { label: 'Notice period', value: 'Typically 1–2 months written notice for termination' },
+              { label: 'Notice period', value: 'Typically 30 days written notice (Civil Code Article 1687) for termination' },
               { label: 'Maintenance', value: "Each party's responsibilities for repairs and upkeep" },
               { label: 'Inventory list', value: 'List of furnishings and fittings included with the property' },
             ].map((row, i) => (
@@ -113,24 +113,24 @@ export default function TenancyTemplatePage() {
 
         {/* residential vs Condo vs Room Rental */}
         <section className="max-w-3xl mx-auto px-4 pb-12">
-          <h2 className="text-xl font-bold text-navy-800 mb-5 text-center">residential vs Condo vs Room Rental Templates</h2>
+          <h2 className="text-xl font-bold text-navy-800 mb-5 text-center">Residential vs Condo vs Room Rental Templates</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/residential-tenancy-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏠</div>
-              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">residential Flat</h3>
-              <p className="text-sm text-navy-500">Requires residential subletting approval, occupancy caps (6–9 persons), minimum 6-month tenancy. Additional clauses for compliance.</p>
-              <p className="text-xs text-brand-600 font-medium mt-3">residential Tenancy Agreement →</p>
+              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Residential Flat</h3>
+              <p className="text-sm text-navy-500">Requires Residential subletting approval, occupancy caps (6–9 persons), minimum 6-month tenancy. Additional clauses for compliance.</p>
+              <p className="text-xs text-brand-600 font-medium mt-3">Residential Tenancy Agreement →</p>
             </Link>
             <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏢</div>
               <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Private Condo / Landed</h3>
-              <p className="text-sm text-navy-500">No residential approval needed. Includes air-con servicing, condo management fees, and maintenance clauses. More flexibility on terms.</p>
+              <p className="text-sm text-navy-500">No Residential approval needed. Includes air-con servicing, condo management fees, and maintenance clauses. More flexibility on terms.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Generate Now →</p>
             </Link>
             <Link href="/room-rental-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🛏️</div>
               <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Room Rental</h3>
-              <p className="text-sm text-navy-500">For single rooms in residential or private property. Includes house rules, shared facilities, and shorter minimum periods.</p>
+              <p className="text-sm text-navy-500">For single rooms in Residential or private property. Includes house rules, shared facilities, and shorter minimum periods.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Room Rental Agreement →</p>
             </Link>
           </div>
@@ -173,7 +173,7 @@ export default function TenancyTemplatePage() {
           <h2 className="text-lg font-bold text-navy-800 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses, subletting approval, and occupancy rules.' },
+              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement', desc: 'Residential-specific clauses, subletting approval, and occupancy rules.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement', desc: 'Room rentals in residential or private property — house rules included.' },
               { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'Renew an existing tenancy agreement quickly.' },
               { href: '/lease-agreement', label: 'Tenancy Agreement Guide', desc: 'Complete guide to Philippines tenancy agreements.' },

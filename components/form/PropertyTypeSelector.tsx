@@ -13,8 +13,8 @@ type Props = {
 const OPTIONS = [
   {
     type: 'residential' as PropertyType,
-    title: 'residential Flat',
-    subtitle: 'Renting out the entire residential flat. Requires residential subletting approval.',
+    title: 'Residential Flat',
+    subtitle: 'Renting out the entire Residential flat. Requires Residential subletting approval.',
     tag: 'Whole Unit',
     icon: (
       <svg className="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">

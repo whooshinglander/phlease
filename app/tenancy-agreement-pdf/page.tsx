@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Download a free Philippines tenancy agreement PDF. Standard residential tenancy agreement for residential and condo, updated for 2026.',
     url: 'https://phlease.com/tenancy-agreement-pdf',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: 'Is a PDF tenancy agreement legally valid in Philippines?',
-    a: 'Yes. A printed or digitally signed PDF tenancy agreement is legally valid in Philippines, provided it contains the essential terms: property address, parties\' full names and NRIC/passport numbers, tenancy duration, monthly rent, security deposit, and notice period. Remember to pay stamp duty to BIR within 14 days of signing.',
+    a: 'Yes. A printed or digitally signed PDF tenancy agreement is legally valid in Philippines, provided it contains the essential terms: property address, parties\' full names and NRIC/passport numbers, tenancy duration, monthly rent, security deposit, and notice period. Remember to pay stamp duty to BIR within 5 days after the end of the month of signing.',
   },
   {
     q: 'What should a Philippines tenancy agreement PDF include?',
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'Do I need to stamp a tenancy agreement PDF in Philippines?',
-    a: 'Yes. All tenancy agreements in Philippines must be stamped by BIR. The stamp duty is calculated on the annual rent: 0.4% of the total rent for leases up to 4 years. You can pay stamp duty online via the BIR e-Stamping portal. Unstamped agreements are not admissible as evidence in court.',
+    a: 'Yes. All lease agreements in the Philippines should be stamped with the BIR. The Documentary Stamp Tax (DST) is PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. You can pay DST via the BIR e-filing system. Unstamped agreements may not be admissible as evidence in court.',
   },
 ]
 
@@ -61,7 +61,7 @@ const howToSchema = {
     { '@type': 'HowToStep', name: 'Add parties and terms', text: 'Fill in landlord and tenant names, NRIC/passport numbers, rent amount, deposit, and tenancy duration.' },
     { '@type': 'HowToStep', name: 'Review and generate', text: 'Preview the completed agreement and make any adjustments.' },
     { '@type': 'HowToStep', name: 'Download your PDF', text: 'Download the signed-ready PDF tenancy agreement instantly.' },
-    { '@type': 'HowToStep', name: 'Stamp the agreement', text: 'Pay stamp duty to BIR via the e-Stamping portal within 14 days of signing.' },
+    { '@type': 'HowToStep', name: 'Stamp the agreement', text: 'Pay stamp duty to BIR via the e-Stamping portal within 5 days after the end of the month of signing.' },
   ],
 }
 
@@ -175,7 +175,7 @@ export default function TenancyAgreementPDFPage() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template Philippines', desc: 'Printable Word/PDF template' },
-              { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses and requirements' },
+              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement', desc: 'Residential-specific clauses and requirements' },
               { href: '/tenancy-renewal', label: 'Renew Your Tenancy Agreement', desc: 'How to renew and stamp a renewal' },
               { href: '/faq', label: 'Tenancy FAQ', desc: 'Common questions answered' },
             ].map((l, i) => (

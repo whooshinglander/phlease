@@ -223,7 +223,7 @@ function ordinalDay(dateStr: string): string {
 }
 function fmtMonth(dateStr: string): string {
   if (!dateStr) return '___'
-  return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-SG', { month: 'long' })
+  return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-PH', { month: 'long' })
 }
 function fmtYear(dateStr: string): string {
   if (!dateStr) return '___'
@@ -231,7 +231,7 @@ function fmtYear(dateStr: string): string {
 }
 function fmtDateFull(dateStr: string): string {
   if (!dateStr) return '[DATE]'
-  return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-SG', {
+  return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-PH', {
     day: 'numeric', month: 'long', year: 'numeric',
   })
 }
@@ -512,7 +512,7 @@ export default function ContractPDF({ doc }: Props) {
             <Text style={styles.noteNum}>1.</Text>
             <Text style={styles.noteText}>
               <Text style={{ fontFamily: 'Times-Bold' }}>Stamp Duty: </Text>
-              This Agreement must be stamped with BIR within 14 days of signing if executed in Philippines, or within 30 days of receipt if executed overseas. Stamp duty is calculated at 0.4% of the total rent for the lease period.
+              This Agreement must be stamped with BIR within 5 days after the end of the month of signing if executed in Philippines, or within 30 days of receipt if executed overseas. Stamp duty is calculated at 0.4% of the total rent for the lease period.
             </Text>
           </View>
           <View style={styles.noteItem}>
@@ -525,7 +525,7 @@ export default function ContractPDF({ doc }: Props) {
           <View style={styles.noteItem}>
             <Text style={styles.noteNum}>3.</Text>
             <Text style={styles.noteText}>
-              <Text style={{ fontFamily: 'Times-Bold' }}>residential Approval (if applicable): </Text>
+              <Text style={{ fontFamily: 'Times-Bold' }}>Residential Approval (if applicable): </Text>
               If the property is an residential flat, the Landlord must obtain residential&apos;s approval for subletting the entire flat before the Tenant takes possession. Room rentals within an owner-occupied residential flat do not require residential approval.
             </Text>
           </View>

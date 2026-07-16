@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Answers on renewal of tenancy agreement Philippines, stamp duty, residential subletting, deposits, diplomatic clause, and more.',
     url: 'https://phlease.com/faq',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }

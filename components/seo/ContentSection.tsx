@@ -9,10 +9,10 @@ export default function ContentSection() {
         </h2>
         <div className="prose prose-slate prose-sm max-w-none text-navy-600 space-y-3">
           <p>
-            A tenancy agreement (TA) is a legally binding contract between a landlord and tenant that sets out the terms of a residential rental in Philippines. It covers rent, deposit, tenancy period, maintenance responsibilities, and what happens when either party wants to leave early.
+            A tenancy agreement (TA) is a legally binding contract between a landlord and tenant that sets out the terms of a Residential rental in Philippines. It covers rent, deposit, tenancy period, maintenance responsibilities, and what happens when either party wants to leave early.
           </p>
           <p>
-            Under Philippines law, any tenancy agreement for a period exceeding 9 months must be stamped with the Inland Revenue Authority of Philippines (BIR). Stamp duty is calculated on the annual rent and must be paid within 14 days of signing.
+            Under Philippines law, any tenancy agreement for a period exceeding 9 months must be stamped with the Inland Revenue Authority of Philippines (BIR). Stamp duty is calculated on the annual rent and must be paid within 5 days after the end of the month of signing.
           </p>
           <p>
             While verbal agreements are technically valid, a written and stamped tenancy agreement is essential for protecting both landlord and tenant — especially when disputes arise over deposits, repairs, or early termination.
@@ -23,23 +23,23 @@ export default function ContentSection() {
       {/* residential vs Private */}
       <div>
         <h2 className="text-xl font-bold text-navy-800 mb-4">
-          residential vs Private Property — What's Different?
+          Residential vs Private Property — What's Different?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-brand-50 border border-blue-200 rounded-xl p-5">
-            <p className="font-semibold text-brand-800 mb-3">residential Flat</p>
+            <p className="font-semibold text-brand-800 mb-3">Residential Flat</p>
             <ul className="space-y-2 text-sm text-brand-700">
-              <li className="flex gap-2"><span className="flex-shrink-0">•</span>Landlord must obtain residential approval before subletting</li>
+              <li className="flex gap-2"><span className="flex-shrink-0">•</span>Landlord must obtain Residential approval before subletting</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>Maximum occupancy rules apply (typically 6 persons)</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>Minimum subletting period: 6 months</li>
-              <li className="flex gap-2"><span className="flex-shrink-0">•</span>Approval must be renewed — residential monitors compliance</li>
+              <li className="flex gap-2"><span className="flex-shrink-0">•</span>Approval must be renewed — Residential monitors compliance</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>Non-citizen tenants subject to additional restrictions</li>
             </ul>
           </div>
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
             <p className="font-semibold text-navy-800 mb-3">Private Property</p>
             <ul className="space-y-2 text-sm text-navy-600">
-              <li className="flex gap-2"><span className="flex-shrink-0">•</span>No residential approval needed — landlord has full discretion</li>
+              <li className="flex gap-2"><span className="flex-shrink-0">•</span>No Residential approval needed — landlord has full discretion</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>No occupancy cap (subject to building rules)</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>Minimum tenancy period varies by property</li>
               <li className="flex gap-2"><span className="flex-shrink-0">•</span>Short-term rentals (Airbnb) still prohibited</li>
@@ -56,7 +56,7 @@ export default function ContentSection() {
         </h2>
         <div className="text-navy-600 text-sm space-y-3">
           <p>
-            All tenancy agreements in Philippines are subject to stamp duty payable to BIR. The duty must be paid within 14 days of signing if the agreement is signed in Philippines, or within 30 days if signed overseas.
+            All tenancy agreements in Philippines are subject to stamp duty payable to BIR. The duty must be paid within 5 days after the end of the month of signing if the agreement is signed in Philippines, or within 30 days if signed overseas.
           </p>
           <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
@@ -67,7 +67,7 @@ export default function ContentSection() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                <tr><td className="px-4 py-3 text-navy-700">Up to 1 year</td><td className="px-4 py-3 text-navy-700">0.4% of total rent</td></tr>
+                <tr><td className="px-4 py-3 text-navy-700">Up to 1 year</td><td className="px-4 py-3 text-navy-700">PHP 6.00 + PHP 2.00 per PHP 1,000 of annual rent</td></tr>
                 <tr><td className="px-4 py-3 text-navy-700">1 to 3 years</td><td className="px-4 py-3 text-navy-700">0.4% of average annual rent</td></tr>
                 <tr><td className="px-4 py-3 text-navy-700">More than 3 years</td><td className="px-4 py-3 text-navy-700">0.4% of average annual rent × 4</td></tr>
               </tbody>

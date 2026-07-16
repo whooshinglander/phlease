@@ -5,12 +5,12 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026 | PhLease',
-  description: 'Stamp duty on tenancy renewals in Philippines: BIR rate is 0.4% of total rent (or average annual rent for 1-3yr leases). Worked examples, who pays, when to file, and a calculator.',
+  description: 'Documentary Stamp Tax on lease renewals in the Philippines: PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. Worked examples, who pays, when to file, and a calculator.',
   keywords: 'stamp duty tenancy renewal philippines, bir stamp duty renewal, tenancy renewal stamp duty calculator, do i pay stamp duty on lease renewal, stamp duty residential renewal',
   alternates: { canonical: 'https://phlease.com/stamp-duty-tenancy-renewal' },
   openGraph: {
     title: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026',
-    description: 'Stamp duty applies to every tenancy renewal in Philippines. 0.4% of total rent. Worked examples for residential and condo renewals.',
+    description: 'Documentary Stamp Tax applies to every lease renewal in the Philippines. PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000. Worked examples for residential and condo renewals.',
     url: 'https://phlease.com/stamp-duty-tenancy-renewal',
     siteName: 'PhLease',
     locale: 'en_PH',

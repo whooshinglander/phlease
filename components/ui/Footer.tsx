@@ -23,8 +23,8 @@ export default function Footer() {
 
         {/* Nav links — 2 rows */}
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-3">
-          <Link href="/lease-agreement" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Tenancy Agreement SG</Link>
-          <Link href="/residential-tenancy-agreement" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">residential Guide</Link>
+          <Link href="/lease-agreement" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Contract of Lease PH</Link>
+          <Link href="/residential-tenancy-agreement" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Residential Guide</Link>
           <Link href="/room-rental-agreement" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Room Rental</Link>
           <Link href="/tenancy-renewal" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Renewal</Link>
           <Link href="/tenancy-agreement-template" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Templates</Link>

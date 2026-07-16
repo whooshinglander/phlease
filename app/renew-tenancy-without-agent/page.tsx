@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'DIY tenancy renewal in Philippines. Skip the half-month commission, follow the steps, stamp it yourself.',
     url: 'https://phlease.com/renew-tenancy-without-agent',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "What does an agent actually do on a renewal that I'd take over myself?",
-    a: "On a typical renewal, the agent: drafts (or copies) the renewal letter or new tenancy, runs comparable rent checks on PropertyGuru and 99.co to justify the rate, ferries signatures between landlord and tenant, and reminds you to stamp at BIR. That's roughly 3-5 hours of work spread over a couple of weeks. For a half-month commission of $1,500-$2,500 on a typical $3,000-$5,000/month flat, the hourly rate is high. The trade-off is convenience, not legal protection. The agent isn't your lawyer.",
+    a: "On a typical renewal, the agent: drafts (or copies) the renewal letter or new lease, runs comparable rent checks on Lamudi and Property24 to justify the rate, ferries signatures between landlord and tenant, and reminds you to pay DST at BIR. That's roughly 3-5 hours of work spread over a couple of weeks. The trade-off is convenience, not legal protection. The agent isn't your lawyer.",
   },
   {
     q: 'Can my tenant insist that I use a property agent for the renewal?',
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: "Common DIY renewal mistakes — what should I watch for?",
-    a: "The frequent ones: forgetting to stamp within 14 days of signing (BIR charges a penalty); using a renewal addendum when you've actually changed multiple terms (issue a fresh tenancy instead); not checking the tenant's pass expiry against the new end date; recycling the original tenancy verbatim without updating the diplomatic clause or deposit clause; and skipping a quick inventory walk-through before signing — wear-and-tear arguments at end-of-term get expensive without one.",
+    a: "The frequent ones: forgetting to stamp within 5 days after the end of the month of signing (BIR charges a penalty); using a renewal addendum when you've actually changed multiple terms (issue a fresh tenancy instead); not checking the tenant's pass expiry against the new end date; recycling the original tenancy verbatim without updating the diplomatic clause or deposit clause; and skipping a quick inventory walk-through before signing — wear-and-tear arguments at end-of-term get expensive without one.",
   },
   {
     q: "How much do I actually save going DIY?",
@@ -124,9 +124,9 @@ export default function RenewWithoutAgentPage() {
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">3. If residential: check your subletting approval window</p>
+              <p className="font-semibold text-navy-800 mb-2">3. If Residential: check your subletting approval window</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                residential grants approval for up to 3 years. If your renewal extends past the approved end date, re-apply on the residential portal before the new tenancy starts. Inside the window, no re-application needed but update residential with the new dates. Skip this if you're on private property. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal page</Link>.
+                Residential grants approval for up to 3 years. If your renewal extends past the approved end date, re-apply on the Residential portal before the new tenancy starts. Inside the window, no re-application needed but update Residential with the new dates. Skip this if you're on private property. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal page</Link>.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -142,7 +142,7 @@ export default function RenewWithoutAgentPage() {
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">6. Stamp via BIR within 14 days</p>
+              <p className="font-semibold text-navy-800 mb-2">6. Stamp via BIR within 5 days after the end of the month of signing</p>
               <p className="text-navy-600 text-sm leading-relaxed">
                 Log in to <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Under e-Stamping, choose Lease/Tenancy Agreement, enter the dates, the monthly rent, and pay 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1-3 year lease). The certificate downloads as a PDF, attach it to the signed tenancy. Tenant typically pays unless your agreement says otherwise. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
               </p>

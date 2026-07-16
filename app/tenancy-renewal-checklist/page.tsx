@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Required, recommended, and nice-to-have sections for a Philippines tenancy renewal. Plain English checklist.',
     url: 'https://phlease.com/tenancy-renewal-checklist',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'What are the minimum sections a renewal agreement must contain?',
-    a: "Seven things, no fewer. Identification of both parties (full name + NRIC/FIN/passport), identification of the property (full address with unit number and postal code), the term (start and end date in DD/MM/YYYY), rent amount with the day of the month it's due and the bank account it goes into, the security deposit amount and how it's refunded, the notice period for early termination, and an acknowledgment that stamp duty will be paid. Without these seven, you don't really have an agreement, you have a draft.",
+    a: "Seven things, no fewer. Identification of both parties (full name + government-issued ID/passport), identification of the property (full address with unit number and postal code), the term (start and end date in DD/MM/YYYY), rent amount with the day of the month it's due and the bank account it goes into, the security deposit amount and how it's refunded, the notice period for early termination, and an acknowledgment that stamp duty will be paid. Without these seven, you don't really have an agreement, you have a draft.",
   },
   {
     q: 'What sections are required vs nice to have?',
@@ -29,11 +29,11 @@ const FAQS = [
   },
   {
     q: 'Should I use NRIC, FIN, or passport number for the tenant?',
-    a: "Whichever ID document the tenant currently holds. Philippinesan and PR tenants: NRIC. Employment Pass / S Pass / Work Permit / Student Pass holders: FIN (the number on their work pass card, not their passport). Tourists or short-stay foreigners (rare for renewals): passport number plus pass type and expiry. Use the same ID type they used in the original tenancy unless their status has changed (e.g., went from EP to PR). Don't mix — pick one consistent ID per party.",
+    a: "Whichever ID document the tenant currently holds. Filipino and PR tenants: NRIC. Employment Pass / S Pass / Work Permit / Student Pass holders: FIN (the number on their work pass card, not their passport). Tourists or short-stay foreigners (rare for renewals): passport number plus pass type and expiry. Use the same ID type they used in the original tenancy unless their status has changed (e.g., went from EP to PR). Don't mix — pick one consistent ID per party.",
   },
   {
     q: 'Do I need witnesses to sign the renewal?',
-    a: "No. Philippines tenancy agreements don't legally require a witness signature. The contract is binding on both parties once signed and stamped, regardless of whether a third person watched. Some templates still include witness signature lines because they're copy-pasted from old UK forms. You can leave them blank or remove them — neither affects validity. What matters is signature from both landlord and tenant, and BIR stamping within 14 days.",
+    a: "No. Philippines tenancy agreements don't legally require a witness signature. The contract is binding on both parties once signed and stamped, regardless of whether a third person watched. Some templates still include witness signature lines because they're copy-pasted from old UK forms. You can leave them blank or remove them — neither affects validity. What matters is signature from both landlord and tenant, and BIR stamping within 5 days after the end of the month of signing.",
   },
   {
     q: 'What does BIR stamp duty actually require the document to contain?',
@@ -117,7 +117,7 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">1. Parties identification</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Full legal names of landlord and tenant, plus ID numbers. Philippinesan / PR uses NRIC, foreigner on a work or student pass uses FIN, short-stay foreigner uses passport number with pass type. Add residential address for both parties — needed for legal notice service if disputes arise.
+                Full legal names of landlord and tenant, plus ID numbers. Filipino / PR uses NRIC, foreigner on a work or student pass uses FIN, short-stay foreigner uses passport number with pass type. Add residential address for both parties — needed for legal notice service if disputes arise.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -153,7 +153,7 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">7. Stamp duty acknowledgment</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                One line stating who pays BIR stamp duty. The tenant pays by default in Philippines unless the agreement says otherwise. Stamp duty must be paid within 14 days of signing — see the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
+                One line stating who pays BIR stamp duty. The tenant pays by default in Philippines unless the agreement says otherwise. Stamp duty must be paid within 5 days after the end of the month of signing — see the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function TenancyRenewalChecklistPage() {
           <h2 className="text-2xl font-bold text-navy-800 mb-4">Don't forget</h2>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">BIR stamping within 14 days.</strong> From signing date, not start date. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
+              <li><strong className="text-navy-800">BIR stamping within 5 days after the end of the month of signing.</strong> From signing date, not start date. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
               <li><strong className="text-navy-800">residential approval if applicable.</strong> If the renewal extends past your current residential subletting approval window, re-apply via the residential portal before the new tenancy starts. Room rentals don't need separate approval but still count toward the occupancy cap.</li>
               <li><strong className="text-navy-800">One signed copy each side, plus one for stamping.</strong> Three originals total — landlord keeps one, tenant keeps one, the third goes through BIR e-stamping. With e-signatures, this just means saving three identical PDFs.</li>
               <li><strong className="text-navy-800">Witnesses usually not required.</strong> Philippines tenancies are valid with just landlord and tenant signatures. If your template has witness lines, you can leave them blank or remove them — neither affects enforceability.</li>

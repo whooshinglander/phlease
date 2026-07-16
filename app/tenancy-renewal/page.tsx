@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'How do I renew a tenancy agreement in Philippines?',
-    a: "To renew a tenancy in Philippines: (1) Give notice of intention to renew before the expiry date — typically 2 months before, as required by most agreements. (2) Agree on the new rental rate and term with the other party. (3) Sign a new tenancy agreement or a renewal addendum. (4) Stamp the renewed agreement with BIR within 14 days. PhLease's renewal generator creates a fresh, fully stamped-ready agreement pre-filled for renewals.",
+    a: "To renew a tenancy in Philippines: (1) Give notice of intention to renew before the expiry date — typically 2 months before, as required by most agreements. (2) Agree on the new rental rate and term with the other party. (3) Sign a new tenancy agreement or a renewal addendum. (4) Stamp the renewed agreement with BIR within 5 days after the end of the month of signing. PhLease's renewal generator creates a fresh, fully stamped-ready agreement pre-filled for renewals.",
   },
   {
     q: 'Do I need to sign a new tenancy agreement to renew?',
@@ -33,11 +33,11 @@ const FAQS = [
   },
   {
     q: 'Can the landlord increase rent upon renewal?',
-    a: "Yes. Unless your existing agreement includes a fixed renewal rent or a cap on rent increases, the landlord may propose a new rental rate for the renewal term. Philippines has no rent control legislation — rent on renewal is entirely subject to negotiation between landlord and tenant. Market rate comparisons from PropertyGuru or 99.co can inform negotiations.",
+    a: "Yes. Unless your existing agreement includes a fixed renewal rent or a cap on rent increases, the landlord may propose a new rental rate for the renewal term. Philippines has no rent control legislation — rent on renewal is entirely subject to negotiation between landlord and tenant. Market rate comparisons from Lamudi or Property24 can inform negotiations.",
   },
   {
     q: 'Do I need to pay stamp duty again on a tenancy renewal?',
-    a: "Yes — stamp duty applies to each tenancy agreement, including renewals. The rate is the same: 0.4% of total rent for leases of 1 year or less, or 0.4% of average annual rent for leases of 1–3 years. Pay to BIR within 14 days of signing the renewal agreement.",
+    a: "Yes — stamp duty applies to each tenancy agreement, including renewals. The rate is the same: PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess Pay to BIR within 5 days after the end of the month of signing the renewal agreement.",
   },
   {
     q: 'What happens if the tenancy expires without renewal?',
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'Do I need to re-submit for residential approval on renewal?',
-    a: "If you are subletting an residential flat, you must update your residential subletting record when you renew. residential approval for subletting is granted for up to 3 years at a time and must be renewed if the subletting continues beyond the approved period. Check your residential approval letter for the approved end date.",
+    a: "If you are renting out a condominium unit, check your condominium corporation's rules on lease renewals. Some condos require registration of tenants and may have specific renewal procedures. For apartments under the Rent Control Act, ensure compliance with the lease term and deposit limits.",
   },
 ]
 
@@ -160,8 +160,8 @@ export default function TenancyRenewalPage() {
               { label: 'Notice to renew', value: "Give written notice at least 2 months before lease expiry (check your TA)" },
               { label: 'Agree new rent', value: 'Negotiate updated monthly rent — Philippines has no rent control' },
               { label: 'Sign new agreement', value: 'Sign a fresh tenancy agreement or a renewal addendum' },
-              { label: 'Stamp with BIR', value: 'Pay stamp duty within 14 days of signing' },
-              { label: 'residential subletting', value: 'Update residential subletting record if applicable' },
+              { label: 'Stamp with BIR', value: 'Pay stamp duty within 5 days after the end of the month of signing' },
+              { label: 'Residential subletting', value: 'Update Residential subletting record if applicable' },
               { label: 'Inventory check', value: 'Update inventory list if furnishings changed' },
               { label: 'Security deposit', value: 'Top up deposit if rent increased and deposit needs adjusting' },
             ].map((row, i) => (
@@ -191,7 +191,7 @@ export default function TenancyRenewalPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { href: '/lease-agreement', label: 'Philippines Tenancy Agreement Guide', desc: 'New tenancy agreements — stamp duty, deposits, residential rules.' },
-              { href: '/residential-tenancy-agreement', label: 'residential Tenancy Agreement', desc: 'residential-specific clauses and renewal requirements.' },
+              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement', desc: 'Residential-specific clauses and renewal requirements.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a generator beats a blank template.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'All common questions answered.' },
             ].map((l, i) => (

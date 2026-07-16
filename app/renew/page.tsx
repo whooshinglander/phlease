@@ -267,18 +267,18 @@ export default function RenewPage() {
           <p className="text-sm text-navy-500 leading-relaxed">
             An addendum is a short supplementary document that modifies one or more terms of an existing agreement.
             It references the original TA and is signed by both parties. It&apos;s simpler and cheaper to stamp than a full new TA —
-            you only pay stamp duty on any rent increase (if applicable).
+            you only pay DST on the new lease term
           </p>
         </div>
 
         {/* residential rental renewal info box */}
         <div className="mt-4 bg-blue-50 border border-blue-200 rounded-xl p-5">
-          <p className="text-sm font-semibold text-blue-800 mb-2">residential rental renewal — what you need to know</p>
+          <p className="text-sm font-semibold text-blue-800 mb-2">Residential rental renewal — what you need to know</p>
           <ul className="text-sm text-blue-700 space-y-1.5 leading-relaxed">
-            <li>• Update your residential subletting record if you are subletting the whole flat — residential approval must be current.</li>
-            <li>• Stamp duty applies to the renewal period. Pay to BIR within 14 days of signing.</li>
-            <li>• Minimum renewal period for residential whole-flat subletting is 6 months.</li>
-            <li>• Non-Malaysian tenants require residential approval on record — check approval expiry before renewing.</li>
+            <li>• Update your Residential subletting record if you are subletting the whole flat — Residential approval must be current.</li>
+            <li>• Stamp duty applies to the renewal period. Pay to BIR within 5 days after the end of the month of signing.</li>
+            <li>• Minimum renewal period for Residential whole-flat subletting is 6 months.</li>
+            <li>• Non-Malaysian tenants require Residential approval on record — check approval expiry before renewing.</li>
           </ul>
         </div>
       </main>

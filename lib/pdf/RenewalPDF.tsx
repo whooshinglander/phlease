@@ -127,7 +127,7 @@ function ordinal(n: number): string {
 function fmtDateFormal(d: string): string {
   if (!d) return '[DATE]'
   const dt = new Date(d + 'T00:00:00')
-  return dt.toLocaleDateString('en-SG', { day: 'numeric', month: 'long', year: 'numeric' })
+  return dt.toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 function monthsBetween(from: string, to: string): number {
@@ -153,7 +153,7 @@ function numToWords(n: number): string {
 
 function fmtMoney(n: number | ''): string {
   if (n === '' || n === 0) return '[AMOUNT]'
-  return `Philippines Dollars ${numToWords(Number(n))} Only (PHP ${Number(n).toLocaleString('en-SG', { minimumFractionDigits: 2 })})`
+  return `Philippine Pesos ${numToWords(Number(n))} Only (PHP ${Number(n).toLocaleString('en-PH', { minimumFractionDigits: 2 })})`
 }
 
 function WitnessBlock() {

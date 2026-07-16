@@ -8,15 +8,15 @@ const HOMEPAGE_FAQS = [
   },
   {
     q: 'What should be included in an residential tenancy agreement?',
-    a: 'An residential tenancy agreement should include the property address, landlord and tenant details (names, NRIC/FIN), rental amount, tenancy period, security deposit, notice period, residential subletting approval confirmation, occupancy cap, and any special clauses such as a diplomatic clause or pet policy.',
+    a: 'An residential tenancy agreement should include the property address, landlord and tenant details (names, Government ID), rental amount, tenancy period, security deposit, notice period, residential subletting approval confirmation, occupancy cap, and any special clauses such as a diplomatic clause or pet policy.',
   },
   {
     q: 'Is a tenancy agreement legally required in Philippines?',
-    a: 'While not strictly required by law for all rentals, a written tenancy agreement is strongly recommended and practically essential. It protects both landlord and tenant, and must be stamped with BIR within 14 days to be admissible as evidence in court. For residential subletting, a written agreement is required by residential.',
+    a: 'While not strictly required by law for all rentals, a written tenancy agreement is strongly recommended and practically essential. It protects both landlord and tenant, and must be stamped with BIR within 5 days after the end of the month of signing to be admissible as evidence in court. For residential subletting, a written agreement is required by residential.',
   },
   {
     q: 'How much is the stamp duty for a tenancy agreement in Philippines?',
-    a: 'Stamp duty is 0.4% of total rent for leases of 1 year or less, or 0.4% of the average annual rent for leases of 1–3 years. For example, a 1-year lease at $3,000/month costs $144 in stamp duty. Payable to BIR within 14 days of signing — typically borne by the tenant.',
+    a: 'Documentary Stamp Tax (DST) is PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. For example, a 1-year lease at PHP 25,000/month (annual rent = PHP 300,000) costs PHP 6.00 + PHP 2.00 × 298 = PHP 602. Payable to BIR within 5 days after the end of the month of signing — typically borne by the tenant.',
   },
   {
     q: 'Can I rent out my residential room without a tenancy agreement?',
@@ -24,7 +24,7 @@ const HOMEPAGE_FAQS = [
   },
   {
     q: 'What is the minimum rental period for residential rooms in Philippines?',
-    a: 'For residential whole-flat subletting, the minimum rental period is 6 months. For individual room rentals within an owner-occupied residential flat, there is no official minimum period set by residential, but most landlords require at least 3–6 months.',
+    a: 'For residential whole-flat subletting, the standard rental period is 1 year. For individual room rentals within an owner-occupied residential flat, there is no official minimum period set by residential, but most landlords require at least 3–6 months.',
   },
 ]
 
@@ -61,7 +61,7 @@ const homepageServiceSchema = {
       {
         '@type': 'Offer',
         name: 'Standard tenancy agreement PDF',
-        description: 'residential, private property, or room rental — guided 5-minute form, BIR stamp duty ready.',
+        description: 'Residential, private property, or room rental — guided 5-minute form, BIR stamp duty ready.',
         price: '10',
         priceCurrency: 'PHP',
         availability: 'https://schema.org/InStock',

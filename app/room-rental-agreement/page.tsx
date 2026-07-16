@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Generate a Philippines room rental agreement for residential flats and private property. Free to preview, download from ₱500.',
     url: 'https://phlease.com/room-rental-agreement',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'website',
   },
 }
@@ -25,11 +25,11 @@ const FAQS = [
   },
   {
     q: 'Is a room rental agreement legally binding in Philippines?',
-    a: 'Yes — a signed room rental agreement with consideration (payment of rent) is legally binding. Stamp duty applies: 0.4% of total rent for leases up to 1 year, payable to BIR within 14 days. A written agreement is strongly recommended to avoid disputes over deposit, notice periods, and house rules.',
+    a: 'Yes — a signed room rental agreement with consideration (payment of rent) is legally binding. Stamp duty applies: 0.4% of total rent for leases up to 1 year, payable to BIR within 5 days after the end of the month of signing. A written agreement is strongly recommended to avoid disputes over deposit, notice periods, and house rules.',
   },
   {
     q: 'Can residential flat owners rent out rooms?',
-    a: 'Yes, Philippines Citizens and Permanent Residents who own residential flats may rent out rooms without requiring residential approval for subletting, subject to the flat\'s occupancy cap (typically 6 persons for 3-room flats, 9 for larger flats). The owner must continue to live in the flat. For whole-flat subletting, residential approval and meeting the Minimum Occupation Period (MOP) are required.',
+    a: 'Yes, Philippines Citizens and Permanent Residents who own residential flats may rent out rooms without requiring residential approval for subletting, subject to the flat\'s occupancy cap (typically 6 persons for 3-room flats, 9 for larger flats). The owner must continue to live in the flat. For whole-flat subletting, residential approval and meeting the minimum lease period are required.',
   },
   {
     q: 'What should a Philippines room rental agreement include?',
@@ -76,7 +76,7 @@ export default function RoomRentalPage() {
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: '🛏️', title: 'residential Room Rules Included', desc: 'Occupancy cap guidance and residential-specific room rental terms built in.' },
+              { icon: '🛏️', title: 'Residential Room Rules Included', desc: 'Occupancy cap guidance and Residential-specific room rental terms built in.' },
               { icon: '👁️', title: 'Free Preview', desc: 'Fill in your details and preview the full agreement before paying.' },
               { icon: '📄', title: 'PDF Download from ₱500', desc: 'Download a print-ready PDF room rental agreement for Philippines.' },
             ].map((f, i) => (

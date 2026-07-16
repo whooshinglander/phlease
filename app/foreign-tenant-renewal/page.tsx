@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Should the tenancy term match the tenant's pass expiry date?",
-    a: "Best practice is to keep the tenancy end date on or before the pass expiry. If the pass runs out 8 months into a 12-month renewal, you have a built-in problem if MOM doesn't approve the renewal. Either align the tenancy to the pass (shorter term, then re-renew once the new pass is issued), or sign a 12-month tenancy with a clear early-termination clause tied to pass non-renewal. Don't just sign and hope.",
+    a: "Best practice is to align the lease term with the foreign tenant's visa validity. If the visa expires mid-lease, include a clause allowing early termination without penalty. For Philippine visas (9G, 47(a)(2), Special Resident Retiree's Visa, etc.), check the validity period and include appropriate termination provisions.",
   },
   {
     q: "What if the tenant's pass isn't renewed mid-term?",
@@ -29,11 +29,11 @@ const FAQS = [
   },
   {
     q: 'Does the tenant need to update ICA when they renew at the same address?',
-    a: "If the address on their pass card already matches the rental, no — staying put doesn't trigger a fresh ICA update. The 28-day rule applies when a foreigner changes residential address. So if they're renewing at the same flat, ICA is already current. If they move to a different unit (even within the same condo or block), they have 28 days from the move date to update ICA via the e-Service or in person. Failure to update is a breach under the Immigration Act.",
+    a: "Foreign nationals in the Philippines must register their residential address with the Bureau of Immigration (BI). If renewing at the same address, no update is needed unless the ACR I-Card requires renewal. For address changes, report to the BI within 30 days of moving.",
   },
   {
     q: 'How does this work for Dependent Pass holders?',
-    a: "DP holders ride on the main pass holder's status. If the EP holder's pass is renewed, the DP gets renewed alongside. For tenancy purposes, the DP holder can sign a tenancy in their own name, but the underlying employment risk sits with the main pass holder. Practical tip: if the lease is in the DP holder's name (often the spouse who isn't working), still verify the main EP holder's pass validity, because that's what actually keeps the family in Philippines.",
+    a: "Dependent visa holders in the Philippines ride on the main visa holder's status. For lease purposes, either party can sign the agreement. Verify the main visa holder's validity as it determines the family's legal stay in the Philippines.",
   },
   {
     q: 'Can someone on STVP or Long Term Visit Pass rent and renew?',
@@ -45,11 +45,11 @@ const FAQS = [
   },
   {
     q: "If I'm a foreign landlord renting to a foreign tenant, any tax angle?",
-    a: "Yes. As a non-resident landlord, you're taxed on rental income at a flat 22% (rising to 24% from YA 2024) on net rental, with no personal reliefs. The tenant has no withholding obligation for residential rent paid to a non-resident landlord — that's withholding for commercial property rentals, not residential. You report the rental income through your BIR filing. If you have a property agent collecting rent on your behalf, they may have agency-specific reporting practices.",
+    a: "Yes. As a non-resident landlord, rental income from the Philippines is subject to 15% final withholding tax (for non-resident foreign corporations) or graduated rates for individual non-residents. The tenant or property manager typically withholds the tax and remits it to the BIR. Consult a tax professional for your specific situation.",
   },
   {
     q: "Can the tenant sign a new tenancy before MOM has approved their pass renewal?",
-    a: "Legally yes — the tenancy is a contract between landlord and tenant, not conditional on MOM approval. But it's risky for both sides. If MOM denies the renewal after they've signed, the tenant is on the hook for rent unless there's a clause covering it. The cleaner approach is to sign with a condition precedent: tenancy is binding subject to pass renewal approval within X weeks. Or sign a Letter of Intent with a small good-faith deposit that's refundable if the pass is denied, and only convert to a full tenancy once approval comes through.",
+    a: "Legally yes — the lease is a contract between landlord and tenant, not conditional on visa approval. But it's risky for both sides. If the BI (Bureau of Immigration) denies the renewal after they've signed, the tenant is on the hook for rent unless there's a clause covering it. The cleaner approach is to sign with a condition precedent: lease is binding subject to visa renewal approval within X weeks. Or sign a Letter of Intent with a small good-faith deposit that's refundable if the visa is denied, and only convert to a full lease once approval comes through.",
   },
 ]
 
@@ -101,7 +101,7 @@ export default function ForeignTenantRenewalPage() {
             Renewing a Tenancy for a Foreign Tenant in Philippines
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Renewing for an Employment Pass, S Pass, Work Permit, or Dependent's Pass holder is mostly the same as for a Philippinesan tenant. The differences are pass expiry alignment, the diplomatic clause, and the ICA 28-day address-update rule. Get those three right and the rest is just paperwork.
+            Renewing for an Employment Pass, S Pass, Work Permit, or Dependent's Pass holder is mostly the same as for a Filipino tenant. The differences are pass expiry alignment, the diplomatic clause, and the ICA 28-day address-update rule. Get those three right and the rest is just paperwork.
           </p>
           <p className="text-navy-500 text-sm">
             For the general renewal flow, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">renewal guide</Link>. For the clause itself, see the <Link href="/diplomatic-clause-tenancy-renewal" className="text-brand-700 hover:underline">diplomatic clause page</Link>.
@@ -152,7 +152,7 @@ export default function ForeignTenantRenewalPage() {
               <li><strong className="text-navy-800">S Pass holders.</strong> Often included. The S Pass renewal rate is high but not 100%, and tenants on tighter budgets need the option.</li>
               <li><strong className="text-navy-800">WP holders.</strong> Less common, partly because WP tenancies are often dorms or company-arranged housing. If renting on the open market, a clause is reasonable.</li>
               <li><strong className="text-navy-800">DP holders.</strong> Tied to the main pass holder, so the diplomatic trigger is usually framed around the EP/S Pass holder's status, not the DP itself.</li>
-              <li><strong className="text-navy-800">PR holders.</strong> Don't typically need a diplomatic clause — they're not at risk of pass non-renewal in the same way. Treat the renewal like a Philippinesan tenant.</li>
+              <li><strong className="text-navy-800">PR holders.</strong> Don't typically need a diplomatic clause — they're not at risk of pass non-renewal in the same way. Treat the renewal like a Filipino tenant.</li>
             </ul>
           </div>
         </section>

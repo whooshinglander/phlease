@@ -191,7 +191,7 @@ export default function HomeForm() {
                 <span className="font-semibold text-navy-900">residential / Private / Room</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-navy-600">
-                <span className="font-semibold text-navy-900">BIR stamp duty ready</span>
+                <span className="font-semibold text-navy-900">BIR DST ready</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-navy-600">
                 <span className="font-semibold text-navy-900">Card / GCash</span>

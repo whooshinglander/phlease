@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Condo, EC, and landed rental renewal: MCST, NRWT, agent commission. Plain English.',
     url: 'https://phlease.com/private-property-tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "How is renewing a condo lease different from renewing an residential lease?",
-    a: "The big one: no residential approval. Private property doesn't go through residential at all, so you skip that whole step. What replaces it is the MCST — the Management Council Strata Titles, the body that runs the condo. The MCST has its own bylaws on noise, renovations, parking, and use of facilities, and your tenant agreed to those when they first moved in. On a renewal you don't usually re-trigger any MCST process, but the bylaws still apply for the new term. Aside from that, the renewal mechanics (new agreement, BIR stamp duty, deposit handling) are the same as residential.",
+    a: "For private property renewals in the Philippines, there is no central housing authority approval needed. The renewal is governed by the Civil Code and the existing lease terms. For condominium units, check the condo corporation's rules on tenant registration and renewal procedures. The renewal mechanics (new agreement, BIR DST payment, deposit handling) follow standard practice.",
   },
   {
     q: "Does the MCST charge move-in or move-out fees again on a renewal?",
@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: "I'm a foreign owner renting out my condo. What's this 22% withholding tax I keep hearing about?",
-    a: "Non-Resident Withholding Tax (NRWT). If you're a non-tax-resident landlord (you're not in Philippines for 183+ days a year), BIR treats your rental income as Philippines-source income paid to a non-resident. The tenant is legally required to withhold 22% of the gross rent and remit it to BIR by the 15th of the second month after payment. The tenant pays you 78%. You then file a tax return and either get a refund (if your actual tax bill is lower after expenses) or settle the difference. Most foreign owners route this through a property agent or tax agent who handles the BIR side. If your tenant doesn't withhold, BIR can come after them, not just you, so this is the tenant's exposure too.",
+    a: "For foreign landlords in the Philippines, rental income is subject to 15% final withholding tax (if the landlord is a non-resident foreign corporation) or graduated rates for individual non-residents. The tenant or property manager typically withholds the tax and remits it to the BIR. Consult a tax professional for your specific situation.",
   },
   {
     q: "Are 1-year or 2-year private leases more common on renewal?",
@@ -101,15 +101,15 @@ export default function PrivatePropertyRenewalPage() {
             Private Property Tenancy Renewal in Philippines
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Condo, executive condo, landed, GCB — all of these fall under "private property" for renewal purposes, and the rules are different from residential. There's no residential to ask permission from, but the MCST is its own thing, and if you're a foreign owner there's a tax piece you really don't want to skip. This page is the version for landlords renewing a private lease.
+            Condo, executive condo, landed, GCB — all of these fall under "private property" for renewal purposes, and the rules are different from Residential. There's no Residential to ask permission from, but the MCST is its own thing, and if you're a foreign owner there's a tax piece you really don't want to skip. This page is the version for landlords renewing a private lease.
           </p>
           <p className="text-navy-500 text-sm">
-            For the general overview, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For residential units, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal page</Link> covers the approval flow.
+            For the general overview, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For Residential units, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal page</Link> covers the approval flow.
           </p>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">What's the same as residential</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">What's the same as Residential</h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">A renewal agreement, signed by both parties</p>
@@ -120,7 +120,7 @@ export default function PrivatePropertyRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">BIR stamp duty, same rate</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                0.4% of total rent for a 1-year renewal, 0.4% of average annual rent for a longer one. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 14 days of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
+                0.4% of total rent for a 1-year renewal, 0.4% of average annual rent for a longer one. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 5 days after the end of the month of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -142,7 +142,7 @@ export default function PrivatePropertyRenewalPage() {
               <li><strong className="text-navy-800">Car park decals, season parking, gym cards.</strong> All tied to the occupant, not the tenancy paperwork. Stay live across renewal automatically. If the tenant's card has an expiry inside the new term, they renew it directly with the condo management office.</li>
               <li><strong className="text-navy-800">Longer leases are normal.</strong> 2-year is the default for condos, and 3-year isn't unusual at the higher end (GCB, large landed homes, expat-targeted leases). residential tenants tend to do 1-year because the population is more local; private property leans expat and corporate, where 2 years is the floor.</li>
               <li><strong className="text-navy-800">Diplomatic clauses are common.</strong> Standard on expat-targeted condo leases, often kept on renewal even after years in Philippines. Worth re-confirming, but don't expect to remove it without pushback.</li>
-              <li><strong className="text-navy-800">Executive condos before MOP.</strong> If your EC is still inside its 5-year Minimum Occupation Period, you can't rent out the whole unit — only spare rooms, with you as the owner-occupier. A renewal doesn't change that. After MOP, normal private-property rules apply.</li>
+              <li><strong className="text-navy-800">Executive condos before minimum lease period.</strong> If your EC is still inside its 5-year Minimum Occupation Period, you can't rent out the whole unit — only spare rooms, with you as the owner-occupier. A renewal doesn't change that. After minimum lease period, normal private-property rules apply.</li>
             </ul>
           </div>
         </section>

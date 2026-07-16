@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Is there a statutory minimum notice period in Philippines?',
-    a: "No. Residential tenancy in Philippines is contract-driven. There's no Tenancy Reform Act or rent control statute that imposes a minimum notice period, the way some jurisdictions do. The UK and parts of Australia have statutory minimums for residential tenancies, Philippines does not. What you and your counterparty signed is what governs. The Conveyancing and Law of Property Act covers some aspects of leases, but it doesn't override your contract on notice.",
+    a: "In the Philippines, notice periods are governed by the Civil Code (Article 1687) and the terms of the lease agreement. For month-to-month leases, either party may terminate by giving 15 days' written notice. For fixed-term leases, the notice period specified in the agreement applies. The Civil Code provides the legal framework for lease termination.",
   },
   {
     q: 'Can a tenant give shorter notice on renewal than they did at the start?',
@@ -160,7 +160,7 @@ export default function TenancyRenewalNoticePeriodPage() {
                 <strong className="text-navy-800">Day 30 — Sign.</strong> Final renewal document signed by both parties. Either a short renewal addendum (if only dates and rent change) or a fresh new tenancy (if anything else moves). Most landlords sign a fresh new tenancy because the document trail is cleaner.
               </li>
               <li>
-                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via BIR eStamping. Stamp duty must be paid within 14 days of signing, and the stamping needs to happen before the new tenancy commences. Same 0.4% rate as a new tenancy.
+                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via BIR eStamping. Stamp duty must be paid within 5 days after the end of the month of signing, and the stamping needs to happen before the new tenancy commences. Same 0.4% rate as a new tenancy.
               </li>
               <li>
                 <strong className="text-navy-800">Day 0 — New tenancy commences.</strong> Old tenancy ends, new one begins. Deposit either rolls over or gets topped up, rent payments continue under the new terms.

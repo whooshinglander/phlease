@@ -4,24 +4,24 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'residential Tenancy Renewal in Philippines — What You Actually Need to Do | PhLease',
-  description: 'How residential tenancy renewal works: residential approval, the new agreement itself, stamp duty, what changes vs your original lease. Plain English, no fluff.',
+  title: 'Residential Tenancy Renewal in Philippines — What You Actually Need to Do | PhLease',
+  description: 'How Residential tenancy renewal works: Residential approval, the new agreement itself, stamp duty, what changes vs your original lease. Plain English, no fluff.',
   keywords: 'residential tenancy renewal, residential rental renewal singapore, residential subletting renewal, residential whole flat renewal, residential room renewal',
   alternates: { canonical: 'https://phlease.com/residential-tenancy-renewal-guide' },
   openGraph: {
-    title: 'residential Tenancy Renewal in Philippines — What You Actually Need to Do',
-    description: 'residential renewal: approval, agreement, stamp duty, what changes. Plain English.',
+    title: 'Residential Tenancy Renewal in Philippines — What You Actually Need to Do',
+    description: 'Residential renewal: approval, agreement, stamp duty, what changes. Plain English.',
     url: 'https://phlease.com/residential-tenancy-renewal-guide',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
 
 const FAQS = [
   {
-    q: 'Do I need residential approval again when I renew?',
-    a: "Depends on your current approval period. residential grants subletting approval for up to 3 years per application. If your renewal extends past the approved end date, you have to re-apply via the residential portal before you start the new tenancy. If you're still inside the approved 3-year window, you don't need to re-apply, but it's still good practice to update residential with the new tenancy dates so their record matches.",
+    q: 'Do I need Residential approval again when I renew?',
+    a: "Depends on your current approval period. Residential grants subletting approval for up to 3 years per application. If your renewal extends past the approved end date, you have to re-apply via the Residential portal before you start the new tenancy. If you're still inside the approved 3-year window, you don't need to re-apply, but it's still good practice to update Residential with the new tenancy dates so their record matches.",
   },
   {
     q: 'Can I just sign a one-page renewal addendum, or do I need a full new agreement?',
@@ -33,11 +33,11 @@ const FAQS = [
   },
   {
     q: 'Stamp duty on the renewal — same as new?',
-    a: "Same rate. 0.4% of total rent for a 1-year renewal, or 0.4% of average annual rent for a 1–3 year renewal. Pay to BIR within 14 days of signing, via BIR eStamping. The tenant typically pays unless your renewal agreement says otherwise.",
+    a: "Same rate. 0.4% of total rent for a 1-year renewal, or 0.4% of average annual rent for a 1–3 year renewal. Pay to BIR within 5 days after the end of the month of signing, via BIR eStamping. The tenant typically pays unless your renewal agreement says otherwise.",
   },
   {
-    q: "I'm renewing a room rental, not the whole flat. Does residential care?",
-    a: "Yes, residential still tracks subletting of bedrooms, but the rules are looser than whole-flat subletting. You don't need a separate residential approval for renting out individual rooms while you live there as the owner-occupier, but the maximum occupancy cap for the flat (4 unrelated tenants for a 4-room+ flat) still applies. If you renew with the same tenant and stay under the cap, you're fine. Keep the agreement on file in case residential checks.",
+    q: "I'm renewing a room rental, not the whole flat. Does Residential care?",
+    a: "Yes, Residential still tracks subletting of bedrooms, but the rules are looser than whole-flat subletting. You don't need a separate Residential approval for renting out individual rooms while you live there as the owner-occupier, but the maximum occupancy cap for the flat (4 unrelated tenants for a 4-room+ flat) still applies. If you renew with the same tenant and stay under the cap, you're fine. Keep the agreement on file in case Residential checks.",
   },
   {
     q: 'What if my tenant wants a 2-year renewal but I only want 1 year?',
@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     q: 'Foreigner tenant: any extra steps for renewal?',
-    a: "If your tenant is on an Employment Pass, S Pass, or Work Permit, check that their pass is still valid through the renewal end date. If their pass expires mid-term, the tenancy needs a clause covering that scenario (early termination on pass expiry, prorated deposit return). For foreigners on long-term passes, the renewal is otherwise the same as for a Philippinesan tenant.",
+    a: "If your tenant is on an Employment Pass, S Pass, or Work Permit, check that their pass is still valid through the renewal end date. If their pass expires mid-term, the tenancy needs a clause covering that scenario (early termination on pass expiry, prorated deposit return). For foreigners on long-term passes, the renewal is otherwise the same as for a Filipino tenant.",
   },
 ]
 
@@ -66,8 +66,8 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'residential Tenancy Renewal in Philippines — What You Actually Need to Do',
-  description: 'residential tenancy renewal walkthrough: residential approval, the new agreement, stamp duty, foreign tenants, what changes vs the original lease.',
+  headline: 'Residential Tenancy Renewal in Philippines — What You Actually Need to Do',
+  description: 'Residential tenancy renewal walkthrough: Residential approval, the new agreement, stamp duty, foreign tenants, what changes vs the original lease.',
   url: 'https://phlease.com/residential-tenancy-renewal-guide',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
@@ -80,7 +80,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://phlease.com/' },
     { '@type': 'ListItem', position: 2, name: 'Tenancy Renewal Philippines', item: 'https://phlease.com/tenancy-renewal' },
-    { '@type': 'ListItem', position: 3, name: 'residential Tenancy Renewal Guide' },
+    { '@type': 'ListItem', position: 3, name: 'Residential Tenancy Renewal Guide' },
   ],
 }
 
@@ -124,7 +124,7 @@ export default function residentialRenewalGuidePage() {
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">3. Stamp it with BIR within 14 days</p>
+              <p className="font-semibold text-navy-800 mb-2">3. Stamp it with BIR within 5 days after the end of the month of signing</p>
               <p className="text-navy-600 text-sm leading-relaxed">
                 Stamp duty on the renewal is 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1–3 year lease). Same rate as a new tenancy — there is no discount for renewals. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
               </p>

@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'Is there a legal limit on how much my landlord can raise the rent?',
-    a: "No. Philippines has no rent control. The Residential Tenancies framework here doesn't cap renewal increases the way some jurisdictions do (no equivalent of Hong Kong's old rent control or NYC stabilisation). Whatever you and your landlord sign is what applies. The only constraint is the existing tenancy — your landlord cannot raise rent mid-lease unless your contract has a rent-review clause. On renewal, it's open negotiation.",
+    a: "For units with monthly rent of PHP 10,000 and below, the Rent Control Act (RA 9653) limits rent increases to 7% per year. For units above PHP 10,000/month, rent is freely negotiable between landlord and tenant. The landlord cannot raise rent mid-lease unless the contract has a rent-review clause. On renewal, it's open negotiation for units above the threshold.",
   },
   {
     q: 'How do I figure out what a fair increase actually is?',
-    a: "Start with the  Rental Index (the official quarterly index for private residential rents — published on ura.gov.sg). Look at the year-on-year change for your property type and region. Then cross-check current listings on PropertyGuru and 99.co for similar units in your block or neighbourhood — same size, same condition, same MRT. If your existing rent is already at or above what comparable units are listing for, you have grounds to push back. If you're significantly below market, expect a meaningful ask.",
+    a: "Check current listings on Lamudi, Property24, and RentPad for comparable units in your area — same size, same condition, same location. If your existing rent is already at or above what comparable units are listing for, you have grounds to push back. If you're significantly below market, expect a meaningful increase.",
   },
   {
     q: 'When does negotiation actually work in the tenant\'s favour?',
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'What tools do I use to check market trend?',
-    a: "Three free sources cover most of it.  Rental Index (ura.gov.sg/realEstateIIWeb) gives you the macro trend by region and property type, updated quarterly. PropertyGuru and 99.co show you actual current asking rents — filter by your exact development if it's a condo, or by residential block cluster. SRX also publishes a private rental index that some agents reference. For residential rentals specifically, residential itself publishes median rents by town and flat type on data.gov.sg.",
+    a: "Three free sources cover most of it. Lamudi and Property24 show current asking rents — filter by your exact development if it's a condo, or by city/barangay. RentPad also publishes rental listings. For market trends, check BSP (Bangko Sentral ng Pilipinas) reports on residential real estate prices.",
   },
   {
     q: 'My landlord is asking for 20% more. Is that crazy?',

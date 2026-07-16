@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'Do I need separate residential approval to renew a room rental?',
-    a: "No, room rentals work differently from whole-flat subletting. As long as you (the owner-occupier) still live in the flat, residential doesn't require a separate subletting approval per room. You do still need to register the tenants under residential's Renting of Bedrooms scheme via the residential portal, and that registration carries over on renewal as long as the same tenants stay. If a new tenant replaces an old one, update the registration with the new tenant's details before they move in.",
+    a: "No, room rentals in the Philippines don't require approval from a central housing authority. As long as you (the owner-occupier) still live in the unit, you can rent out rooms. Check your condominium corporation or HOA bylaws for any restrictions on room rentals. If a new tenant replaces an old one, update the lease agreement accordingly.",
   },
   {
     q: 'Does the residential occupancy cap still apply when I renew?',
-    a: "Yes, and it's the most common thing landlords forget. The cap is 4 unrelated tenants total for a 4-room or larger flat, and 2 unrelated tenants for a 3-room flat. That total includes everyone living in the flat besides the owner's family, across all rooms. If you renew with the same tenants and you're already at the cap, you're fine. If you're renewing one room and adding a new tenant in another room, double-check the headcount before signing.",
+    a: "In the Philippines, there is no national occupancy cap for room rentals. However, condominium corporations and HOAs may have their own rules on maximum occupants. Check your building's bylaws. Local ordinances (barangay rules) may also apply. Always verify with your building management before adding new tenants.",
   },
   {
     q: 'What are typical rents for master vs common room on renewal?',
@@ -104,12 +104,12 @@ export default function RoomRentalRenewalPage() {
             Renting out a master or common room while you live in the flat is the most common residential rental setup. The renewal process is lighter than whole-flat subletting, but a few things still trip people up — the occupancy cap, how shared facilities get handled, and whether utilities carry forward. This page covers the room-specific stuff.
           </p>
           <p className="text-navy-500 text-sm">
-            For whole-flat residential renewals, see the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal guide</Link>.
+            For whole-flat Residential renewals, see the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal guide</Link>.
           </p>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">residential rules for room rentals on renewal</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">Residential rules for room rentals on renewal</h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">Owner-occupier requirement</p>

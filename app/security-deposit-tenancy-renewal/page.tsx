@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'When deposits carry over on renewal, when you top up, when you refund. Plain English with worked examples.',
     url: 'https://phlease.com/security-deposit-tenancy-renewal',
     siteName: 'PhLease',
-    locale: 'en_SG',
+    locale: 'en_PH',
     type: 'article',
   },
 }
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: 'Rent is going up. Do I need to top up the deposit?',
-    a: "Standard market practice is yes, top up to match the new rent, if the original deposit was set as a fixed number of months. Quick math: if the original deposit was 1 month at $3,000 = $3,000, and the new rent is $3,300, the top-up is ₱5000 to bring the deposit to 1 month at the new rate. If the original deposit was 2 months at $4,500 = $9,000, and the new rent is $5,000, the top-up is $1,000 to make it 2 months at the new rate. The top-up is usually transferred on or before the renewal start date.",
+    a: "Standard market practice is yes, top up to match the new rent, if the original deposit was set as a fixed number of months. Quick math: if the original deposit was 1 month at PHP 25,000 = PHP 25,000, and the new rent is PHP 28,000, the top-up is PHP 3,000 to bring the deposit to 1 month at the new rate. The top-up is usually transferred on or before the renewal start date.",
   },
   {
     q: 'Can the tenant ask for a partial deposit refund at renewal?',
