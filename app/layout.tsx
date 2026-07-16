@@ -21,15 +21,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://phlease.com'),
-  title: 'Residential Contract of Lease Template Philippines | Preview Before Purchase',
-  description: 'Residential tenancy agreement template for Philippines. Generate your agreement in minutes, preview free, download PDF from ₱500. residential and private property covered.',
-  keywords: 'free tenancy agreement generator Philippines, Philippines tenancy agreement, residential tenancy agreement, Philippines rental contract, tenancy agreement generator, rental agreement Philippines, tenancy renewal Philippines, free tenancy agreement Philippines, Philippines TA template, tenancy renewal agreement generator, free tenancy renewal agreement generator Philippines, renew tenancy agreement generator Philippines, generate tenancy renewal agreement Philippines',
+  title: 'Contract of Lease Template Philippines | Preview Before Purchase',
+  description: 'Tenancy agreement template for Philippines. Generate your agreement in minutes, preview free, download PDF from ₱500. Covers condo, apartment, house & lot, and room rental.',
+  keywords: 'free tenancy agreement generator Philippines, Philippines tenancy agreement, contract of lease Philippines, Philippines rental contract, tenancy agreement generator, rental agreement Philippines, tenancy renewal Philippines, free tenancy agreement Philippines, PH lease template, tenancy renewal agreement generator, free tenancy renewal agreement generator Philippines, renew tenancy agreement generator Philippines, generate tenancy renewal agreement Philippines',
   alternates: {
     canonical: 'https://phlease.com',
   },
   openGraph: {
-    title: 'Residential Contract of Lease Template Philippines | Preview Before Purchase',
-    description: 'Residential tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500. residential and private property covered.',
+    title: 'Contract of Lease Template Philippines | Preview Before Purchase',
+    description: 'Tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500. Covers condo, apartment, house & lot, and room rental.',
     url: 'https://phlease.com',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free residential Tenancy Agreement Template Philippines | Download PDF',
-    description: 'Residential tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500.',
+    title: 'Free Tenancy Agreement Template Philippines | Download PDF',
+    description: 'Tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500.',
     images: ['https://phlease.com/opengraph-image'],
   },
   robots: {
@@ -62,7 +62,7 @@ const jsonLd = [
     url: 'https://phlease.com',
     applicationCategory: 'LegalService',
     operatingSystem: 'Any',
-    description: 'Generate Philippines tenancy agreements for residential flats and private property. Free preview, download from ₱500.',
+    description: 'Generate Philippines tenancy agreements for condo, apartment, house & lot, and room rental. Free preview, download from ₱500.',
     offers: {
       '@type': 'Offer',
       price: '10',
@@ -86,7 +86,7 @@ const jsonLd = [
     '@type': 'LegalService',
     name: 'PhLease Agreement Generator',
     url: 'https://phlease.com',
-    description: 'Free online generator for Philippines residential tenancy agreements. residential flats and private property. Free to preview, download from PHP ₱500.',
+    description: 'Free online generator for Philippines tenancy agreements. Covers condo, apartment, house & lot, and room rental. Free to preview, download from PHP ₱500.',
     areaServed: {
       '@type': 'Country',
       name: 'Philippines',
@@ -99,9 +99,9 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'How to create a Philippines tenancy agreement',
-    description: 'Generate a legally structured Philippines tenancy agreement for residential or private property in minutes.',
+    description: 'Generate a legally structured Philippines tenancy agreement for condo, apartment, house & lot, or room rental in minutes.',
     step: [
-      { '@type': 'HowToStep', position: 1, name: 'Enter property details', text: 'Select residential flat, private condo, landed property, or room rental. Enter the property address and type.' },
+      { '@type': 'HowToStep', position: 1, name: 'Enter property details', text: 'Select condo, apartment, house & lot, or room rental. Enter the property address and type.' },
       { '@type': 'HowToStep', position: 2, name: 'Add landlord and tenant information', text: 'Enter the full legal names, government-issued ID/passport numbers, and contact details for both parties.' },
       { '@type': 'HowToStep', position: 3, name: 'Set rental terms', text: 'Specify the monthly rent, tenancy start and end dates, security deposit amount, and any special clauses such as diplomatic clause or pet policy.' },
       { '@type': 'HowToStep', position: 4, name: 'Review and download your agreement', text: 'Preview the full tenancy agreement for free. Download as a ready-to-sign PDF from PHP ₱500.' },

@@ -5,12 +5,12 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Common Tenancy Renewal Pitfalls in Philippines — 5 Mistakes That Cost Money | PhLease',
-  description: 'The five failure modes we see most often in Philippines tenancy renewals: handshake renewals, late BIR stamping, missed residential approval, foreign pass expiry, deposit disputes. What it costs and how to avoid each.',
-  keywords: 'tenancy renewal mistakes singapore, tenancy renewal problems, common rental renewal pitfalls, what can go wrong tenancy renewal',
+  description: 'The five failure modes we see most often in Philippines tenancy renewals: handshake renewals, late BIR stamping, condo corp restrictions, foreign pass expiry, deposit disputes. What it costs and how to avoid each.',
+  keywords: 'tenancy renewal mistakes philippines, tenancy renewal problems, common rental renewal pitfalls, what can go wrong tenancy renewal',
   alternates: { canonical: 'https://phlease.com/common-tenancy-renewal-pitfalls' },
   openGraph: {
     title: 'Common Tenancy Renewal Pitfalls in Philippines — 5 Mistakes That Cost Money',
-    description: 'Handshake renewals, late stamping, missed residential approval, pass expiry, deposit disputes. What it costs and how to avoid.',
+    description: 'Handshake renewals, late stamping, condo corp restrictions, pass expiry, deposit disputes. What it costs and how to avoid.',
     url: 'https://phlease.com/common-tenancy-renewal-pitfalls',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -28,12 +28,12 @@ const FAQS = [
     a: "BIR charges a penalty of ₱500 or the duty amount (whichever is greater) if you're up to 3 months late, and up to 4× the duty if you're more than 3 months late. The bigger problem is enforceability: an unstamped tenancy can't be admitted as evidence in Philippines courts. If you ever have to sue for unpaid rent or damage, you have to stamp and pay the penalty before the case proceeds. Stamp within 5 days after the end of the month of signing and this is a non-issue.",
   },
   {
-    q: "I forgot to renew my Residential subletting approval before the new tenancy started. What happens?",
-    a: "In the Philippines, there is no central housing authority tracking subletting. However, condominium corporations may have rules about tenant registration. Check your condo's bylaws and register the tenant if required. Ensure the lease agreement is properly stamped with the BIR.",
+    q: "My condo corporation says subletting is limited to 1 year. Can I still renew?",
+    a: "Check your condo's master deed and by-laws. Some condominium corporations restrict subletting to a maximum term (e.g., 1 year) or require board approval for each renewal. If your renewal would exceed the allowed term, you may need to either negotiate with the condo board for an exception or find a new tenant. Always review the condo rules before signing a renewal — the condo corporation's restrictions apply regardless of what your tenancy agreement says.",
   },
   {
     q: 'My tenant refuses to do a walk-through at the end of the renewal and is now disputing deposit deductions. What now?',
-    a: "Without a signed move-in inventory and condition report, you're fighting over recollections. Send a written list of deductions with photos and quotes within 7 days of move-out. If the tenant rejects it, file a Small Claims Tribunal claim — it costs ₱500 to $50 to file, no lawyer needed, and SCT handles tenancy deposit disputes up to $20,000. Bring photos, the tenancy agreement, repair invoices. Going forward: do a walk-through with a signed condition report at every renewal, not just the original move-in.",
+    a: "Without a signed move-in inventory and condition report, you're fighting over recollections. Send a written list of deductions with photos and quotes within 7 days of move-out. If the tenant rejects it, file a Small Claims Tribunal claim — it costs around ₱1,000 to file, no lawyer needed, and SCT handles tenancy deposit disputes up to ₱1,000,000. Bring photos, the tenancy agreement, repair invoices. Going forward: do a walk-through with a signed condition report at every renewal, not just the original move-in.",
   },
   {
     q: "My foreign tenant's Employment Pass expires 4 months into the renewal and they're leaving. Am I stuck with the vacancy?",
@@ -117,7 +117,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Eight months later the tenant gave 30 days notice and left. The landlord wanted a 2-month notice period as in the original tenancy, but periodic tenancies only require one rental period of notice. The deposit (held under the original agreement) was disputed because there was no current document specifying its terms. Two months of vacant unit at $3,500 plus a contested deposit ate roughly $9,000.
+              Eight months later the tenant gave 30 days notice and left. The landlord wanted a 2-month notice period as in the original tenancy, but periodic tenancies only require one rental period of notice. The deposit (held under the original agreement) was disputed because there was no current document specifying its terms. Two months of vacant unit at ₱200,000 plus a contested deposit ate roughly ₱500,000.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
@@ -135,7 +135,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              BIR penalty for stamping more than 3 months late is up to 4× the original stamp duty. On a $3,500/month tenancy that's roughly $670 in penalty on top of the $168 duty. Worse, an unstamped tenancy is not admissible in Philippines court, so the lawyer's letter had no teeth until stamping was sorted. Three weeks of delay before the landlord could push the matter forward.
+              BIR penalty for stamping more than 3 months late is up to 4× the original stamp duty. On a ₱200,000/month tenancy that's roughly ₱38,400 in penalty on top of the ₱9,600 duty. Worse, an unstamped tenancy is not admissible in Philippines court, so the lawyer's letter had no teeth until stamping was sorted. Three weeks of delay before the landlord could push the matter forward.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
@@ -145,19 +145,19 @@ export default function CommonPitfallsPage() {
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">3. Missed residential subletting approval renewal</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">3. Condo corporation subletting restrictions</h2>
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
             <p className="font-semibold text-navy-800 mb-2">What happened</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              residential grants subletting approval for up to 3 years per application. Landlord renewed the tenancy with the same tenant for a third year, but the residential approval window had ended four months earlier. New tenancy started. residential approval did not.
+              Landlord renewed the lease for a condominium unit without checking the condo corporation's master deed or by-laws. The condo's rules restricted subletting to a maximum of 1 year at a time, and required tenant registration with the property management office. The renewal pushed the total tenancy past the allowed subletting period.
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Residential conducted a routine check, flagged the unapproved sublet, and issued a financial penalty. A black mark went on the landlord's subletting record, which complicated the next approval application. In severe or repeat cases, Residential has revoked subletting approval entirely. Cost here: a few hundred dollars in penalty and a meaningfully harder conversation with Residential on the next renewal.
+              The condo corporation issued a notice of violation, fined the owner, and threatened to suspend access to building amenities for the unit. The landlord had to terminate the renewal early and negotiate a compromise with both the tenant and the condo board. Legal fees, fines, and a month of vacancy cost roughly ₱80,000.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Pull up the Residential approval letter. Note the end date. If your renewal extends past it, re-apply for subletting approval through the Residential portal before the new tenancy starts. Approval usually comes through in a few working days. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal guide</Link> for the full sequence.
+              Before renewing a condo lease, check the condo corporation's master deed and by-laws for subletting restrictions. Some condos limit the number of consecutive renewals, require board approval for new tenants, or cap the total lease term. Register the tenant with the property management office if required. See the <Link href="/private-property-tenancy-renewal" className="text-brand-700 hover:underline">condo renewal guide</Link> for the full checklist.
             </p>
           </div>
         </section>
@@ -171,7 +171,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Tenant left. Landlord was technically owed 10 months of rent under the contract, but suing a former resident who has left Philippines is slow, expensive, and often unrecoverable. Practical outcome: deposit forfeited, unit re-listed, 4 weeks of vacancy. Total exposure was around $12,000 on a $3,000/month unit, partially offset by the deposit.
+              Tenant left. Landlord was technically owed 10 months of rent under the contract, but suing a former resident who has left Philippines is slow, expensive, and often unrecoverable. Practical outcome: deposit forfeited, unit re-listed, 4 weeks of vacancy. Total exposure was around ₱720,000 on a ₱180,000/month unit, partially offset by the deposit.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
@@ -185,11 +185,11 @@ export default function CommonPitfallsPage() {
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
             <p className="font-semibold text-navy-800 mb-2">What happened</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Tenant moved out at the end of a 2-year renewal. Landlord deducted $2,400 from the deposit for repainting, deep cleaning, and a damaged countertop. Tenant disputed all three. There was a move-in inventory from 3 years ago but no condition report at the start of the renewal term and no walk-through at move-out.
+              Tenant moved out at the end of a 2-year renewal. Landlord deducted ₱140,000 from the deposit for repainting, deep cleaning, and a damaged countertop. Tenant disputed all three. There was a move-in inventory from 3 years ago but no condition report at the start of the renewal term and no walk-through at move-out.
             </p>
             <p className="font-semibold text-navy-800 mb-2">What it cost</p>
             <p className="text-navy-600 text-sm leading-relaxed mb-4">
-              Six weeks of email back-and-forth. Tenant filed at the Small Claims Tribunal. Landlord won part of the claim ($800 for the countertop where there was a clear photo) and lost the rest because "wear and tear over 3 years" couldn't be distinguished from tenant damage without a baseline. Net: $1,600 of disputed deductions reversed plus the time cost of SCT proceedings.
+              Six weeks of email back-and-forth. Tenant filed at the Small Claims Tribunal. Landlord won part of the claim (₱45,000 for the countertop where there was a clear photo) and lost the rest because "wear and tear over 3 years" couldn't be distinguished from tenant damage without a baseline. Net: ₱95,000 of disputed deductions reversed plus the time cost of SCT proceedings.
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">

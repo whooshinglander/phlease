@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Private Property Tenancy Renewal in Philippines — Condo, EC, Landed | PhLease',
-  description: 'Condo and private rental renewal in Philippines: MCST bylaws, foreign owner withholding tax, 1 vs 2-year leases, agent commission. Plain English.',
-  keywords: 'private property renewal singapore, condo lease renewal, private rental renewal, condo tenancy renewal vs residential, ec rental renewal, landed rental renewal',
+  title: 'Condo & Residential Lease Renewal in Philippines — Complete Guide | PhLease',
+  description: 'Condo and residential lease renewal in Philippines: condo corporation rules, BIR stamping, 1 vs 2-year leases, agent commission. Plain English.',
+  keywords: 'lease renewal philippines, condo lease renewal philippines, tenancy renewal philippines, residential lease renewal, condo rental renewal, philippines tenancy renewal guide',
   alternates: { canonical: 'https://phlease.com/private-property-tenancy-renewal' },
   openGraph: {
-    title: 'Private Property Tenancy Renewal in Philippines — Condo, EC, Landed',
-    description: 'Condo, EC, and landed rental renewal: MCST, NRWT, agent commission. Plain English.',
+    title: 'Condo & Residential Lease Renewal in Philippines — Complete Guide',
+    description: 'Condo and residential lease renewal: condo corporation rules, BIR stamping, agent commission. Plain English.',
     url: 'https://phlease.com/private-property-tenancy-renewal',
     siteName: 'PhLease',
     locale: 'en_PH',
