@@ -5,12 +5,12 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Free Room Rental Agreement Generator Philippines | PhLease',
-  description: 'Generate a free room rental agreement for Philippines residential flats and private property in minutes. Legally structured, free to preview, download from ₱500.',
-  keywords: 'room rental agreement Philippines, room rental agreement generator Philippines free, residential room rental agreement, Philippines room rental agreement template, free room rental agreement Philippines, room tenancy agreement Philippines',
+  description: 'Generate a free room rental agreement for Philippines condos, apartments, and private property in minutes. Legally structured, free to preview, download from ₱500.',
+  keywords: 'room rental agreement Philippines, room rental agreement generator Philippines free, room rental agreement template, Philippines room rental agreement template, free room rental agreement Philippines, room tenancy agreement Philippines',
   alternates: { canonical: 'https://phlease.com/room-rental-agreement' },
   openGraph: {
     title: 'Free Room Rental Agreement Generator Philippines | PhLease',
-    description: 'Generate a Philippines room rental agreement for residential flats and private property. Free to preview, download from ₱500.',
+    description: 'Generate a Philippines room rental agreement for condos, apartments, and private property. Free to preview, download from ₱500.',
     url: 'https://phlease.com/room-rental-agreement',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -25,19 +25,19 @@ const FAQS = [
   },
   {
     q: 'Is a room rental agreement legally binding in Philippines?',
-    a: 'Yes — a signed room rental agreement with consideration (payment of rent) is legally binding. Stamp duty applies: 0.4% of total rent for leases up to 1 year, payable to BIR within 5 days after the end of the month of signing. A written agreement is strongly recommended to avoid disputes over deposit, notice periods, and house rules.',
+    a: 'Yes — a signed room rental agreement with consideration (payment of rent) is legally binding. Documentary Stamp Tax (DST) applies: PHP 6.00 for the first PHP 2,000 of annual rent plus PHP 2.00 per PHP 1,000 thereafter, payable to BIR within 5 days after the end of the month of signing. A written agreement is strongly recommended to avoid disputes over deposit, notice periods, and house rules.',
   },
   {
-    q: 'Can residential flat owners rent out rooms?',
-    a: 'Yes, Philippines Citizens and Permanent Residents who own residential flats may rent out rooms without requiring residential approval for subletting, subject to the flat\'s occupancy cap (typically 6 persons for 3-room flats, 9 for larger flats). The owner must continue to live in the flat. For whole-flat subletting, residential approval and meeting the minimum lease period are required.',
+    q: 'Can condo owners and apartment lessees rent out rooms?',
+    a: 'Yes, property owners may rent out rooms without needing any government housing authority approval. However, if the unit is in a condominium, check the condo corporation\'s master deed or by-laws — some condos restrict or prohibit subletting individual rooms. For apartments and houses, there are no specific restrictions beyond local barangay ordinances. The owner must continue to live in the unit while renting out rooms.',
   },
   {
     q: 'What should a Philippines room rental agreement include?',
-    a: 'Key items: full address and room description, monthly rent and payment date, utility bill arrangement (included or split), security deposit amount and refund terms, notice period (typically 1 month), house rules (guests, noise, shared spaces), and the landlord\'s right to access the room with notice.',
+    a: 'Key items: full address and room description, monthly rent and payment date, utility bill arrangement (included or split), security deposit amount and refund terms, notice period (typically 30 days), house rules (guests, noise, shared spaces), and the landlord\'s right to access the room with notice.',
   },
   {
     q: 'How to terminate a room rental agreement in Philippines?',
-    a: 'Give written notice per the agreed notice period (usually 1 month). If the agreement has a fixed term, early termination without a break clause may result in forfeiture of deposit or compensation to the landlord. Room renters classified as licensees (rather than tenants) have less legal protection than whole-unit tenants, so a clear written agreement is especially important.',
+    a: 'Give written notice per the agreed notice period (usually 30 days). If the agreement has a fixed term, early termination without a break clause may result in forfeiture of deposit or compensation to the landlord. Room renters classified as licensees (rather than tenants) have less legal protection than whole-unit tenants, so a clear written agreement is especially important.',
   },
 ]
 
@@ -65,7 +65,7 @@ export default function RoomRentalPage() {
             Free Room Rental Agreement<br className="hidden sm:block" /> Generator Philippines
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-xl mx-auto mb-8">
-            Generate a Philippines room rental agreement for residential flats and private property — free to preview, download from <strong className="text-navy-700">₱500</strong>.
+            Generate a Philippines room rental agreement for condos, apartments, and private property — free to preview, download from <strong className="text-navy-700">₱500</strong>.
           </p>
           <Link href="/" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors text-base">
             Generate Room Rental Agreement →
@@ -76,7 +76,7 @@ export default function RoomRentalPage() {
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: '🛏️', title: 'Residential Room Rules Included', desc: 'Occupancy cap guidance and Residential-specific room rental terms built in.' },
+              { icon: '🛏️', title: 'Room Rental Terms Included', desc: 'Covers shared facilities, utility splits, house rules, and notice periods for room rentals.' },
               { icon: '👁️', title: 'Free Preview', desc: 'Fill in your details and preview the full agreement before paying.' },
               { icon: '📄', title: 'PDF Download from ₱500', desc: 'Download a print-ready PDF room rental agreement for Philippines.' },
             ].map((f, i) => (

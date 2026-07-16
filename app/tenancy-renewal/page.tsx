@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Renew Tenancy Agreement Philippines — residential & Condo | PhLease',
-  description: 'Renew your tenancy agreement in Philippines easily. Generate an updated residential or condo renewal contract in minutes. -compliant.',
-  keywords: 'tenancy renewal philippines, renew tenancy agreement philippines, residential rental renewal, residential rental flat renewal, extend tenancy agreement, tenancy renewal agreement philippines, tenancy renewal letter philippines, renew lease philippines',
+  title: 'Renew Tenancy Agreement Philippines — Condo, Apartment & House | PhLease',
+  description: 'Renew your tenancy agreement in Philippines easily. Generate an updated renewal contract in minutes. BIR-compliant.',
+  keywords: 'tenancy renewal philippines, renew tenancy agreement philippines, lease renewal philippines, extend tenancy agreement, tenancy renewal agreement philippines, tenancy renewal letter philippines, renew lease philippines',
   alternates: { canonical: 'https://phlease.com/tenancy-renewal' },
   openGraph: {
-    title: 'Renew Tenancy Agreement Philippines — residential & Condo | PhLease',
-    description: 'Renew your tenancy agreement in Philippines easily. Generate an updated residential or condo renewal contract in minutes.',
+    title: 'Renew Tenancy Agreement Philippines — Condo, Apartment & House | PhLease',
+    description: 'Renew your tenancy agreement in Philippines easily. Generate an updated renewal contract in minutes.',
     url: 'https://phlease.com/tenancy-renewal',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'How do I renew a tenancy agreement in Philippines?',
-    a: "To renew a tenancy in Philippines: (1) Give notice of intention to renew before the expiry date — typically 2 months before, as required by most agreements. (2) Agree on the new rental rate and term with the other party. (3) Sign a new tenancy agreement or a renewal addendum. (4) Stamp the renewed agreement with BIR within 5 days after the end of the month of signing. PhLease's renewal generator creates a fresh, fully stamped-ready agreement pre-filled for renewals.",
+    a: "To renew a tenancy in Philippines: (1) Give notice of intention to renew before the expiry date — typically 30 days before, as required by most agreements. (2) Agree on the new rental rate and term with the other party. (3) Sign a new tenancy agreement or a renewal addendum. (4) Stamp the renewed agreement with BIR within 5 days after the end of the month of signing. PhLease's renewal generator creates a fresh, fully stamped-ready agreement pre-filled for renewals.",
   },
   {
     q: 'Do I need to sign a new tenancy agreement to renew?',
@@ -29,23 +29,23 @@ const FAQS = [
   },
   {
     q: 'How much notice do I need to give to renew a tenancy in Philippines?',
-    a: "Most Philippines tenancy agreements require the tenant to give 2 months' written notice of intention to renew before the lease expiry. Check your existing agreement for the exact notice period — some specify 1 month. If your agreement includes an option to renew clause, the notice period and conditions stated there take precedence.",
+    a: "Most Philippines tenancy agreements require the tenant to give 30 days' written notice of intention to renew before the lease expiry. Check your existing agreement for the exact notice period — some specify a different period. If your agreement includes an option to renew clause, the notice period and conditions stated there take precedence.",
   },
   {
     q: 'Can the landlord increase rent upon renewal?',
-    a: "Yes. Unless your existing agreement includes a fixed renewal rent or a cap on rent increases, the landlord may propose a new rental rate for the renewal term. Philippines has no rent control legislation — rent on renewal is entirely subject to negotiation between landlord and tenant. Market rate comparisons from Lamudi or Property24 can inform negotiations.",
+    a: "Yes. Unless your existing agreement includes a fixed renewal rent or a cap on rent increases, the landlord may propose a new rental rate for the renewal term. Rent on renewal is subject to negotiation between landlord and tenant. For units covered by the Rent Control Act (RA 9653, monthly rent ≤₱10,000), annual increases are capped at 7%. Market rate comparisons from Lamudi or Property24 can inform negotiations.",
   },
   {
     q: 'Do I need to pay stamp duty again on a tenancy renewal?',
-    a: "Yes — stamp duty applies to each tenancy agreement, including renewals. The rate is the same: PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess Pay to BIR within 5 days after the end of the month of signing the renewal agreement.",
+    a: "Yes — Documentary Stamp Tax (DST) applies to each tenancy agreement, including renewals. The rate is the same: PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. Pay to BIR within 5 days after the end of the month of signing the renewal agreement.",
   },
   {
     q: 'What happens if the tenancy expires without renewal?',
-    a: "If neither party terminates and the tenant continues to occupy and pay rent after expiry, a periodic tenancy (usually month-to-month) is created by implication. This carries risk — either party can terminate with short notice, and the original fixed-term protections no longer apply. A signed renewal agreement avoids this ambiguity.",
+    a: "If neither party terminates and the tenant continues to occupy and pay rent after expiry, a month-to-month arrangement is created by implication. This carries risk — either party can terminate with short notice, and the original fixed-term protections no longer apply. A signed renewal agreement avoids this ambiguity.",
   },
   {
-    q: 'Do I need to re-submit for residential approval on renewal?',
-    a: "If you are renting out a condominium unit, check your condominium corporation's rules on lease renewals. Some condos require registration of tenants and may have specific renewal procedures. For apartments under the Rent Control Act, ensure compliance with the lease term and deposit limits.",
+    q: 'Do I need to check condo corporation rules on renewal?',
+    a: "If you are renting out a condominium unit, check your condominium corporation's rules on lease renewals. Some condos require registration of tenants and may have specific renewal procedures. For apartments under the Rent Control Act, ensure compliance with the lease term and deposit limits (max 2 months deposit + 1 month advance).",
   },
 ]
 
@@ -62,8 +62,8 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Renew Tenancy Agreement Philippines — residential & Condo Guide 2026',
-  description: 'How to renew a tenancy agreement in Philippines — notice periods, stamp duty, residential approval, rent negotiation, and renewal checklist.',
+  headline: 'Renew Tenancy Agreement Philippines — Condo, Apartment & House Guide 2026',
+  description: 'How to renew a tenancy agreement in Philippines — notice periods, stamp duty, rent negotiation, and renewal checklist.',
   url: 'https://phlease.com/tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
 }
@@ -80,7 +80,7 @@ const renewalServiceSchema = {
     '@type': 'Offer',
     name: 'Tenancy renewal agreement PDF',
     description: '2-minute renewal flow — updated dates and rent, BIR stamp duty ready.',
-    price: '10',
+    price: '500',
     priceCurrency: 'PHP',
     availability: 'https://schema.org/InStock',
     url: 'https://phlease.com/renew',
@@ -90,7 +90,7 @@ const renewalServiceSchema = {
 const STEPS = [
   { step: '1', title: 'Start the renewal form', desc: 'Go to the Renewal section on PhLease — pre-configured for renewal agreements.' },
   { step: '2', title: 'Enter updated details', desc: 'New start/end dates, updated rent amount, and any changed terms.' },
-  { step: '3', title: 'Confirm parties', desc: 'Same landlord and tenant — just confirm names and NRIC/passport numbers are current.' },
+  { step: '3', title: 'Confirm parties', desc: 'Same landlord and tenant — just confirm names and government-issued ID numbers are current.' },
   { step: '4', title: 'Review and preview', desc: 'Free to preview the full renewal agreement before paying.' },
   { step: '5', title: 'Download PDF', desc: 'Download the print-ready renewal agreement from ₱500. Both parties sign and stamp.' },
 ]
@@ -107,7 +107,7 @@ export default function TenancyRenewalPage() {
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Tenancy Renewal</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Renew Tenancy Agreement Philippines<br className="hidden sm:block" /> — residential &amp; Condo
+            Renew Tenancy Agreement Philippines<br className="hidden sm:block" /> — Condo, Apartment &amp; House
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
             Renewing your Philippines tenancy? Generate a fresh renewal agreement in minutes — updated dates, new rent, same legal structure. Free to preview, download from <strong className="text-navy-700">₱500</strong>.
@@ -157,11 +157,11 @@ export default function TenancyRenewalPage() {
           <h2 className="text-xl font-bold text-navy-800 mb-6">Tenancy Renewal Checklist — Philippines</h2>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm divide-y divide-slate-100">
             {[
-              { label: 'Notice to renew', value: "Give written notice at least 2 months before lease expiry (check your TA)" },
-              { label: 'Agree new rent', value: 'Negotiate updated monthly rent — Philippines has no rent control' },
+              { label: 'Notice to renew', value: "Give written notice at least 30 days before lease expiry (check your TA)" },
+              { label: 'Agree new rent', value: 'Negotiate updated monthly rent — Rent Control Act caps at 7% if applicable' },
               { label: 'Sign new agreement', value: 'Sign a fresh tenancy agreement or a renewal addendum' },
-              { label: 'Stamp with BIR', value: 'Pay stamp duty within 5 days after the end of the month of signing' },
-              { label: 'Residential subletting', value: 'Update Residential subletting record if applicable' },
+              { label: 'Stamp with BIR', value: 'Pay DST within 5 days after the end of the month of signing' },
+              { label: 'Condo corp notice', value: 'Notify condo corporation if required by building rules' },
               { label: 'Inventory check', value: 'Update inventory list if furnishings changed' },
               { label: 'Security deposit', value: 'Top up deposit if rent increased and deposit needs adjusting' },
             ].map((row, i) => (
@@ -190,8 +190,8 @@ export default function TenancyRenewalPage() {
           <h2 className="text-lg font-bold text-navy-800 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/lease-agreement', label: 'Philippines Tenancy Agreement Guide', desc: 'New tenancy agreements — stamp duty, deposits, residential rules.' },
-              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement', desc: 'Residential-specific clauses and renewal requirements.' },
+              { href: '/lease-agreement', label: 'Philippines Tenancy Agreement Guide', desc: 'New tenancy agreements — stamp duty, deposits, rules.' },
+              { href: '/room-rental-renewal', label: 'Room Rental Renewal', desc: 'Room-specific renewal for master and common rooms.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a generator beats a blank template.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'All common questions answered.' },
             ].map((l, i) => (

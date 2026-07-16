@@ -5,12 +5,12 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Philippines Tenancy Agreement PDF — Free Download 2026 | PhLease',
-  description: 'Download a free Philippines tenancy agreement PDF. Standard residential tenancy agreement for residential and condo, updated for 2026. Generate, customise and download instantly.',
-  keywords: 'tenancy agreement singapore pdf, tenancy agreement pdf singapore, singapore tenancy agreement pdf download, residential tenancy agreement pdf, rental agreement singapore pdf free download',
+  description: 'Download a free Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026. Generate, customise and download instantly.',
+  keywords: 'tenancy agreement philippines pdf, tenancy agreement pdf philippines, philippines tenancy agreement pdf download, rental agreement philippines pdf free download',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-pdf' },
   openGraph: {
     title: 'Philippines Tenancy Agreement PDF — Free Download 2026 | PhLease',
-    description: 'Download a free Philippines tenancy agreement PDF. Standard residential tenancy agreement for residential and condo, updated for 2026.',
+    description: 'Download a free Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026.',
     url: 'https://phlease.com/tenancy-agreement-pdf',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -25,15 +25,15 @@ const FAQS = [
   },
   {
     q: 'Is a PDF tenancy agreement legally valid in Philippines?',
-    a: 'Yes. A printed or digitally signed PDF tenancy agreement is legally valid in Philippines, provided it contains the essential terms: property address, parties\' full names and NRIC/passport numbers, tenancy duration, monthly rent, security deposit, and notice period. Remember to pay stamp duty to BIR within 5 days after the end of the month of signing.',
+    a: 'Yes. A printed or digitally signed PDF tenancy agreement is legally valid in Philippines, provided it contains the essential terms: property address, parties\' full names and government-issued ID numbers, tenancy duration, monthly rent, security deposit, and notice period. Remember to pay Documentary Stamp Tax (DST) to BIR within 5 days after the end of the month of signing.',
   },
   {
     q: 'What should a Philippines tenancy agreement PDF include?',
-    a: 'A complete tenancy agreement PDF for Philippines should include: full address, names and IDs of landlord and tenant, start and end dates, monthly rent, security deposit (typically 1–2 months), utility responsibilities, notice period (usually 1–2 months), diplomatic clause if applicable, and an inventory list for furnished units.',
+    a: 'A complete tenancy agreement PDF for Philippines should include: full address, names and IDs of landlord and tenant, start and end dates, monthly rent, security deposit (typically 1–2 months), utility responsibilities, notice period (usually 30 days), diplomatic clause if applicable, and an inventory list for furnished units.',
   },
   {
-    q: 'Can I use the same PDF template for residential and condo rentals?',
-    a: 'The core clauses are similar but residential rentals have additional requirements: residential approval is needed for whole-flat subletting, occupancy limits apply, and only Philippines Citizens can own residential flats. PhLease generates the right version based on your property type.',
+    q: 'Can I use the same PDF template for condo and house rentals?',
+    a: 'The core clauses are similar for all property types. For condominium units, you may need to add a clause about compliance with condo corporation rules. PhLease generates the right version based on your property type.',
   },
   {
     q: 'Do I need to stamp a tenancy agreement PDF in Philippines?',
@@ -57,21 +57,21 @@ const howToSchema = {
   name: 'How to Get a Philippines Tenancy Agreement PDF',
   description: 'Generate and download a free Philippines tenancy agreement as a PDF.',
   step: [
-    { '@type': 'HowToStep', name: 'Enter property details', text: 'Input the full address and property type (residential, condo, or room rental).' },
-    { '@type': 'HowToStep', name: 'Add parties and terms', text: 'Fill in landlord and tenant names, NRIC/passport numbers, rent amount, deposit, and tenancy duration.' },
+    { '@type': 'HowToStep', name: 'Enter property details', text: 'Input the full address and property type (condo, apartment, house, or room rental).' },
+    { '@type': 'HowToStep', name: 'Add parties and terms', text: 'Fill in landlord and tenant names, government-issued ID numbers, rent amount, deposit, and tenancy duration.' },
     { '@type': 'HowToStep', name: 'Review and generate', text: 'Preview the completed agreement and make any adjustments.' },
     { '@type': 'HowToStep', name: 'Download your PDF', text: 'Download the signed-ready PDF tenancy agreement instantly.' },
-    { '@type': 'HowToStep', name: 'Stamp the agreement', text: 'Pay stamp duty to BIR via the e-Stamping portal within 5 days after the end of the month of signing.' },
+    { '@type': 'HowToStep', name: 'Stamp the agreement', text: 'Pay Documentary Stamp Tax (DST) to BIR via the e-filing system within 5 days after the end of the month of signing.' },
   ],
 }
 
 const WHAT_INCLUDES = [
-  { label: 'Property address and type', detail: 'Full address, residential block/unit or condo name' },
-  { label: 'Landlord and tenant details', detail: 'Full names, NRIC or passport numbers, contact info' },
+  { label: 'Property address and type', detail: 'Full address, condo name or house/apt number' },
+  { label: 'Landlord and tenant details', detail: 'Full names, government-issued ID numbers, contact info' },
   { label: 'Tenancy duration and dates', detail: 'Start date, end date, option to renew' },
   { label: 'Rent and payment terms', detail: 'Monthly rent, due date, accepted payment methods' },
   { label: 'Security deposit', detail: 'Typically 1–2 months rent, conditions for forfeiture' },
-  { label: 'Notice period', detail: 'Standard 1–2 months for either party' },
+  { label: 'Notice period', detail: 'Standard 30 days for either party' },
   { label: 'Diplomatic clause', detail: 'Early termination rights for expat tenants (if applicable)' },
   { label: 'Utilities and maintenance', detail: 'Who pays utilities, responsibility for repairs' },
   { label: 'Inventory list', detail: 'Furnished items and condition at move-in (for furnished units)' },
@@ -91,7 +91,7 @@ export default function TenancyAgreementPDFPage() {
             Download Philippines Tenancy Agreement PDF (Free)
           </h1>
           <p className="text-slate-600 text-lg mb-8 max-w-2xl mx-auto">
-            Generate a fully customised Philippines tenancy agreement and download it as a PDF instantly. Covers residential, condo, and room rental. Updated for 2026.
+            Generate a fully customised Philippines tenancy agreement and download it as a PDF instantly. Covers condo, apartment, house, and room rental. Updated for 2026.
           </p>
           <Link
             href="/"
@@ -106,7 +106,7 @@ export default function TenancyAgreementPDFPage() {
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <h2 className="text-xl font-bold text-navy-800 mb-4">What the Tenancy Agreement PDF Includes</h2>
           <p className="text-slate-600 mb-6">
-            A Philippines tenancy agreement PDF generated by PhLease covers all standard clauses required for a legally valid residential tenancy. Here is what is included:
+            A Philippines tenancy agreement PDF generated by PhLease covers all standard clauses required for a legally valid tenancy. Here is what is included:
           </p>
           <div className="space-y-3">
             {WHAT_INCLUDES.map((item, i) => (
@@ -125,17 +125,17 @@ export default function TenancyAgreementPDFPage() {
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <h2 className="text-xl font-bold text-navy-800 mb-5 text-center">PDF Templates for Every Property Type</h2>
           <div className="grid sm:grid-cols-3 gap-4">
-            <Link href="/residential-tenancy-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
-              <p className="font-bold text-navy-800 group-hover:text-brand-600 transition-colors mb-1">residential Tenancy Agreement PDF</p>
-              <p className="text-slate-500 text-sm">Whole flat or room rental. residential-specific clauses included.</p>
-            </Link>
             <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <p className="font-bold text-navy-800 group-hover:text-brand-600 transition-colors mb-1">Condo Tenancy Agreement PDF</p>
-              <p className="text-slate-500 text-sm">Private residential tenancy. Standard residential clauses.</p>
+              <p className="text-slate-500 text-sm">Private condo rental. Standard lease clauses.</p>
+            </Link>
+            <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
+              <p className="font-bold text-navy-800 group-hover:text-brand-600 transition-colors mb-1">House & Apartment Tenancy Agreement PDF</p>
+              <p className="text-slate-500 text-sm">House and lot, townhouse, or apartment rental.</p>
             </Link>
             <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <p className="font-bold text-navy-800 group-hover:text-brand-600 transition-colors mb-1">Room Rental Agreement PDF</p>
-              <p className="text-slate-500 text-sm">Single room in residential or private property.</p>
+              <p className="text-slate-500 text-sm">Single room in condo, apartment, or house.</p>
             </Link>
           </div>
         </section>
@@ -175,7 +175,7 @@ export default function TenancyAgreementPDFPage() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template Philippines', desc: 'Printable Word/PDF template' },
-              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement', desc: 'Residential-specific clauses and requirements' },
+              { href: '/room-rental-agreement', label: 'Room Rental Agreement', desc: 'Room-specific clauses and requirements' },
               { href: '/tenancy-renewal', label: 'Renew Your Tenancy Agreement', desc: 'How to renew and stamp a renewal' },
               { href: '/faq', label: 'Tenancy FAQ', desc: 'Common questions answered' },
             ].map((l, i) => (

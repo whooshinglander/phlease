@@ -21,23 +21,23 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'What are the minimum sections a renewal agreement must contain?',
-    a: "Seven things, no fewer. Identification of both parties (full name + government-issued ID/passport), identification of the property (full address with unit number and postal code), the term (start and end date in DD/MM/YYYY), rent amount with the day of the month it's due and the bank account it goes into, the security deposit amount and how it's refunded, the notice period for early termination, and an acknowledgment that stamp duty will be paid. Without these seven, you don't really have an agreement, you have a draft.",
+    a: "Seven things, no fewer. Identification of both parties (full name + government-issued ID), identification of the property (full address with unit number and postal code), the term (start and end date in DD/MM/YYYY), rent amount with the day of the month it's due and the bank account it goes into, the security deposit amount and how it's refunded, the notice period for early termination, and an acknowledgment that Documentary Stamp Tax (DST) will be paid. Without these seven, you don't really have an agreement, you have a draft.",
   },
   {
     q: 'What sections are required vs nice to have?',
     a: "Required is the seven above. Strongly recommended (you'd regret omitting these): inventory list, utilities arrangement, custom clauses like no-smoking or no-pets, a repair threshold so small fixes go to the tenant, governing law (Philippines), and dispute resolution. Nice to have, but not load-bearing: aircon servicing schedule, internet inclusion, parking, CCTV disclosure, key handover process. The required seven keep the agreement enforceable. The recommended ones prevent fights. The nice-to-haves are polish.",
   },
   {
-    q: 'Should I use NRIC, FIN, or passport number for the tenant?',
-    a: "Whichever ID document the tenant currently holds. Filipino and PR tenants: NRIC. Employment Pass / S Pass / Work Permit / Student Pass holders: FIN (the number on their work pass card, not their passport). Tourists or short-stay foreigners (rare for renewals): passport number plus pass type and expiry. Use the same ID type they used in the original tenancy unless their status has changed (e.g., went from EP to PR). Don't mix — pick one consistent ID per party.",
+    q: 'What ID should I use for the tenant?',
+    a: "Any valid government-issued ID. Common options: passport, driver's license, UMID, SSS ID, GSIS ID, PRC ID, or voter's ID. For foreign tenants, use their passport number. Use the same ID type they used in the original tenancy unless their status has changed. Don't mix — pick one consistent ID per party.",
   },
   {
     q: 'Do I need witnesses to sign the renewal?',
-    a: "No. Philippines tenancy agreements don't legally require a witness signature. The contract is binding on both parties once signed and stamped, regardless of whether a third person watched. Some templates still include witness signature lines because they're copy-pasted from old UK forms. You can leave them blank or remove them — neither affects validity. What matters is signature from both landlord and tenant, and BIR stamping within 5 days after the end of the month of signing.",
+    a: "No. Philippines tenancy agreements don't legally require a witness signature. The contract is binding on both parties once signed and stamped, regardless of whether a third person watched. Some templates still include witness signature lines because they're copy-pasted from old forms. You can leave them blank or remove them — neither affects validity. What matters is signature from both landlord and tenant, and BIR stamping within 5 days after the end of the month of signing.",
   },
   {
     q: 'What does BIR stamp duty actually require the document to contain?',
-    a: "For e-stamping via BIR eStamping, BIR needs: full names + IDs of both parties, property address, lease start and end dates, rent amount, and any other consideration (e.g., advance rent or premium). The system asks for these explicitly during e-stamping. If your renewal agreement is missing any of them, you'll have to pull data from somewhere else to fill the form — which means your agreement isn't doing its job. The seven required sections above cover everything BIR asks for.",
+    a: "For e-filing via BIR, the system needs: full names + IDs of both parties, property address, lease start and end dates, rent amount, and any other consideration (e.g., advance rent or premium). If your renewal agreement is missing any of them, you'll have to pull data from somewhere else to fill the form — which means your agreement isn't doing its job. The seven required sections above cover everything BIR asks for.",
   },
   {
     q: 'Is an addendum valid without re-signing the original tenancy?',
@@ -45,11 +45,11 @@ const FAQS = [
   },
   {
     q: 'Are electronic signatures (DocuSign, etc.) valid for tenancy renewals in Philippines?',
-    a: "Yes. Under Philippines's Electronic Transactions Act (ETA), e-signatures are legally equivalent to wet-ink signatures for tenancy agreements. Common platforms — DocuSign, Adobe Sign, HelloSign, even a clear scanned PDF with both parties' signatures emailed back and forth — all qualify. BIR accepts e-signed documents for stamping. The only contracts the ETA excludes (wills, negotiable instruments, real estate sale deeds) don't include tenancies, so you're fine. Save the signed PDF, stamp it, done.",
+    a: "Yes. Under the Philippines' Electronic Commerce Act (RA 8792), e-signatures are legally equivalent to wet-ink signatures for tenancy agreements. Common platforms — DocuSign, Adobe Sign, HelloSign, even a clear scanned PDF with both parties' signatures emailed back and forth — all qualify. BIR accepts e-signed documents for stamping. Save the signed PDF, stamp it, done.",
   },
   {
     q: 'What happens if a required section is missing or incomplete?',
-    a: "Depends which one. Missing rent amount or term dates: the agreement may be unenforceable as a fixed-term lease, defaulting to a periodic tenancy under common law (terminable on short notice, weak protection for both sides). Missing party IDs: you can't e-stamp it, and you'll have problems if you ever need to enforce it in court. Missing security deposit clause: the deposit isn't legally tied to specific damages, so refund disputes get murky. Always run through the seven required sections before signing. If something's missing, fix the document, don't sign and hope.",
+    a: "Depends which one. Missing rent amount or term dates: the agreement may be unenforceable as a fixed-term lease, defaulting to a month-to-month arrangement (terminable on short notice, weak protection for both sides). Missing party IDs: you can't e-file with BIR, and you'll have problems if you ever need to enforce it in court. Missing security deposit clause: the deposit isn't legally tied to specific damages, so refund disputes get murky. Always run through the seven required sections before signing. If something's missing, fix the document, don't sign and hope.",
   },
 ]
 
@@ -101,10 +101,10 @@ export default function TenancyRenewalChecklistPage() {
             Tenancy Renewal Checklist — What to Include in a Philippines Renewal Agreement
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            A renewal agreement is shorter than people think it should be. Seven sections are non-negotiable, six more are strongly recommended, and the rest is house-specific polish. This page is the checklist, in the order most landlords work through it.
+            A renewal agreement is shorter than people think it should be. Seven sections are non-negotiable, six more are strongly recommended, and the rest is property-specific polish. This page is the checklist, in the order most landlords work through it.
           </p>
           <p className="text-navy-500 text-sm">
-            Works for residential, private condo, and room rentals. For residential-specific approval steps, see the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal guide</Link>.
+            Works for condo, apartment, house, and room rentals. For the full renewal process, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">renewal guide</Link>.
           </p>
         </section>
 
@@ -117,19 +117,19 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">1. Parties identification</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Full legal names of landlord and tenant, plus ID numbers. Filipino / PR uses NRIC, foreigner on a work or student pass uses FIN, short-stay foreigner uses passport number with pass type. Add residential address for both parties — needed for legal notice service if disputes arise.
+                Full legal names of landlord and tenant, plus government-issued ID numbers (passport, driver's license, UMID, etc.). Add residential address for both parties — needed for legal notice service if disputes arise.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">2. Property identification</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Full address: block + unit number, street, postal code. For room rentals, specify which room (e.g., "common room facing the corridor"). For residential, include the flat type. Vague descriptions create arguments later about what was actually rented.
+                Full address: unit number, building/condo name, street, barangay, city, province, postal code. For room rentals, specify which room (e.g., "master bedroom" or "common room facing the street"). Vague descriptions create arguments later about what was actually rented.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">3. Term — start and end dates</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Specific dates in DD/MM/YYYY. Don't write "12 months from signing" — pick the dates and write them in. Most Philippines renewals are 12 or 24 months. Anything longer than 3 years pushes stamp duty into a different bracket and may need land registry filing.
+                Specific dates in DD/MM/YYYY. Don't write "12 months from signing" — pick the dates and write them in. Most Philippines renewals are 12 months. Anything longer than 3 years pushes stamp duty into a different bracket.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
@@ -141,19 +141,19 @@ export default function TenancyRenewalChecklistPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">5. Security deposit</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Amount (typically 1 month for 1-year lease, 2 months for 2-year), what it covers, and the refund timeline after lease ends (usually 14–30 days). Note whether existing deposit from the original lease carries over or if there's a top-up.
+                Amount (typically 1 month for 1-year lease, up to 2 months under the Rent Control Act), what it covers, and the refund timeline after lease ends (usually 14–30 days). Note whether existing deposit from the original lease carries over or if there's a top-up.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">6. Notice period</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                For early termination by either side. 2 months is standard. Specify whether notice can be served at any time or only after a minimum lock-in (often 12 months). If you have a diplomatic clause, the notice period under that clause is usually shorter — write it in clearly.
+                For early termination by either side. 30 days is standard under the Civil Code. Specify whether notice can be served at any time or only after a minimum lock-in (often 12 months). If you have a diplomatic clause, the notice period under that clause is usually shorter — write it in clearly.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">7. Stamp duty acknowledgment</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                One line stating who pays BIR stamp duty. The tenant pays by default in Philippines unless the agreement says otherwise. Stamp duty must be paid within 5 days after the end of the month of signing — see the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
+                One line stating who pays BIR Documentary Stamp Tax (DST). The tenant pays by default in Philippines unless the agreement says otherwise. DST must be paid within 5 days after the end of the month of signing — see the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for rates and worked examples.
               </p>
             </div>
           </div>
@@ -166,12 +166,12 @@ export default function TenancyRenewalChecklistPage() {
           </p>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">Diplomatic clause (if applicable).</strong> For foreign tenants on work passes — early termination if the tenant loses their job and has to leave Philippines. Usually triggers after 12 months in the lease and requires 2 months' notice plus proof of departure (cancelled work pass, flight booking).</li>
+              <li><strong className="text-navy-800">Diplomatic clause (if applicable).</strong> For foreign tenants — early termination if the tenant has to leave Philippines. Usually triggers after 12 months in the lease and requires 30 days' notice plus proof of departure.</li>
               <li><strong className="text-navy-800">Inventory list.</strong> Furniture, appliances, fittings — what's included and what condition each item is in at handover. Without it, deposit disputes about wear and tear become he-said-she-said.</li>
-              <li><strong className="text-navy-800">Utilities arrangement.</strong> Who pays SP Group bill, water, gas, internet. Default is tenant pays, but spell it out. For room rentals, include split formula if shared.</li>
+              <li><strong className="text-navy-800">Utilities arrangement.</strong> Who pays electricity (Meralco or local utility), water, internet. Default is tenant pays, but spell it out. For room rentals, include split formula if shared.</li>
               <li><strong className="text-navy-800">Custom clauses.</strong> No smoking, no pets, no overnight guests beyond X nights, no subletting, no commercial use. Pick what matters to you and write it in. Verbal understandings don't survive year 2.</li>
-              <li><strong className="text-navy-800">Minor repair threshold.</strong> Standard practice in Philippines is the tenant pays for repairs under $150–$200 per incident (e.g., light bulbs, tap washers, minor plumbing). Above that, landlord pays. Write the threshold in.</li>
-              <li><strong className="text-navy-800">Governing law and dispute resolution.</strong> "This agreement is governed by the laws of Philippines. Disputes referred to the Small Claims Tribunals (for claims under $20,000) or Philippines courts." Two lines, saves headaches.</li>
+              <li><strong className="text-navy-800">Minor repair threshold.</strong> Standard practice in Philippines is the tenant pays for repairs under ₱1,000–₱2,000 per incident (e.g., light bulbs, tap washers, minor plumbing). Above that, landlord pays. Write the threshold in.</li>
+              <li><strong className="text-navy-800">Governing law and dispute resolution.</strong> "This agreement is governed by the laws of the Republic of the Philippines. Disputes referred to the barangay conciliation (for claims under the Katarungang Pambarangay) or Philippine courts." Two lines, saves headaches.</li>
             </ul>
           </div>
         </section>
@@ -184,10 +184,10 @@ export default function TenancyRenewalChecklistPage() {
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
               <li><strong className="text-navy-800">Pet policy specifics.</strong> If pets are allowed, what kind, how many, deposit top-up if any, professional cleaning at end of lease.</li>
-              <li><strong className="text-navy-800">CCTV disclosure.</strong> If the property has indoor or doorway cameras, disclose them. Philippines's PDPA requires it, and tenants notice eventually anyway.</li>
+              <li><strong className="text-navy-800">CCTV disclosure.</strong> If the property has indoor or doorway cameras, disclose them. The Philippines' Data Privacy Act requires it, and tenants notice eventually anyway.</li>
               <li><strong className="text-navy-800">Aircon servicing schedule.</strong> Quarterly is standard for Philippines. Spell out who arranges (usually tenant) and who pays (usually tenant for routine, landlord for major repairs).</li>
               <li><strong className="text-navy-800">Internet / wifi.</strong> Whether existing broadband is included in rent, transferred to tenant, or terminated. State the provider and account holder.</li>
-              <li><strong className="text-navy-800">Parking.</strong> Lot number, season parking arrangement, who pays the season parking fee.</li>
+              <li><strong className="text-navy-800">Parking.</strong> Slot number, parking fee arrangement, who pays the association dues for parking.</li>
               <li><strong className="text-navy-800">Key handover process.</strong> Number of keys (front door, gate, mailbox, access card, fob). Replacement cost if lost. Whether duplicates are allowed.</li>
             </ul>
           </div>
@@ -197,11 +197,11 @@ export default function TenancyRenewalChecklistPage() {
           <h2 className="text-2xl font-bold text-navy-800 mb-4">Don't forget</h2>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">BIR stamping within 5 days after the end of the month of signing.</strong> From signing date, not start date. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
-              <li><strong className="text-navy-800">residential approval if applicable.</strong> If the renewal extends past your current residential subletting approval window, re-apply via the residential portal before the new tenancy starts. Room rentals don't need separate approval but still count toward the occupancy cap.</li>
+              <li><strong className="text-navy-800">BIR stamping within 5 days after the end of the month of signing.</strong> From signing date, not start date. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR e-filing</a>. Late stamping triggers a penalty of ₱500 or the duty amount, whichever is higher, plus up to 4x the duty for serious delays.</li>
+              <li><strong className="text-navy-800">Condo corporation notice (if applicable).</strong> Some condominium corporations require you to register or notify them of tenant renewals. Check your condo's master deed or by-laws.</li>
               <li><strong className="text-navy-800">One signed copy each side, plus one for stamping.</strong> Three originals total — landlord keeps one, tenant keeps one, the third goes through BIR e-stamping. With e-signatures, this just means saving three identical PDFs.</li>
               <li><strong className="text-navy-800">Witnesses usually not required.</strong> Philippines tenancies are valid with just landlord and tenant signatures. If your template has witness lines, you can leave them blank or remove them — neither affects enforceability.</li>
-              <li><strong className="text-navy-800">Date the document.</strong> Sounds obvious, gets forgotten. The signing date drives the 14-day stamping clock and matters if the agreement is ever challenged.</li>
+              <li><strong className="text-navy-800">Date the document.</strong> Sounds obvious, gets forgotten. The signing date drives the 5-day stamping window and matters if the agreement is ever challenged.</li>
             </ul>
           </div>
         </section>
