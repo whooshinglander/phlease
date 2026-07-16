@@ -128,9 +128,9 @@ export default function RentIncreaseRenewalPage() {
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">1.  Rental Index</p>
+              <p className="font-semibold text-navy-800 mb-2">1. Comparable listings on Lamudi and Property24.ph</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                The official quarterly index for private residential rents at <a href="https://www.ura.gov.sg/realEstateIIWeb" target="_blank" rel="noopener" className="text-brand-700 hover:underline">ura.gov.sg/realEstateIIWeb</a>. Filter by region (CCR, RCR, OCR) and property type. Look at the year-on-year change covering the period of your existing lease. If the index is up 6%, a 6% renewal ask is in line with the market. If it&apos;s up 15%, expect a bigger number.
+                Check current listings for similar units in the same area on <a href="https://www.lamudi.com.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">Lamudi</a> and <a href="https://www.property24.com.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">Property24.ph</a>. Filter by property type, size, and location. Look at the year-on-year change covering the period of your existing lease. If comparable units are listing 6% higher, a 6% renewal ask is in line with the market. If they&apos;re up 15%, expect a bigger number.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">

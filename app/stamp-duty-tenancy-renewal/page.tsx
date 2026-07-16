@@ -158,7 +158,7 @@ export default function StampDutyRenewalPage() {
             </table>
           </div>
           <p className="text-xs text-navy-400 mt-3">
-            For leases over 3 years, BIR uses the highest annual rent across the term and applies a different rate band. See <a href="https://www.iras.gov.sg/taxes/stamp-duty/for-property/working-out-your-stamp-duty/renting-a-property/stamp-duty-for-leases" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR — stamp duty for leases</a>.
+            For leases over 3 years, BIR uses the highest annual rent across the term and applies a different rate band. See <a href="https://www.bir.gov.ph/index.php/tax-information/documentary-stamp-tax.html" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR — Documentary Stamp Tax guide</a>.
           </p>
         </section>
 
