@@ -1,5 +1,5 @@
 const BASE = 'https://phlease.com';
-const KEY = 'indexnow';
+const KEY = '5f9569304f564fb5a9fa83a2fd71f726';
 
 const urls = [
   `${BASE}/`,

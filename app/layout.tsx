@@ -10,7 +10,7 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const GA_ID = 'G-L8EDWZSMW6'
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 
 export const viewport: Viewport = {
   width: 'device-width',
