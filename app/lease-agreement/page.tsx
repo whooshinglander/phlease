@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'What is the difference between a tenancy agreement and a lease in Philippines?',
-    a: '"Tenancy agreement" and "lease" are used interchangeably for Residential properties. Technically a lease is for longer terms (3+ years) and conveys a property interest, while a tenancy is shorter-term. For Residential rentals of 1–2 years, a tenancy agreement is standard.',
+    a: '"Tenancy agreement" and "lease" are used interchangeably in the Philippines. Technically a lease (arrendamiento) is for longer terms and conveys a property interest under the Civil Code, while a tenancy is shorter-term. For residential rentals of 1–2 years, either term is standard.',
   },
   {
     q: 'How do I terminate a tenancy agreement in Philippines?',
@@ -73,7 +73,7 @@ const articleSchema = {
 }
 
 const STEPS = [
-  { step: '1', title: 'Select property type', desc: 'Residential flat, private condo/landed, or room rental — each has specific clauses.' },
+  { step: '1', title: 'Select property type', desc: 'Condo, apartment, house & lot, or room rental — each has specific clauses.' },
   { step: '2', title: 'Enter property details', desc: 'Address, unit number, postal code, and handover condition.' },
   { step: '3', title: 'Fill in both parties', desc: 'Landlord and tenant names, government-issued ID/passport numbers, contact details.' },
   { step: '4', title: 'Set rental terms', desc: 'Start/end dates, monthly rent, security deposit, and payment details.' },
@@ -95,7 +95,7 @@ export default function TenancyAgreementPhilippinesPage() {
             Tenancy Agreement Philippines PDF<br className="hidden sm:block" /> — Free Generator
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
-            Create a legally structured tenancy agreement for any Philippines residential property — Residential flats, private condos, or room rentals. Free to preview. Download a clean, print-ready <strong className="text-navy-700">PDF from ₱500</strong>. No lawyer required.
+            Create a legally structured tenancy agreement for any Philippines property — condos, apartments, houses, or room rentals. Free to preview. Download a clean, print-ready PDF from ₱500. No lawyer required.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors text-base">
@@ -160,9 +160,9 @@ export default function TenancyAgreementPhilippinesPage() {
               { label: 'Security deposit', value: "Max 2 months deposit + 1 month advance (Rent Control Act). Negotiable for higher rent" },
               { label: 'Standard notice', value: '30 days written notice (Civil Code Article 1687)' },
               { label: 'Diplomatic clause', value: 'Standard for expat tenants — allows early exit on repatriation' },
-              { label: 'Residential subletting', value: 'Requires Residential approval + minimum lease period completion (whole flat)' },
-              { label: 'Minimum tenancy (Residential)', value: '1 year (standard). No statutory minimum for private property' },
-              { label: 'Lawyer required?', value: 'No — for standard Residential tenancies' },
+              { label: 'Condo subletting', value: 'Check condo corporation master deed/by-laws' },
+              { label: 'Minimum tenancy', value: '1 year (standard). No statutory minimum' },
+              { label: 'Lawyer required?', value: 'No — for standard residential leases' },
             ].map((row, i) => (
               <div key={i} className="flex gap-4 px-5 py-3 text-sm">
                 <span className="font-semibold text-navy-700 w-48 shrink-0">{row.label}</span>
@@ -177,14 +177,14 @@ export default function TenancyAgreementPhilippinesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/residential-tenancy-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏠</div>
-              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Residential Flat</h3>
-              <p className="text-sm text-navy-500">Whole flat or room — includes Residential subletting clauses and occupancy rules.</p>
-              <p className="text-xs text-brand-600 font-medium mt-3">Residential Tenancy Guide →</p>
+              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Condo / Apartment</h3>
+              <p className="text-sm text-navy-500">Whole unit or room — governed by the Civil Code and condo corporation rules.</p>
+              <p className="text-xs text-brand-600 font-medium mt-3">Lease Agreement Guide →</p>
             </Link>
             <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏢</div>
               <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Private Property</h3>
-              <p className="text-sm text-navy-500">Condo, apartment, or landed — full private Residential tenancy agreement.</p>
+              <p className="text-sm text-navy-500">Condo, apartment, or landed — full residential lease agreement.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Generate Now →</p>
             </Link>
             <Link href="/room-rental-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
@@ -230,17 +230,16 @@ export default function TenancyAgreementPhilippinesPage() {
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <h2 className="text-2xl font-bold text-navy-900 mb-4">Rental Agreement Philippines</h2>
           <p className="text-navy-600 mb-4 leading-relaxed">
-            A <strong>rental agreement in Philippines</strong> is the same as a tenancy agreement — the terms are used interchangeably. Whether you call it a rental agreement, lease agreement, or tenancy agreement, it is the legally binding contract between a landlord and tenant setting out the terms of occupation of a Residential property.
+            A <strong>rental agreement in Philippines</strong> is the same as a tenancy agreement — the terms are used interchangeably. Whether you call it a rental agreement, lease agreement, or tenancy agreement, it is the legally binding contract between a landlord and tenant setting out the terms of occupation of a property.
           </p>
           <p className="text-navy-600 mb-4 leading-relaxed">
-            In Philippines, Residential rental agreements must comply with the Civil Code of the Philippines Articles 1642-1761 and Rent Control Act RA 9653 for private property. Key requirements include a minimum tenancy period of 1 year (standard market practice), proper stamp duty payment within 5 days after the end of the month of signing, and Philippines citizen or eligible PR approval for subletting of Residential flats.
+            In Philippines, residential lease agreements are governed by the Civil Code of the Philippines Articles 1642-1761 and the Rent Control Act RA 9653 (for units with monthly rent ≤₱10,000). Key requirements include a minimum tenancy period of 1 year (standard market practice), proper Documentary Stamp Tax payment to BIR within 5 days after the end of the month of signing, and compliance with any condo corporation rules on subletting.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
-              { title: 'Residential Rental Agreement', desc: 'Covers whole flat and room rentals. Must comply with Residential subletting rules and citizen occupancy requirements.' },
-              { title: 'Private Condo Rental Agreement', desc: 'More flexible than Residential. No approval required. Typically includes air-con servicing, management fee, and maintenance clauses.' },
-              { title: 'Landed Property Rental Agreement', desc: 'Covers detached, semi-detached, and terrace houses. Usually longer tenancies with higher deposits.' },
-              { title: 'Room Rental Agreement', desc: 'For single room rentals within Residential or private property. Shorter minimum periods and simpler terms.' },
+              { title: 'Condo Lease Agreement', desc: 'Covers condo units and apartments. May need condo corporation approval for subletting. Typically includes air-con servicing, association dues, and maintenance clauses.' },
+              { title: 'House & Lot Lease Agreement', desc: 'Covers detached, semi-detached, and townhouse properties. Usually longer tenancies with standard deposit terms.' },
+              { title: 'Room Rental Agreement', desc: 'For single room rentals within a shared unit. Simpler terms, no government approval needed.' },
             ].map((item, i) => (
               <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-4">
                 <p className="font-semibold text-navy-800 text-sm mb-1">{item.title}</p>

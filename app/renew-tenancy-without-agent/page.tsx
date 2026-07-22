@@ -37,11 +37,11 @@ const FAQS = [
   },
   {
     q: "What if there's a dispute mid-renewal and I have no agent to mediate?",
-    a: "Most renewal disputes are about rent (you want more, tenant wants less) or deposit top-ups. Your recourse is the same with or without an agent: negotiate, walk away, or escalate. If you can't agree on terms, the tenancy ends on the original expiry date and the tenant moves out. For deposit disputes after the fact, the Small Claims Tribunal handles claims up to $20,000 and is designed for non-lawyers. Filing fee is roughly ₱500-$20 depending on amount. No agent ever resolves a real dispute for you anyway, they just pass messages.",
+    a: "Most renewal disputes are about rent (you want more, tenant wants less) or deposit top-ups. Your recourse is the same with or without an agent: negotiate, walk away, or escalate. If you can't agree on terms, the tenancy ends on the original expiry date and the tenant moves out. For deposit disputes after the fact, barangay conciliation is the first step (mandatory), then small claims court for amounts up to ₱1,000,000 — designed for non-lawyers. Filing fee is minimal. No agent ever resolves a real dispute for you anyway, they just pass messages.",
   },
   {
     q: 'How do I check market rent without an agent feeding me comps?',
-    a: "PropertyGuru and 99.co both let you filter rental listings by district, property type, and bedroom count. Look at units in your block or the next few blocks, listed in the past 30-60 days, similar size and condition. 's rental contract data on data.gov.sg shows actually-transacted rents (not asking rents) by postal sector — more accurate than listings. For residential, the residential rental transactions page publishes monthly medians by town and flat type. Cross-check three sources, your number won't be far off.",
+    a: "Lamudi and Property24.ph let you filter rental listings by city, property type, and bedroom count. Look at units in your area listed in the past 30-60 days, similar size and condition. RentPad.ph also publishes rental listings. For market trends, check BSP (Bangko Sentral ng Pilipinas) quarterly reports on residential real estate prices. Cross-check three sources, your number won't be far off.",
   },
   {
     q: "Common DIY renewal mistakes — what should I watch for?",
@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     q: "How much do I actually save going DIY?",
-    a: "On a renewal, the typical agent commission in Philippines is half a month's rent plus GST. For a $3,000/month flat, that's ~$1,635 including GST. For a $5,000/month flat, ~$2,725. New tenancies are usually a full month commission (so a new tenant via an agent costs you $3,000-$5,000+). The renewal saving is real but smaller than people assume — the bigger saving comes from not having to find a new tenant at all.",
+    a: "On a renewal, the typical agent commission in Philippines is half a month's rent. For a ₱25,000/month unit, that's ~₱12,500. For a ₱40,000/month unit, ~₱20,000. New tenancies are usually a full month commission (so a new tenant via an agent costs you ₱25,000-₱40,000+). The renewal saving is real but smaller than people assume — the bigger saving comes from not having to find a new tenant at all.",
   },
 ]
 
@@ -101,7 +101,7 @@ export default function RenewWithoutAgentPage() {
             Renew Your Philippines Tenancy Without an Agent
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Renewing with a tenant you already know is the easiest case for going DIY. The relationship is settled, the unit condition is documented, the agreement is mostly a copy of the previous one with new dates and rent. The half-month commission, typically $1,500-$2,500, stays in your pocket.
+            Renewing with a tenant you already know is the easiest case for going DIY. The relationship is settled, the unit condition is documented, the agreement is mostly a copy of the previous one with new dates and rent. The half-month commission, typically ₱12,500-₱20,000, stays in your pocket.
           </p>
           <p className="text-navy-500 text-sm">
             For the broader rules around renewals (notice, stamp duty, deposits), see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>.
@@ -177,10 +177,10 @@ export default function RenewWithoutAgentPage() {
             Renewal commission in Philippines is conventionally half a month's rent plus GST, paid by the landlord (or the party that engaged the agent). Worked examples:
           </p>
           <ul className="space-y-2 text-navy-600 text-sm mb-4 pl-5 list-disc">
-            <li>$2,500/month flat: half-month + 9% GST = ~$1,363 saved</li>
-            <li>$3,500/month flat: ~$1,908 saved</li>
-            <li>$5,000/month flat: ~$2,725 saved</li>
-            <li>$7,000/month condo: ~$3,815 saved</li>
+            <li>₱20,000/month unit: half-month = ~₱10,000 saved</li>
+            <li>₱30,000/month unit: ~₱15,000 saved</li>
+            <li>₱40,000/month unit: ~₱20,000 saved</li>
+            <li>₱50,000/month premium unit: ~₱25,000 saved</li>
           </ul>
           <p className="text-navy-600 text-sm leading-relaxed">
             For 3-5 hours of work over a couple of weeks, the implied hourly rate of DIY is high. The numbers are even better if the agent would have charged you a full month (some do, particularly for new tenancies presented as renewals on different terms).

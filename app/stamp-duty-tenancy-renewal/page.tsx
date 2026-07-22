@@ -85,12 +85,12 @@ const breadcrumbSchema = {
 }
 
 const EXAMPLES = [
-  { lease: '1 year', rent: '$2,000/mo', total: '$24,000', duty: '$96', formula: '0.4% × $24,000' },
-  { lease: '1 year', rent: '$3,000/mo', total: '$36,000', duty: '$144', formula: '0.4% × $36,000' },
-  { lease: '1 year', rent: '$5,000/mo', total: '$60,000', duty: '$240', formula: '0.4% × $60,000' },
-  { lease: '2 years', rent: '$3,500/mo', total: '$84,000', duty: '$168', formula: '0.4% × $42,000 (avg annual rent)' },
-  { lease: '2 years', rent: '$4,500/mo', total: '₱5008,000', duty: '$216', formula: '0.4% × $54,000 (avg annual rent)' },
-  { lease: '3 years', rent: '$3,000/mo', total: '₱5008,000', duty: '$144', formula: '0.4% × $36,000 (avg annual rent)' },
+  { lease: '1 year', rent: '₱15,000/mo', total: '₱180,000', duty: '₱366', formula: '₱6 + ₱2 × 178' },
+  { lease: '1 year', rent: '₱25,000/mo', total: '₱300,000', duty: '₱602', formula: '₱6 + ₱2 × 298' },
+  { lease: '1 year', rent: '₱40,000/mo', total: '₱480,000', duty: '₱962', formula: '₱6 + ₱2 × 478' },
+  { lease: '2 years', rent: '₱25,000/mo', total: '₱600,000', duty: '₱1,202', formula: '₱6 + ₱2 × 598 (annual rent ₱300k)' },
+  { lease: '2 years', rent: '₱35,000/mo', total: '₱840,000', duty: '₱1,682', formula: '₱6 + ₱2 × 838 (annual rent ₱420k)' },
+  { lease: '3 years', rent: '₱25,000/mo', total: '₱900,000', duty: '₱1,802', formula: '₱6 + ₱2 × 898 (annual rent ₱300k)' },
 ]
 
 export default function StampDutyRenewalPage() {
