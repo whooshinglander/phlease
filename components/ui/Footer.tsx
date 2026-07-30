@@ -42,9 +42,6 @@ export default function Footer() {
         <p className="text-xs text-navy-300 text-center">
           © {new Date().getFullYear()} PhLease · Built for Philippines landlords and tenants
         </p>
-        <p className="text-xs text-navy-300 text-center mt-1">
-          <a href="https://picklesg.com" className="hover:text-brand-700 transition-colors" target="_blank" rel="noopener noreferrer">Pickleball Singapore</a> also available
-        </p>
       </div>
     </footer>
   )
