@@ -21,14 +21,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://phlease.com'),
-  title: 'Contract of Lease Template Philippines | Preview Before Purchase',
+  title: 'Philippines Tenancy Agreement & Lease Contract | Free PDF',
   description: 'Tenancy agreement template for Philippines. Generate your agreement in minutes, preview free, download PDF from ₱500. Covers condo, apartment, house & lot, and room rental.',
   keywords: 'free tenancy agreement generator Philippines, Philippines tenancy agreement, contract of lease Philippines, Philippines rental contract, tenancy agreement generator, rental agreement Philippines, tenancy renewal Philippines, free tenancy agreement Philippines, PH lease template, tenancy renewal agreement generator, free tenancy renewal agreement generator Philippines, renew tenancy agreement generator Philippines, generate tenancy renewal agreement Philippines',
   alternates: {
     canonical: 'https://phlease.com',
   },
   openGraph: {
-    title: 'Contract of Lease Template Philippines | Preview Before Purchase',
+    title: 'Philippines Tenancy Agreement & Lease Contract | Free PDF',
     description: 'Tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500. Covers condo, apartment, house & lot, and room rental.',
     url: 'https://phlease.com',
     siteName: 'PhLease',

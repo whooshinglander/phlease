@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026 | PhLease',
+  title: 'Can Your Landlord Increase Rent in Philippines?',
   description: 'How much can your landlord raise rent on renewal in Philippines? Rent Control Act caps, market benchmarks from Lamudi and Property24.ph, and what 2026 actually looks like.',
   keywords: 'rent increase tenancy renewal philippines, how much rent increase philippines, is my landlord allowed to increase rent, fair rent increase 2026, rent hike philippines, philippines rental index',
   alternates: { canonical: 'https://phlease.com/rent-increase-tenancy-renewal' },
   openGraph: {
-    title: 'Rent Increase on Tenancy Renewal in Philippines — What\'s Reasonable in 2026',
+    title: 'Can Your Landlord Increase Rent in Philippines?',
     description: 'No rent control in Philippines. How to benchmark a fair increase, when negotiation works, and what 2026 numbers actually look like.',
     url: 'https://phlease.com/rent-increase-tenancy-renewal',
     siteName: 'PhLease',

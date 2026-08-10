@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Renew Tenancy Agreement Philippines — Condo, Apartment & House | PhLease',
+  title: 'Renew Your Lease in Philippines | Tenancy Renewal PDF',
   description: 'Renew your tenancy agreement in Philippines easily. Generate an updated renewal contract in minutes. BIR-compliant.',
   keywords: 'tenancy renewal philippines, renew tenancy agreement philippines, lease renewal philippines, extend tenancy agreement, tenancy renewal agreement philippines, tenancy renewal letter philippines, renew lease philippines',
   alternates: { canonical: 'https://phlease.com/tenancy-renewal' },
   openGraph: {
-    title: 'Renew Tenancy Agreement Philippines — Condo, Apartment & House | PhLease',
+    title: 'Renew Your Lease in Philippines | Tenancy Renewal PDF',
     description: 'Renew your tenancy agreement in Philippines easily. Generate an updated renewal contract in minutes.',
     url: 'https://phlease.com/tenancy-renewal',
     siteName: 'PhLease',
