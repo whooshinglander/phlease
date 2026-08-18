@@ -143,14 +143,14 @@ export default function FormStep5_Clauses({ formData, onChange, onPreview, onBac
               />
             </div>
             <div className="flex flex-col gap-1">
-              {idx === 0 && <label htmlFor={`occupantNric_0`} className="text-xs font-medium text-navy-600">NRIC/FIN/Passport</label>}
+              {idx === 0 && <label htmlFor={`occupantNric_0`} className="text-xs font-medium text-navy-600">Gov't ID/Passport</label>}
               <input
                 id={idx === 0 ? `occupantNric_0` : undefined}
                 name={`occupantNric_${idx}`}
                 type="text"
                 autoComplete="off"
                 spellCheck={false}
-                aria-label={idx > 0 ? `Occupant ${idx + 1} NRIC/FIN/Passport` : undefined}
+                aria-label={idx > 0 ? `Occupant ${idx + 1} Gov't ID/Passport` : undefined}
                 value={occ.nric}
                 onChange={(e) => {
                   const updated = [...formData.occupants]

@@ -2,18 +2,19 @@ import { useState } from 'react'
 import { TenancyFormData, AdditionalTenant, AdditionalLandlord } from '@/lib/types'
 import FormField from './FormField'
 
-// Validates SG NRIC/FIN: [STFGM] + 7 digits + letter
-// Returns error string or empty string if valid/empty
+// Validates a government-issued ID / passport number (PH: UMID, driver's
+// license, passport — varied formats). Accepts any non-trivial alphanumeric
+// string; only flags clearly-empty or placeholder-only values.
 function validateNric(value: string): string {
   if (!value.trim()) return ''
-  const upper = value.trim().toUpperCase()
-  if (/^[STFGM]\d{7}[A-Z]$/.test(upper)) return ''
-  // Looks like they tried NRIC/FIN format but it's wrong
-  if (/^[STFGM]/i.test(upper) || /^\d/.test(upper)) {
-    return 'Format should be: letter + 7 digits + letter (e.g. 1234)'
+  const trimmed = value.trim()
+  // Reject placeholder-only values (e.g. "1234", "XXXX")
+  if (/^[xX0\s-]{3,}$/.test(trimmed)) {
+    return 'Enter a valid government-issued ID or passport number'
   }
-  // Otherwise assume passport — no validation
-  return ''
+  // Accept any reasonable alphanumeric ID (PH IDs have no single format)
+  if (/^[A-Za-z0-9-]{4,20}$/.test(trimmed)) return ''
+  return 'Enter a valid government-issued ID or passport number'
 }
 
 type Props = {
@@ -102,7 +103,7 @@ export default function FormStep3_Parties({ formData, onChange, onNext, onBack }
             onChange={(v) => onChange({ landlordName: v })}
             placeholder="e.g. Joseph Lim Zhi Kai"
             autoComplete="name" />
-          <FormField label="NRIC / FIN" name="landlordNric" value={formData.landlordNric}
+          <FormField label="Landlord Gov't ID / Passport" name="landlordNric" value={formData.landlordNric}
             onChange={(v) => { onChange({ landlordNric: v }); setNricErrors(p => ({ ...p, landlordNric: '' })) }}
             placeholder="e.g. 1234"
             autoComplete="off"
@@ -128,9 +129,9 @@ export default function FormStep3_Parties({ formData, onChange, onNext, onBack }
             </div>
             <FormField label="Full Name" name={`addLandlordName_${i}`} value={l.name}
               onChange={(v) => updateAdditionalLandlord(i, { name: v })}
-              placeholder="As per NRIC / Passport"
+              placeholder="As per Gov't ID / Passport"
               autoComplete="name" />
-            <FormField label="NRIC / FIN" name={`addLandlordNric_${i}`} value={l.nric}
+            <FormField label="Additional Landlord Gov't ID / Passport" name={`addLandlordNric_${i}`} value={l.nric}
               onChange={(v) => { updateAdditionalLandlord(i, { nric: v }); setNricErrors(p => ({ ...p, [`addLandlordNric_${i}`]: '' })) }}
               placeholder="e.g. 1234"
               autoComplete="off"
@@ -157,9 +158,9 @@ export default function FormStep3_Parties({ formData, onChange, onNext, onBack }
             onChange={(v) => onChange({ tenantName: v })}
             placeholder="e.g. Lee Mei Ling"
             autoComplete="name" />
-          <FormField label="NRIC / FIN / Passport No." name="tenantNric" value={formData.tenantNric}
+          <FormField label="Tenant Gov't ID / Passport No." name="tenantNric" value={formData.tenantNric}
             onChange={(v) => { onChange({ tenantNric: v }); setNricErrors(p => ({ ...p, tenantNric: '' })) }}
-            placeholder="e.g. S7654321B"
+            placeholder="e.g. 1234-5678-9012"
             autoComplete="off"
             spellCheck={false}
             error={nricErrors.tenantNric}
@@ -183,9 +184,9 @@ export default function FormStep3_Parties({ formData, onChange, onNext, onBack }
             </div>
             <FormField label="Full Name" name={`addTenantName_${i}`} value={t.name}
               onChange={(v) => updateAdditionalTenant(i, { name: v })}
-              placeholder="As per NRIC / Passport"
+              placeholder="As per Gov't ID / Passport"
               autoComplete="name" />
-            <FormField label="NRIC / FIN / Passport No." name={`addTenantNric_${i}`} value={t.nricPassport}
+            <FormField label="Additional Tenant Gov't ID / Passport No." name={`addTenantNric_${i}`} value={t.nricPassport}
               onChange={(v) => { updateAdditionalTenant(i, { nricPassport: v }); setNricErrors(p => ({ ...p, [`addTenantNric_${i}`]: '' })) }}
               placeholder="e.g. 1234"
               autoComplete="off"

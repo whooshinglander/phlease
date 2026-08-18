@@ -164,10 +164,10 @@ function WitnessBlock() {
         <View style={styles.witnessBlock}>
           <Text style={styles.witnessLabel}>Name</Text>
           <View style={styles.witnessLine} />
-          <Text style={styles.witnessCaption}>Full name as per NRIC</Text>
+          <Text style={styles.witnessCaption}>Full name as per government-issued ID</Text>
         </View>
         <View style={styles.witnessBlock}>
-          <Text style={styles.witnessLabel}>NRIC No.</Text>
+          <Text style={styles.witnessLabel}>Gov't ID No.</Text>
           <View style={styles.witnessLine} />
           <Text style={styles.witnessCaption}>Identity number</Text>
         </View>
@@ -217,8 +217,8 @@ export default function RenewalPDF({ data }: Props) {
             <Text style={styles.partyValue}>{p(data.landlordName, 'LANDLORD NAME')}</Text>
           </View>
           <View style={styles.partyRow}>
-            <Text style={styles.partyLabel}>NRIC / FIN No:</Text>
-            <Text style={styles.partyValue}>{p(data.landlordNric, 'SXXXXXXXA')}</Text>
+            <Text style={styles.partyLabel}>Gov't ID / Passport No:</Text>
+            <Text style={styles.partyValue}>{p(data.landlordNric, 'XXXX-XXXX-XXXX')}</Text>
           </View>
         </View>
         <Text style={styles.italic}>(hereinafter called "the Landlord") of the one part</Text>
@@ -231,8 +231,8 @@ export default function RenewalPDF({ data }: Props) {
             <Text style={styles.partyValue}>{p(data.tenantName, 'TENANT NAME')}</Text>
           </View>
           <View style={styles.partyRow}>
-            <Text style={styles.partyLabel}>NRIC / FIN / Passport No:</Text>
-            <Text style={styles.partyValue}>{p(data.tenantNric, 'SXXXXXXXA')}</Text>
+            <Text style={styles.partyLabel}>Gov't ID / Passport No:</Text>
+            <Text style={styles.partyValue}>{p(data.tenantNric, 'XXXX-XXXX-XXXX')}</Text>
           </View>
         </View>
         <Text style={styles.italic}>(hereinafter called "the Tenant") of the other part</Text>
@@ -341,7 +341,7 @@ export default function RenewalPDF({ data }: Props) {
           <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Signature</Text>
           <View style={styles.signatureLine} />
           <Text style={styles.signatureName}>{p(data.landlordName, 'LANDLORD NAME')}</Text>
-          <Text style={[styles.witnessLabel, { marginTop: 6, marginBottom: 2, fontSize: 9 }]}>NRIC / FIN No.</Text>
+          <Text style={[styles.witnessLabel, { marginTop: 6, marginBottom: 2, fontSize: 9 }]}>Gov't ID / Passport No.</Text>
           <View style={[styles.witnessLine, { marginBottom: 8 }]} />
           <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Date</Text>
           <View style={[styles.witnessLine, { maxWidth: 140, marginBottom: 0 }]} />
@@ -354,7 +354,7 @@ export default function RenewalPDF({ data }: Props) {
           <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Signature</Text>
           <View style={styles.signatureLine} />
           <Text style={styles.signatureName}>{p(data.tenantName, 'TENANT NAME')}</Text>
-          <Text style={[styles.witnessLabel, { marginTop: 6, marginBottom: 2, fontSize: 9 }]}>NRIC / FIN / Passport No.</Text>
+          <Text style={[styles.witnessLabel, { marginTop: 6, marginBottom: 2, fontSize: 9 }]}>Gov't ID / Passport No.</Text>
           <View style={[styles.witnessLine, { marginBottom: 8 }]} />
           <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Date</Text>
           <View style={[styles.witnessLine, { maxWidth: 140, marginBottom: 0 }]} />

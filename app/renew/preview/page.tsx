@@ -282,7 +282,7 @@ export default function RenewPreviewPage() {
             <p className="text-sm font-bold text-navy-800 mb-3 uppercase tracking-wider">Between</p>
             <div className="ml-4 mb-4 space-y-1 text-sm text-navy-800">
               <p><span className="font-semibold">NAME:</span>&nbsp;&nbsp;{p(data.landlordName, 'LANDLORD NAME')}</p>
-              <p><span className="font-semibold">NRIC / FIN No:</span>&nbsp;&nbsp;{p(data.landlordNric, 'SXXXXXXXA')}</p>
+              <p><span className="font-semibold">Gov't ID / Passport No:</span>&nbsp;&nbsp;{p(data.landlordNric, 'XXXX-XXXX-XXXX')}</p>
             </div>
             <p className="text-sm text-navy-700 italic ml-4 mb-6">
               (hereinafter called &ldquo;<strong>the Landlord</strong>&rdquo;) of the one part
@@ -292,7 +292,7 @@ export default function RenewPreviewPage() {
             <p className="text-sm font-bold text-navy-800 mb-3 uppercase tracking-wider">And</p>
             <div className="ml-4 mb-4 space-y-1 text-sm text-navy-800">
               <p><span className="font-semibold">NAME:</span>&nbsp;&nbsp;{p(data.tenantName, 'TENANT NAME')}</p>
-              <p><span className="font-semibold">NRIC / FIN / Passport No:</span>&nbsp;&nbsp;{p(data.tenantNric, 'SXXXXXXXA')}</p>
+              <p><span className="font-semibold">Gov't ID / Passport No:</span>&nbsp;&nbsp;{p(data.tenantNric, 'XXXX-XXXX-XXXX')}</p>
             </div>
             <p className="text-sm text-navy-700 italic ml-4 mb-6">
               (hereinafter called &ldquo;<strong>the Tenant</strong>&rdquo;) of the other part
@@ -345,8 +345,8 @@ export default function RenewPreviewPage() {
                       <p className="text-navy-800 mb-16">{data.landlordName || '[LANDLORD NAME]'}</p>
                       <p className="font-bold text-navy-900 uppercase tracking-wide mb-4">In the Presence of (Witness)</p>
                       <div className="grid grid-cols-2 gap-8 mb-4">
-                        <div><p className="font-semibold text-navy-700 mb-8">Name</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Full name as per NRIC</p></div>
-                        <div><p className="font-semibold text-navy-700 mb-8">NRIC No.</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Identity number</p></div>
+                        <div><p className="font-semibold text-navy-700 mb-8">Name</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Full name as per government-issued ID</p></div>
+                        <div><p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Identity number</p></div>
                       </div>
                       <p className="font-semibold text-navy-700 mb-8">Date</p>
                       <div className="border-b border-slate-800 w-1/3" />
@@ -358,8 +358,8 @@ export default function RenewPreviewPage() {
                       <p className="text-navy-800 mb-16">{data.tenantName || '[TENANT NAME]'}</p>
                       <p className="font-bold text-navy-900 uppercase tracking-wide mb-4">In the Presence of (Witness)</p>
                       <div className="grid grid-cols-2 gap-8 mb-4">
-                        <div><p className="font-semibold text-navy-700 mb-8">Name</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Full name as per NRIC</p></div>
-                        <div><p className="font-semibold text-navy-700 mb-8">NRIC No.</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Identity number</p></div>
+                        <div><p className="font-semibold text-navy-700 mb-8">Name</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Full name as per government-issued ID</p></div>
+                        <div><p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p><div className="border-b border-slate-800 w-full mb-1" /><p className="text-xs text-navy-400">Identity number</p></div>
                       </div>
                       <p className="font-semibold text-navy-700 mb-8">Date</p>
                       <div className="border-b border-slate-800 w-1/3" />
@@ -405,10 +405,10 @@ export default function RenewPreviewPage() {
                       <div>
                         <p className="font-semibold text-navy-700 mb-8">Name</p>
                         <div className="border-b border-slate-800 w-full mb-1" />
-                        <p className="text-xs text-navy-400">Full name as per NRIC</p>
+                        <p className="text-xs text-navy-400">Full name as per government-issued ID</p>
                       </div>
                       <div>
-                        <p className="font-semibold text-navy-700 mb-8">NRIC No.</p>
+                        <p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p>
                         <div className="border-b border-slate-800 w-full mb-1" />
                         <p className="text-xs text-navy-400">Identity number</p>
                       </div>
@@ -426,10 +426,10 @@ export default function RenewPreviewPage() {
                       <div>
                         <p className="font-semibold text-navy-700 mb-8">Name</p>
                         <div className="border-b border-slate-800 w-full mb-1" />
-                        <p className="text-xs text-navy-400">Full name as per NRIC</p>
+                        <p className="text-xs text-navy-400">Full name as per government-issued ID</p>
                       </div>
                       <div>
-                        <p className="font-semibold text-navy-700 mb-8">NRIC No.</p>
+                        <p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p>
                         <div className="border-b border-slate-800 w-full mb-1" />
                         <p className="text-xs text-navy-400">Identity number</p>
                       </div>

@@ -72,12 +72,12 @@ function Field({ label, name, type = 'text', value, onChange, placeholder, hint,
 
 function validateNric(value: string): string {
   if (!value.trim()) return ''
-  const upper = value.trim().toUpperCase()
-  if (/^[STFGM]\d{7}[A-Z]$/.test(upper)) return ''
-  if (/^[STFGM]/i.test(upper) || /^\d/.test(upper)) {
-    return 'Format: letter + 7 digits + letter (e.g. 1234)'
+  const trimmed = value.trim()
+  if (/^[xX0\s-]{3,}$/.test(trimmed)) {
+    return 'Enter a valid government-issued ID or passport number'
   }
-  return ''
+  if (/^[A-Za-z0-9-]{4,20}$/.test(trimmed)) return ''
+  return 'Enter a valid government-issued ID or passport number'
 }
 
 export default function RenewPage() {
@@ -122,7 +122,7 @@ export default function RenewPage() {
               <Field label="Landlord Full Name" name="landlordName" value={data.landlordName}
                 onChange={v => update({ landlordName: v })} placeholder="e.g. Joseph Lim Zhi Kai"
                 autoComplete="name" />
-              <Field label="Landlord NRIC / FIN" name="landlordNric" value={data.landlordNric}
+              <Field label="Landlord Gov't ID / Passport" name="landlordNric" value={data.landlordNric}
                 onChange={v => { update({ landlordNric: v }); setNricErrors(p => ({ ...p, landlordNric: '' })) }}
                 placeholder="e.g. 1234" autoComplete="off" spellCheck={false}
                 onBlur={() => handleNricBlur('landlordNric', data.landlordNric)} />
@@ -132,9 +132,9 @@ export default function RenewPage() {
               <Field label="Tenant Full Name" name="tenantName" value={data.tenantName}
                 onChange={v => update({ tenantName: v })} placeholder="e.g. Lee Mei Ling"
                 autoComplete="name" />
-              <Field label="Tenant NRIC / FIN / Passport" name="tenantNric" value={data.tenantNric}
+              <Field label="Tenant Gov't ID / Passport" name="tenantNric" value={data.tenantNric}
                 onChange={v => { update({ tenantNric: v }); setNricErrors(p => ({ ...p, tenantNric: '' })) }}
-                placeholder="e.g. S7654321B" autoComplete="off" spellCheck={false}
+                placeholder="e.g. 1234-5678-9012" autoComplete="off" spellCheck={false}
                 onBlur={() => handleNricBlur('tenantNric', data.tenantNric)} />
             </div>
             {nricErrors.tenantNric && <p className="text-xs text-red-500 font-medium mt-0.5">{nricErrors.tenantNric}</p>}

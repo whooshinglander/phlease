@@ -160,7 +160,7 @@ export default function TenancyRenewalNoticePeriodPage() {
                 <strong className="text-navy-800">Day 30 — Sign.</strong> Final renewal document signed by both parties. Either a short renewal addendum (if only dates and rent change) or a fresh new tenancy (if anything else moves). Most landlords sign a fresh new tenancy because the document trail is cleaner.
               </li>
               <li>
-                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via BIR eStamping. Stamp duty must be paid within 5 days after the end of the month of signing, and the stamping needs to happen before the new tenancy commences. Same 0.4% rate as a new tenancy.
+                <strong className="text-navy-800">Day 14 — Stamp.</strong> Renewal stamped with BIR via BIR eStamping. Stamp duty must be paid within 5 days after the end of the month of signing, and the stamping needs to happen before the new tenancy commences. Same Documentary Stamp Tax rate as a new tenancy.
               </li>
               <li>
                 <strong className="text-navy-800">Day 0 — New tenancy commences.</strong> Old tenancy ends, new one begins. Deposit either rolls over or gets topped up, rent payments continue under the new terms.

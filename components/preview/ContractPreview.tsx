@@ -81,7 +81,7 @@ export default function ContractPreview({ doc, hasCustomClauses, showFull = fals
 
         <div className="ml-4 mb-4 space-y-1 text-sm text-navy-800">
           <p><span className="font-semibold">NAME:</span>&nbsp;&nbsp;{meta.landlordName}</p>
-          <p><span className="font-semibold">NRIC / FIN No:</span>&nbsp;&nbsp;{meta.landlordNric}</p>
+          <p><span className="font-semibold">Gov't ID / Passport No:</span>&nbsp;&nbsp;{meta.landlordNric}</p>
           <p><span className="font-semibold">ADDRESS:</span>&nbsp;&nbsp;{meta.landlordAddress}</p>
         </div>
         <p className="text-sm text-navy-700 italic ml-4 mb-6">
@@ -95,7 +95,7 @@ export default function ContractPreview({ doc, hasCustomClauses, showFull = fals
 
         <div className="ml-4 mb-4 space-y-1 text-sm text-navy-800">
           <p><span className="font-semibold">NAME:</span>&nbsp;&nbsp;{meta.tenantName}</p>
-          <p><span className="font-semibold">NRIC / FIN / Passport No:</span>&nbsp;&nbsp;{meta.tenantNric}</p>
+          <p><span className="font-semibold">Gov't ID / Passport No:</span>&nbsp;&nbsp;{meta.tenantNric}</p>
         </div>
         <p className="text-sm text-navy-700 italic ml-4 mb-8">
           (hereinafter called &ldquo;<strong>the Tenant</strong>&rdquo; which expression shall where the context so
@@ -160,10 +160,10 @@ export default function ContractPreview({ doc, hasCustomClauses, showFull = fals
                     <div>
                       <p className="font-semibold text-navy-700 mb-8">Name</p>
                       <div className="border-b border-slate-800 w-full mb-1" />
-                      <p className="text-xs text-navy-400">Full name as per NRIC</p>
+                      <p className="text-xs text-navy-400">Full name as per government-issued ID</p>
                     </div>
                     <div>
-                      <p className="font-semibold text-navy-700 mb-8">NRIC No.</p>
+                      <p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p>
                       <div className="border-b border-slate-800 w-full mb-1" />
                       <p className="text-xs text-navy-400">Identity number</p>
                     </div>
@@ -181,10 +181,10 @@ export default function ContractPreview({ doc, hasCustomClauses, showFull = fals
                     <div>
                       <p className="font-semibold text-navy-700 mb-8">Name</p>
                       <div className="border-b border-slate-800 w-full mb-1" />
-                      <p className="text-xs text-navy-400">Full name as per NRIC</p>
+                      <p className="text-xs text-navy-400">Full name as per government-issued ID</p>
                     </div>
                     <div>
-                      <p className="font-semibold text-navy-700 mb-8">NRIC No.</p>
+                      <p className="font-semibold text-navy-700 mb-8">Gov't ID No.</p>
                       <div className="border-b border-slate-800 w-full mb-1" />
                       <p className="text-xs text-navy-400">Identity number</p>
                     </div>

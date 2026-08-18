@@ -264,10 +264,10 @@ function WitnessBlock() {
         <View style={styles.witnessBlock}>
           <Text style={styles.witnessLabel}>Name</Text>
           <View style={styles.witnessLine} />
-          <Text style={styles.witnessCaption}>Full name as per NRIC</Text>
+          <Text style={styles.witnessCaption}>Full name as per government-issued ID</Text>
         </View>
         <View style={styles.witnessBlock}>
-          <Text style={styles.witnessLabel}>NRIC No.</Text>
+          <Text style={styles.witnessLabel}>Gov't ID No.</Text>
           <View style={styles.witnessLine} />
           <Text style={styles.witnessCaption}>Identity number</Text>
         </View>
@@ -317,7 +317,7 @@ export default function ContractPDF({ doc }: Props) {
               <Text style={styles.partyValue}>{l.name}</Text>
             </View>
             <View style={styles.partyRow}>
-              <Text style={styles.partyLabel}>NRIC / FIN No:</Text>
+              <Text style={styles.partyLabel}>Gov't ID / Passport No:</Text>
               <Text style={styles.partyValue}>{l.nric}</Text>
             </View>
             {i === 0 && (
@@ -342,7 +342,7 @@ export default function ContractPDF({ doc }: Props) {
               <Text style={styles.partyValue}>{t.name}</Text>
             </View>
             <View style={styles.partyRow}>
-              <Text style={styles.partyLabel}>NRIC / FIN / Passport No:</Text>
+              <Text style={styles.partyLabel}>Gov't ID / Passport No:</Text>
               <Text style={styles.partyValue}>{t.id}</Text>
             </View>
             {i === 0 && (
@@ -416,7 +416,7 @@ export default function ContractPDF({ doc }: Props) {
               </Text>
               <View style={styles.signatureLine} />
               <Text style={styles.signatureName}>{l.name}</Text>
-              <Text style={[styles.witnessLabel, { marginTop: 8, marginBottom: 2, fontSize: 9 }]}>NRIC / FIN No.</Text>
+              <Text style={[styles.witnessLabel, { marginTop: 8, marginBottom: 2, fontSize: 9 }]}>Gov't ID / Passport No.</Text>
               <View style={[styles.witnessLine, { marginBottom: 8 }]} />
               <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Date</Text>
               <View style={[styles.witnessLine, { maxWidth: 140, marginBottom: 0 }]} />
@@ -434,7 +434,7 @@ export default function ContractPDF({ doc }: Props) {
               </Text>
               <View style={styles.signatureLine} />
               <Text style={styles.signatureName}>{t.name}</Text>
-              <Text style={[styles.witnessLabel, { marginTop: 8, marginBottom: 2, fontSize: 9 }]}>NRIC / FIN / Passport No.</Text>
+              <Text style={[styles.witnessLabel, { marginTop: 8, marginBottom: 2, fontSize: 9 }]}>Gov't ID / Passport No.</Text>
               <View style={[styles.witnessLine, { marginBottom: 8 }]} />
               <Text style={[styles.witnessLabel, { marginBottom: 2, fontSize: 9 }]}>Date</Text>
               <View style={[styles.witnessLine, { maxWidth: 140, marginBottom: 0 }]} />
@@ -512,14 +512,14 @@ export default function ContractPDF({ doc }: Props) {
             <Text style={styles.noteNum}>1.</Text>
             <Text style={styles.noteText}>
               <Text style={{ fontFamily: 'Times-Bold' }}>Stamp Duty: </Text>
-              This Agreement must be stamped with BIR within 5 days after the end of the month of signing if executed in Philippines, or within 30 days of receipt if executed overseas. Stamp duty is calculated at 0.4% of the total rent for the lease period.
+              This Agreement must be stamped with the Bureau of Internal Revenue (BIR) within five (5) days after the end of the month of signing if executed in the Philippines, or within thirty (30) days of receipt if executed overseas. Documentary Stamp Tax (DST) is calculated at PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess of PHP 2,000, pursuant to the National Internal Revenue Code (TRAIN Law).
             </Text>
           </View>
           <View style={styles.noteItem}>
             <Text style={styles.noteNum}>2.</Text>
             <Text style={styles.noteText}>
-              <Text style={{ fontFamily: 'Times-Bold' }}>NRIC Verification: </Text>
-              Both parties should verify the identity of the other party against their original NRIC, FIN, or Passport before signing.
+              <Text style={{ fontFamily: 'Times-Bold' }}>Identity Verification: </Text>
+              Both parties should verify the identity of the other party against their original government-issued ID or Passport before signing.
             </Text>
           </View>
           <View style={styles.noteItem}>

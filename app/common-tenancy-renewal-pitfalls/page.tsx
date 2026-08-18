@@ -121,7 +121,7 @@ export default function CommonPitfallsPage() {
             </p>
             <p className="font-semibold text-navy-800 mb-2">How to avoid</p>
             <p className="text-navy-600 text-sm leading-relaxed">
-              Sign a renewal. Either a short addendum or a fresh tenancy. Stamp with BIR within 5 days after the end of the month of signing. The total cost of doing this is the stamp duty (0.4% of total rent) plus 30 minutes of admin. Skipping it has a non-zero chance of costing thousands.
+              Sign a renewal. Either a short addendum or a fresh tenancy. Stamp with BIR within 5 days after the end of the month of signing. The total cost of doing this is the stamp duty (Documentary Stamp Tax — PHP 6.00 first ₱2,000 + ₱2.00/₱1,000) plus 30 minutes of admin. Skipping it has a non-zero chance of costing thousands.
             </p>
           </div>
         </section>

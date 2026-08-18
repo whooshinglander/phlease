@@ -120,7 +120,7 @@ export default function PrivatePropertyRenewalPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">BIR stamp duty, same rate</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                0.4% of total rent for a 1-year renewal, 0.4% of average annual rent for a longer one. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 5 days after the end of the month of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
+                Documentary Stamp Tax — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000 of average annual rent. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 5 days after the end of the month of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">

@@ -68,8 +68,8 @@ export default function ContentSection() {
               </thead>
               <tbody className="divide-y divide-slate-100">
                 <tr><td className="px-4 py-3 text-navy-700">Up to 1 year</td><td className="px-4 py-3 text-navy-700">PHP 6.00 + PHP 2.00 per PHP 1,000 of annual rent</td></tr>
-                <tr><td className="px-4 py-3 text-navy-700">1 to 3 years</td><td className="px-4 py-3 text-navy-700">0.4% of average annual rent</td></tr>
-                <tr><td className="px-4 py-3 text-navy-700">More than 3 years</td><td className="px-4 py-3 text-navy-700">0.4% of average annual rent × 4</td></tr>
+                <tr><td className="px-4 py-3 text-navy-700">1 to 3 years</td><td className="px-4 py-3 text-navy-700">DST: PHP 6.00 first ₱2,000 + ₱2.00/₱1,000 of average annual rent</td></tr>
+                <tr><td className="px-4 py-3 text-navy-700">More than 3 years</td><td className="px-4 py-3 text-navy-700">DST: PHP 6.00 first ₱2,000 + ₱2.00/₱1,000 of average annual rent</td></tr>
               </tbody>
             </table>
           </div>

@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: 'Stamp duty — does it differ between renewal addendum and fresh agreement?',
-    a: "No. Both are stampable documents. The rate is 0.4% of total rent for 1-year leases, or 0.4% of average annual rent for 1–3 year leases. If you stamp a renewal addendum, BIR stamps based on the rent and term in the addendum. If you stamp a fresh new tenancy, BIR stamps based on the new tenancy's rent and term. Either way you pay the same.",
+    a: "No. Both are stampable documents. The rate is the Documentary Stamp Tax — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000. If you stamp a renewal addendum, BIR stamps based on the rent and term in the addendum. If you stamp a fresh new tenancy, BIR stamps based on the new tenancy's rent and term. Either way you pay the same.",
   },
   {
     q: "My existing agreement has a 'right to renew' clause. Do I still sign anything?",

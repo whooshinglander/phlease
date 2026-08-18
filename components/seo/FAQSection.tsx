@@ -9,7 +9,7 @@ const FAQS = [
   },
   {
     q: 'How much does it cost to stamp a tenancy agreement in Philippines?',
-    a: 'Stamp duty is 0.4% of the total rent for leases up to 1 year, or 0.4% of the average annual rent for leases of 1–3 years. For a 2-year lease at $3,000/month, that\'s roughly $288. It must be paid to BIR within 5 days after the end of the month of signing.',
+    a: 'Documentary Stamp Tax (DST) is PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. It must be paid to BIR within 5 days after the end of the month of signing.',
   },
   {
     q: 'Can I renew my tenancy without signing a new agreement?',
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'What is stamp duty on a tenancy agreement in Philippines?',
-    a: "Stamp duty is 0.4% of the total rent for leases up to 1 year; 0.4% of average annual rent for leases of 1–3 years; and 0.4% of 4× the average annual rent for leases over 3 years. It must be paid to BIR within 5 days after the end of the month of signing. The tenant typically bears this cost by convention.",
+    a: "Documentary Stamp Tax (DST) is PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess. It must be paid to BIR within 5 days after the end of the month of signing. The tenant typically bears this cost by convention.",
   },
   {
     q: 'What is a diplomatic clause in a Philippines tenancy agreement?',

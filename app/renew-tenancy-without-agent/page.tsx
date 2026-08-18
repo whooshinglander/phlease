@@ -144,7 +144,7 @@ export default function RenewWithoutAgentPage() {
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">6. Stamp via BIR within 5 days after the end of the month of signing</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Log in to <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Under e-Stamping, choose Lease/Tenancy Agreement, enter the dates, the monthly rent, and pay 0.4% of total rent (1-year lease) or 0.4% of average annual rent (1-3 year lease). The certificate downloads as a PDF, attach it to the signed tenancy. Tenant typically pays unless your agreement says otherwise. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
+                Log in to <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a>. Under e-Stamping, choose Lease/Tenancy Agreement, enter the dates, the monthly rent, and pay the Documentary Stamp Tax — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000. The certificate downloads as a PDF, attach it to the signed tenancy. Tenant typically pays unless your agreement says otherwise. See the <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty page</Link> for worked examples.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
