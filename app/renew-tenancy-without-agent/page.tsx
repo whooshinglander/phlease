@@ -6,7 +6,7 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Renew Your Philippines Tenancy Without an Agent — Step by Step | PhLease',
   description: 'How to handle a Philippines tenancy renewal yourself, no agent. The half-month commission stays in your pocket. Plain English walkthrough, what to watch for, when an agent is still worth it.',
-  keywords: 'renew tenancy without agent singapore, diy tenancy renewal, no agent tenancy renewal, save commission tenancy renewal, self renewal tenancy singapore',
+  keywords: 'renew tenancy without agent philippines, diy tenancy renewal, no agent tenancy renewal, save commission tenancy renewal, self renewal tenancy philippines',
   alternates: { canonical: 'https://phlease.com/renew-tenancy-without-agent' },
   openGraph: {
     title: 'Renew Your Philippines Tenancy Without an Agent — Step by Step',

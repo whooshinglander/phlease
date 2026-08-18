@@ -157,7 +157,7 @@ export default function FormStep4_Terms({ formData, onChange, onNext, onBack }: 
             <p className="text-sm font-medium text-brand-800">Stamp Duty Required by BIR</p>
             <p className="text-xs text-brand-600 mt-0.5">
               Must be stamped within 14 days of signing.{' '}
-              <a href="https://www.iras.gov.sg/taxes/stamp-duty/for-property/renting-a-property/renting-residential-property"
+              <a href="https://www.bir.gov.ph"
                 target="_blank" rel="noopener noreferrer" className="underline font-medium">
                 Calculate on BIR →
               </a>

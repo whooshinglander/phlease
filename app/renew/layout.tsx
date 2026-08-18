@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Renewal of Tenancy Agreement Philippines — residential & Condo | PhLease',
   description: 'Renewal of tenancy agreement in Philippines made easy. Generate a legally structured residential rental renewal or condo renewal agreement in minutes. Free to preview, download from ₱500. No agent needed.',
-  keywords: 'renewal of tenancy agreement singapore, residential rental renewal, renew tenancy agreement singapore, residential tenancy renewal, renew residential rental, tenancy renewal singapore, extend tenancy agreement singapore, tenancy renewal agreement generator, renew lease singapore',
+  keywords: 'renewal of tenancy agreement philippines, residential rental renewal, renew tenancy agreement philippines, residential tenancy renewal, renew residential rental, tenancy renewal philippines, extend tenancy agreement philippines, tenancy renewal agreement generator, renew lease philippines',
   alternates: {
     canonical: 'https://phlease.com/renew',
   },

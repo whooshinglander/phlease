@@ -61,9 +61,9 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 ## Authoritative external references
 
-- [BIR — Stamp duty for leases](https://www.iras.gov.sg/taxes/stamp-duty/for-property/working-out-your-stamp-duty/renting-a-property/stamp-duty-for-leases): Philippines tax authority on tenancy stamp duty.
-- [residential — Renting out residential flat / bedroom](https://www.residential.gov.sg/residential/renting-a-flat-bedroom): residential authoritative subletting rules and approval process.
-- [MOM — passes and permits](https://www.mom.gov.sg/passes-and-permits): For foreign tenant work pass implications.
+- [BIR — Documentary Stamp Tax](https://www.bir.gov.ph): Philippines tax authority on tenancy stamp duty (DST).
+- [BIR e-filing](https://efps.bir.gov.ph): File documentary stamp tax on tenancy agreements.
+- [HLURB / DHSUD](https://dhsud.gov.ph): Philippines housing authority — subletting and residential rental rules.
 
 ## Site policy
 

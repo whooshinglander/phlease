@@ -6,7 +6,7 @@ import Footer from '@/components/ui/Footer'
 export const metadata: Metadata = {
   title: 'Tenancy Renewal vs New Agreement — Which Do You Actually Need? | PhLease',
   description: "If you're keeping the same property and same tenant, you renew. If anything material changes, you might want a fresh new agreement. Here's how to tell.",
-  keywords: 'tenancy renewal vs new agreement, renewal addendum singapore, lease renewal vs new lease, when to sign new tenancy',
+  keywords: 'tenancy renewal vs new agreement, renewal addendum philippines, lease renewal vs new lease, when to sign new tenancy',
   alternates: { canonical: 'https://phlease.com/tenancy-renewal-vs-new-agreement' },
   openGraph: {
     title: 'Tenancy Renewal vs New Agreement — Which Do You Need',

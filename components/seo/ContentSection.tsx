@@ -75,7 +75,7 @@ export default function ContentSection() {
           </div>
           <p>
             Stamp duty is typically borne by the tenant. An unstamped agreement is not admissible as evidence in court — making it legally unenforceable until stamped.{' '}
-            <a href="https://www.iras.gov.sg/taxes/stamp-duty/for-property/renting-a-property/renting-residential-property"
+            <a href="https://www.bir.gov.ph"
               target="_blank" rel="noopener noreferrer"
               className="text-brand-600 underline font-medium">
               Calculate on BIR →
