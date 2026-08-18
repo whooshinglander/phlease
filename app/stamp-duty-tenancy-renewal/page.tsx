@@ -67,7 +67,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Stamp Duty on Tenancy Renewal Philippines — BIR Rates 2026',
-  description: 'Definitive guide to stamp duty on tenancy renewals in Philippines. 0.4% of total rent. Worked examples for residential and condo. When to file with BIR.',
+  description: 'Definitive guide to stamp duty on tenancy renewals in Philippines. Documentary Stamp Tax (DST) — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000. Worked examples for residential and condo. When to file with BIR.',
   url: 'https://phlease.com/stamp-duty-tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
@@ -110,7 +110,7 @@ export default function StampDutyRenewalPage() {
             Stamp Duty on Tenancy Renewal in Philippines
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-2xl mx-auto mb-3">
-            Yes — every tenancy renewal in Philippines needs to be stamped with BIR. The rate is <strong className="text-navy-700">0.4% of total rent</strong> (1-year leases) or <strong className="text-navy-700">0.4% of average annual rent</strong> (1–3 year leases). Same as a new tenancy.
+            Yes — every tenancy renewal in Philippines needs to be stamped with BIR. The rate is the Documentary Stamp Tax: <strong className="text-navy-700">PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 for every PHP 1,000 or fractional part thereof in excess</strong>. Same as a new tenancy.
           </p>
           <p className="text-navy-400 text-sm">
             File within <strong>14 days</strong> of signing. Updated for 2026 BIR rates.
@@ -123,7 +123,7 @@ export default function StampDutyRenewalPage() {
             <h2 className="text-lg font-bold text-navy-800 mb-4">TL;DR</h2>
             <ul className="space-y-2 text-navy-600 text-sm">
               <li>✓ <strong>Yes you need to stamp the renewal.</strong> Every renewal is a fresh stampable document.</li>
-              <li>✓ <strong>Rate: 0.4% of total rent</strong> for 1-year leases, or 0.4% of average annual rent for 1–3 year leases.</li>
+              <li>✓ <strong>Rate: Documentary Stamp Tax</strong> — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000 thereafter.</li>
               <li>✓ <strong>Tenant typically pays</strong> by Philippines convention (the renewal can specify otherwise).</li>
               <li>✓ <strong>14-day filing window</strong> from signing. Late stamping incurs penalty of ₱500 (≤3 months late) or 4× duty (&gt;3 months late).</li>
               <li>✓ <strong>Same rate for residential and condo</strong> — only rent and lease length change the duty.</li>

@@ -22,7 +22,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 - [Renewing a Philippines tenancy](https://phlease.com/tenancy-renewal): Definitive guide to renewing an existing Philippines tenancy. When to renew, what changes, stamp duty on renewals.
 - [residential tenancy renewal guide](https://phlease.com/residential-tenancy-renewal-guide): residential-specific renewal walkthrough — residential approval window, addendum vs fresh tenancy, foreign tenant pass expiry, when to renew vs find a new tenant.
 - [Renewal vs new agreement](https://phlease.com/tenancy-renewal-vs-new-agreement): Quick test for whether you sign a renewal addendum, a fresh new tenancy, or let the lease lapse to periodic.
-- [Stamp duty on tenancy renewals](https://phlease.com/stamp-duty-tenancy-renewal): BIR stamp duty on renewals, rate is 0.4% of total rent (1-yr leases) or 0.4% of average annual rent (1-3 yr leases). Worked examples for residential and condo. 14-day filing window.
+- [Stamp duty on tenancy renewals](https://phlease.com/stamp-duty-tenancy-renewal): BIR Documentary Stamp Tax on renewals — PHP 6.00 for the first PHP 2,000 of annual rent plus PHP 2.00 per PHP 1,000. Worked examples for residential and condo. 14-day filing window.
 - [Rent increase on renewal — what's reasonable](https://phlease.com/rent-increase-tenancy-renewal): Philippines has no rent control. Benchmarking via  Rental Index, leverage analysis, typical 3-7% in stable markets, up to 15% in hot markets.
 - [Diplomatic clause in tenancy renewals](https://phlease.com/diplomatic-clause-tenancy-renewal): What it is, who qualifies (EP/S Pass/WP holders), typical 12+2 structure, when to keep / drop / modify on renewal.
 - [Security deposit on tenancy renewal](https://phlease.com/security-deposit-tenancy-renewal): Deposit usually carries over. Top-up math when rent increases. Partial refund when going from 2-year to 1-year. Documenting the carryover.
@@ -52,8 +52,8 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 ## Stamp duty (definitive — BIR rates 2026)
 
-- Lease ≤ 1 year: 0.4% of total rent.
-- Lease 1–3 years: 0.4% of average annual rent.
+- Lease ≤ 1 year: DST PHP 6.00 for first PHP 2,000 of annual rent + PHP 2.00 per PHP 1,000.
+- Lease 1–3 years: DST on average annual rent — PHP 6.00 for first PHP 2,000 + PHP 2.00 per PHP 1,000.
 - File with BIR within 14 days of signing (30 days if signed overseas).
 - Same rate applies to renewals as to new tenancies.
 - Same rate applies to residential and private property.
