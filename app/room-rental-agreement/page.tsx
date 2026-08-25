@@ -4,12 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Free Room Rental Agreement Generator Philippines | PhLease',
+  title: 'Room Rental Agreement Generator Philippines | PhLease',
   description: 'Generate a free room rental agreement for Philippines condos, apartments, and private property in minutes. Legally structured, free to preview, download from ₱500.',
   keywords: 'room rental agreement Philippines, room rental agreement generator Philippines free, room rental agreement template, Philippines room rental agreement template, free room rental agreement Philippines, room tenancy agreement Philippines',
   alternates: { canonical: 'https://phlease.com/room-rental-agreement' },
   openGraph: {
-    title: 'Free Room Rental Agreement Generator Philippines | PhLease',
+    title: 'Room Rental Agreement Generator Philippines | PhLease',
     description: 'Generate a Philippines room rental agreement for condos, apartments, and private property. Free to preview, download from ₱500.',
     url: 'https://phlease.com/room-rental-agreement',
     siteName: 'PhLease',
@@ -62,7 +62,7 @@ export default function RoomRentalPage() {
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Room Rental</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Free Room Rental Agreement<br className="hidden sm:block" /> Generator Philippines
+            Room Rental Agreement<br className="hidden sm:block" /> Generator Philippines
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-xl mx-auto mb-8">
             Generate a Philippines room rental agreement for condos, apartments, and private property — free to preview, download from <strong className="text-navy-700">₱500</strong>.

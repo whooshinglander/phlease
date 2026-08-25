@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Residential Lease Agreement Template Philippines (Free Download) | PhLease',
-  description: 'Free residential lease agreement template for Philippines. Generate your condo, apartment, or house & lot lease in minutes, preview free, and download the PDF from ₱500.',
+  title: 'Residential Lease Agreement Template Philippines | PhLease',
+  description: 'Residential lease agreement template for Philippines. Generate your condo, apartment, or house & lot lease in minutes, preview free, and download the PDF from ₱500.',
   keywords: 'residential lease agreement philippines, lease agreement template free philippines, condo lease agreement philippines, apartment rental agreement philippines, house and lot lease philippines, free lease agreement download philippines, contract of lease philippines, tenancy agreement philippines',
   alternates: { canonical: 'https://phlease.com/private-property-tenancy-agreement' },
   openGraph: {
-    title: 'Residential Lease Agreement Template Philippines (Free Download) | PhLease',
-    description: 'Free residential lease agreement template for Philippines. Generate your agreement in minutes, preview free, download PDF from ₱500.',
+    title: 'Residential Lease Agreement Template Philippines | PhLease',
+    description: 'Residential lease agreement template for Philippines. Generate your agreement in minutes, preview free, download PDF from ₱500.',
     url: 'https://phlease.com/private-property-tenancy-agreement',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -54,7 +54,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Residential Lease Agreement Template Philippines (Free Download)',
+  headline: 'Residential Lease Agreement Template Philippines',
   description: 'Complete guide to residential lease agreements in Philippines. Stamp duty, clauses, and how to generate one online.',
   url: 'https://phlease.com/private-property-tenancy-agreement',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
@@ -72,7 +72,7 @@ export default function LeaseAgreementPage() {
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Residential Lease</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Residential Lease Agreement Template Philippines<br className="hidden sm:block" /> (Free Download)
+            Residential Lease Agreement Template Philippines<br className="hidden sm:block" />
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-xl mx-auto mb-8">
             Generate a free residential lease agreement for your condo, apartment, or house &amp; lot. Covers all standard clauses, free to preview, and download the PDF from <strong className="text-navy-700">₱500</strong>. Takes under 5 minutes.
@@ -117,7 +117,7 @@ export default function LeaseAgreementPage() {
           <h2 className="text-lg font-bold text-navy-800 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Free Philippines tenancy agreement template for condo, apartment, and room rental.' },
+              { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Philippines tenancy agreement template for condo, apartment, and room rental.' },
               { href: '/room-rental-agreement', label: 'Room Rental Agreement', desc: 'Room rental agreement for condo or apartment.' },
               { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'Renew your lease agreement in the Philippines.' },
               { href: '/lease-agreement', label: 'Lease Agreement Guide', desc: 'Complete guide to Philippines lease agreements.' },

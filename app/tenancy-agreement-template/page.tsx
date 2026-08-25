@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tenancy Agreement Template Philippines — Free Download',
-  description: 'Download a free Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable Word/PDF format.',
+  title: 'Tenancy Agreement Template Philippines — Instant PDF',
+  description: 'Download a Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable Word/PDF format.',
   keywords: 'tenancy agreement template Philippines free download, Philippines tenancy agreement template, rental agreement template Philippines, free tenancy agreement template Philippines,  tenancy agreement template, tenancy agreement Philippines download, residential tenancy agreement template',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-template' },
   openGraph: {
-    title: 'Tenancy Agreement Template Philippines — Free Download',
-    description: 'Download a free Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable format.',
+    title: 'Tenancy Agreement Template Philippines — Instant PDF',
+    description: 'Download a Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable format.',
     url: 'https://phlease.com/tenancy-agreement-template',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -56,7 +56,7 @@ const comparison = [
   { feature: 'Guided step-by-step form', template: false, generator: true },
   { feature: 'Residential-specific clauses', template: false, generator: true },
   { feature: 'Diplomatic clause auto-included', template: false, generator: true },
-  { feature: 'Free to use', template: true, generator: true },
+  { feature: 'No signup required', template: true, generator: true },
   { feature: 'Printable PDF output', template: true, generator: true },
   { feature: 'You choose which clauses to include', template: true, generator: false },
   { feature: 'Manual data entry into blanks', template: true, generator: false },
@@ -71,7 +71,7 @@ export default function TenancyTemplatePage() {
 
         {/* Hero */}
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
-          <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Free Template</div>
+          <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">PDF Template</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
             Philippines Tenancy Agreement Template
           </h1>

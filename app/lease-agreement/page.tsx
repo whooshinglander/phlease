@@ -92,7 +92,7 @@ export default function TenancyAgreementPhilippinesPage() {
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
           <div className="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">Philippines Tenancy Agreement</div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Tenancy Agreement Philippines PDF<br className="hidden sm:block" /> — Free Generator
+            Tenancy Agreement Philippines PDF<br className="hidden sm:block" /> — Generator
           </h1>
           <p className="text-navy-500 text-base sm:text-lg max-w-2xl mx-auto mb-8">
             Create a legally structured tenancy agreement for any Philippines property — condos, apartments, houses, or room rentals. Free to preview. Download a clean, print-ready PDF from ₱500. No lawyer required.

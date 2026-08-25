@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free Tenancy Agreement Template Philippines | Download PDF',
+    title: 'Tenancy Agreement Template Philippines | Download PDF',
     description: 'Tenancy agreement template. Generate in minutes, preview free, download PDF from ₱500.',
     images: ['https://phlease.com/opengraph-image'],
   },

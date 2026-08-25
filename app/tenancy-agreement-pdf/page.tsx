@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Philippines Tenancy Agreement PDF — Free Download 2026 | PhLease',
-  description: 'Download a free Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026. Generate, customise and download instantly.',
+  title: 'Philippines Tenancy Agreement PDF — Instant Download | PhLease',
+  description: 'Download a Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026. Generate, customise and download instantly.',
   keywords: 'tenancy agreement philippines pdf, tenancy agreement pdf philippines, philippines tenancy agreement pdf download, rental agreement philippines pdf free download',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-pdf' },
   openGraph: {
-    title: 'Philippines Tenancy Agreement PDF — Free Download 2026 | PhLease',
-    description: 'Download a free Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026.',
+    title: 'Philippines Tenancy Agreement PDF — Instant Download | PhLease',
+    description: 'Download a Philippines tenancy agreement PDF. Standard tenancy agreement for condo, apartment, and house rentals, updated for 2026.',
     url: 'https://phlease.com/tenancy-agreement-pdf',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -55,7 +55,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to Get a Philippines Tenancy Agreement PDF',
-  description: 'Generate and download a free Philippines tenancy agreement as a PDF.',
+  description: 'Generate and download a Philippines tenancy agreement as a PDF.',
   step: [
     { '@type': 'HowToStep', name: 'Enter property details', text: 'Input the full address and property type (condo, apartment, house, or room rental).' },
     { '@type': 'HowToStep', name: 'Add parties and terms', text: 'Fill in landlord and tenant names, government-issued ID numbers, rent amount, deposit, and tenancy duration.' },
@@ -86,9 +86,9 @@ export default function TenancyAgreementPDFPage() {
       <main className="flex-1">
         {/* Hero */}
         <section className="max-w-3xl mx-auto px-4 py-14 text-center">
-          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wide mb-3">Free Download</p>
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wide mb-3">Download</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
-            Download Philippines Tenancy Agreement PDF (Free)
+            Download Philippines Tenancy Agreement PDF
           </h1>
           <p className="text-slate-600 text-lg mb-8 max-w-2xl mx-auto">
             Generate a fully customised Philippines tenancy agreement and download it as a PDF instantly. Covers condo, apartment, house, and room rental. Updated for 2026.
