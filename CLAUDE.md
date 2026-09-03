@@ -16,7 +16,8 @@ Next.js 14 App Router (app/), TypeScript, Tailwind CSS, Stripe, Brevo email, Ver
 ## Known gotchas
 - This repo uses `app/` not `src/app/` — flat App Router structure.
 - PDF generation happens server-side — do not move to client-side.
-- Philippines law context — all clauses reference Philippines Residential Tenancy Act. Do not adapt for other jurisdictions.
+- Philippines law context — clauses reference the **Civil Code of the Philippines (Title VIII, Lease, Arts. 1643–1688)**, **RA 9653 (Rent Control Act — ₱10k/₱5k thresholds, 7% cap, extended by DHSUD NHSB Res. 2024-01)**, and **TRAIN Law (RA 10963) DST (₱6 first ₱2,000 + ₱2/₱1,000, BIR Form 2080 within 5 days after month-end)**. There is NO "Philippines Residential Tenancy Act" — do not cite one. Do not adapt for other jurisdictions.
+- History: this site was cloned from sgtenancy. Two contamination sweeps done (2026-08-16 rates/strings, 2026-09-03 whole pages). Before adding/editing any legal copy, grep the page for SG concepts (HDB, MCST, IRAS, NRIC, GCB, "Residential" as a proper noun) — string-grep alone misses whole-page concept contamination.
 
 ## Deploy
-`VERCEL_TOKEN=$(security find-generic-password -a helios -s vercel_token -w) vercel --yes --prod`
+`VERCEL_TOKEN=$(grep '^VERCEL_TOKEN=' ~/.helios/.env | cut -d'=' -f2-) vercel --yes --prod`

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-template' },
   openGraph: {
     title: 'Tenancy Agreement Template Philippines — Instant PDF',
-    description: 'Download a Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable format.',
+    description: 'Download a Philippines tenancy agreement template. Covers house & lot, condo, room rental. BIR stamp-duty ready, editable format.',
     url: 'https://phlease.com/tenancy-agreement-template',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -54,7 +54,7 @@ const faqSchema = {
 const comparison = [
   { feature: 'Customised to your property', template: false, generator: true },
   { feature: 'Guided step-by-step form', template: false, generator: true },
-  { feature: 'Residential-specific clauses', template: false, generator: true },
+  { feature: 'Property-type clauses (condo / house & lot)', template: false, generator: true },
   { feature: 'Diplomatic clause auto-included', template: false, generator: true },
   { feature: 'No signup required', template: true, generator: true },
   { feature: 'Printable PDF output', template: true, generator: true },

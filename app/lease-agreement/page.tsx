@@ -67,7 +67,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Tenancy Agreement Philippines — Complete Guide 2026',
-  description: 'Everything landlords and tenants in Philippines need to know about tenancy agreements — stamp duty, deposits, Residential rules, diplomatic clause, and how to generate one online.',
+  description: 'Everything landlords and tenants in the Philippines need to know about lease contracts — BIR stamp duty, deposits, condominium rules, diplomatic clause, and how to generate one online.',
   url: 'https://phlease.com/lease-agreement',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
 }
@@ -212,8 +212,8 @@ export default function TenancyAgreementPhilippinesPage() {
           <h2 className="text-lg font-bold text-navy-800 mb-4">More Philippines Tenancy Resources</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement Guide', desc: 'Residential-specific clauses, approval requirements, and occupancy rules.' },
-              { href: '/room-rental-agreement', label: 'Room Rental Agreement Guide', desc: 'Room rentals, shared facilities, and Residential room rules.' },
+              { href: '/residential-tenancy-agreement', label: 'Residential Tenancy Agreement Guide', desc: 'House-and-lot and condo lease clauses, stamp duty, and occupancy rules.' },
+              { href: '/room-rental-agreement', label: 'Room Rental Agreement Guide', desc: 'Room rentals, shared facilities, and condominium house rules.' },
               { href: '/tenancy-agreement-template', label: 'Tenancy Agreement Template', desc: 'Why a generator beats a blank template.' },
               { href: '/tenancy-renewal', label: 'Tenancy Renewal Philippines', desc: 'How to renew a tenancy agreement in Philippines.' },
               { href: '/faq', label: 'Tenancy Agreement FAQ', desc: 'Stamp duty, deposits, diplomatic clause, and more.' },
