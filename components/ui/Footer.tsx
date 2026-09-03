@@ -36,6 +36,12 @@ export default function Footer() {
           <a href="mailto:whooshinglander@gmail.com" className="text-sm text-navy-500 hover:text-brand-700 transition-colors font-medium">Contact</a>
         </div>
 
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-6">
+          <a href="https://sgtenancy.com" className="text-sm text-navy-400 hover:text-brand-700 transition-colors">Singapore → SG Tenancy</a>
+          <a href="https://sanyathai.com" className="text-sm text-navy-400 hover:text-brand-700 transition-colors">Thailand → SanyaThai</a>
+          <a href="https://sewa2u.com" className="text-sm text-navy-400 hover:text-brand-700 transition-colors">Malaysia → Sewa2u</a>
+        </div>
+
         <p className="text-xs text-navy-400 text-center mb-1.5 max-w-lg mx-auto">
           Not legal advice. This tool generates tenancy agreements for reference only. Consult a qualified lawyer for complex tenancy matters.
         </p>
