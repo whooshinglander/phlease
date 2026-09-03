@@ -109,9 +109,9 @@ export default function RentIncreaseRenewalPage() {
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">Philippines has no rent control</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">How much can rent go up at renewal?</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-3">
-            This is the part that surprises people moving from London, New York, or Sydney. Philippines does not cap renewal rent increases. There is no rent stabilisation board, no fair-rent tribunal, no annual percentage limit. The Residential Tenancies legal framework governs deposits, evictions, and stamp duty. It does not set or police rent levels.
+            For most Philippine rentals, the market decides. There is no rent stabilisation board and no fair-rent tribunal for ordinary units — when your fixed term ends, the landlord can propose any number, and you accept, counter, or walk. One important exception: <strong className="text-navy-800">RA 9653 (the Rent Control Act, as extended)</strong> caps increases at <strong className="text-navy-800">7% per year</strong> while the same tenant stays in covered low-rent units — monthly rent up to ₱10,000 in the NCR and other highly urbanized cities, up to ₱5,000 in other areas.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed mb-3">
             What this means in practice: when your existing tenancy ends, the landlord can ask for whatever number they want. You can accept, counter, or walk. The only thing they cannot do is raise the rent during your fixed-term lease (unless your contract specifically allows it, which most don&apos;t).

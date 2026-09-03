@@ -5,8 +5,8 @@ import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'Tenancy Agreement Template Philippines — Instant PDF',
-  description: 'Download a Philippines tenancy agreement template. Covers Residential, condo, room rental. -compliant, editable Word/PDF format.',
-  keywords: 'tenancy agreement template Philippines free download, Philippines tenancy agreement template, rental agreement template Philippines, free tenancy agreement template Philippines,  tenancy agreement template, tenancy agreement Philippines download, residential tenancy agreement template',
+  description: 'Download a Philippines tenancy agreement template. Covers house & lot, condo, room rental. BIR stamp-duty ready, editable Word/PDF format.',
+  keywords: 'tenancy agreement template Philippines free download, Philippines tenancy agreement template, rental agreement template Philippines, free tenancy agreement template Philippines, contract of lease template Philippines, tenancy agreement Philippines download, residential tenancy agreement template',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-template' },
   openGraph: {
     title: 'Tenancy Agreement Template Philippines — Instant PDF',
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'Where can I get a free tenancy agreement template in Philippines?',
-    a: "The  () provides a basic residential tenancy agreement template as a PDF. PhLease goes further — instead of a blank template you fill in manually, our guided form generates a fully customised agreement based on your specific property, parties, and terms. Free to preview before you pay.",
+    a: "There is no single official government template for residential leases in the Philippines — a lease is valid in any written form both parties accept. PhLease goes further than a blank template you fill in manually: our guided form generates a fully customised agreement based on your specific property, parties, and terms. Free to preview before you pay.",
   },
   {
-    q: 'Is the  tenancy agreement template mandatory in Philippines?',
-    a: "No. The  template is a guide, not a legal requirement. Landlords and tenants in Philippines are free to use any written agreement they both accept, provided it covers the essential terms. Using a purpose-built generator ensures nothing important is missed.",
+    q: 'Is an official tenancy agreement template mandatory in the Philippines?',
+    a: "No. Any written agreement is valid as long as it covers the essential terms — the property, the price, and the period. There is no mandated government form. Using a purpose-built generator ensures nothing important is missed.",
   },
   {
     q: 'What is the difference between residential and private property tenancy agreements?',
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'How do I fill in a Philippines tenancy agreement template?',
-    a: "A complete tenancy agreement needs: full address of the property, full legal names and NRIC/passport numbers of both landlord and tenant, tenancy start and end dates, monthly rental amount, security deposit (1–2 months), notice period, any diplomatic clause, and an inventory list if the unit is furnished. Using a generator ensures all mandatory fields are included.",
+    a: "A complete tenancy agreement needs: full address of the property, full legal names and government ID details (passport, driver's license, or UMID) of both landlord and tenant, tenancy start and end dates, monthly rental amount, security deposit (1–2 months), notice period, any diplomatic clause, and an inventory list if the unit is furnished. Using a generator ensures all mandatory fields are included.",
   },
   {
     q: 'Do I need a lawyer for a tenancy agreement in Philippines?',
@@ -113,24 +113,24 @@ export default function TenancyTemplatePage() {
 
         {/* residential vs Condo vs Room Rental */}
         <section className="max-w-3xl mx-auto px-4 pb-12">
-          <h2 className="text-xl font-bold text-navy-800 mb-5 text-center">Residential vs Condo vs Room Rental Templates</h2>
+          <h2 className="text-xl font-bold text-navy-800 mb-5 text-center">Condo vs House &amp; Lot vs Room Rental Templates</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link href="/residential-tenancy-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏠</div>
-              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Residential Flat</h3>
-              <p className="text-sm text-navy-500">Requires Residential subletting approval, occupancy caps (6–9 persons), minimum 6-month tenancy. Additional clauses for compliance.</p>
+              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">House &amp; Lot / Apartment</h3>
+              <p className="text-sm text-navy-500">Standard residential lease under the Civil Code. Deposit, repairs, termination, and notice clauses written in. Stamp-duty ready.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Residential Tenancy Agreement →</p>
             </Link>
             <Link href="/" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🏢</div>
-              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Private Condo / Landed</h3>
-              <p className="text-sm text-navy-500">No Residential approval needed. Includes air-con servicing, condo management fees, and maintenance clauses. More flexibility on terms.</p>
+              <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Condo Unit</h3>
+              <p className="text-sm text-navy-500">Includes condo corporation subletting checks, association dues, and maintenance clauses. More flexibility on terms.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Generate Now →</p>
             </Link>
             <Link href="/room-rental-agreement" className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hover:border-brand-300 hover:shadow-md transition-all group">
               <div className="text-3xl mb-3">🛏️</div>
               <h3 className="font-semibold text-navy-800 mb-1 group-hover:text-brand-600">Room Rental</h3>
-              <p className="text-sm text-navy-500">For single rooms in Residential or private property. Includes house rules, shared facilities, and shorter minimum periods.</p>
+              <p className="text-sm text-navy-500">For single rooms in condos or private houses. Includes house rules, shared facilities, and shorter minimum periods.</p>
               <p className="text-xs text-brand-600 font-medium mt-3">Room Rental Agreement →</p>
             </Link>
           </div>

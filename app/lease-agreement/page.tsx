@@ -41,7 +41,7 @@ const FAQS = [
   },
   {
     q: 'Can I use a free tenancy agreement generator in Philippines?',
-    a: 'Yes. There is no legal requirement to use a lawyer or specific government template for Residential tenancies. The  () provides a reference template, but using a generator like PhLease ensures all clauses are correctly filled in for your property and parties.',
+    a: 'Yes. There is no legal requirement to use a lawyer or a specific government template for residential tenancies in the Philippines — a lease is valid once the parties agree on the property and the price. Using a generator like PhLease ensures all clauses are correctly filled in for your property and parties.',
   },
   {
     q: 'What is the difference between a tenancy agreement and a lease in Philippines?',
@@ -233,7 +233,7 @@ export default function TenancyAgreementPhilippinesPage() {
             A <strong>rental agreement in Philippines</strong> is the same as a tenancy agreement — the terms are used interchangeably. Whether you call it a rental agreement, lease agreement, or tenancy agreement, it is the legally binding contract between a landlord and tenant setting out the terms of occupation of a property.
           </p>
           <p className="text-navy-600 mb-4 leading-relaxed">
-            In Philippines, residential lease agreements are governed by the Civil Code of the Philippines Articles 1642-1761 and the Rent Control Act RA 9653 (for units with monthly rent ≤₱10,000). Key requirements include a minimum tenancy period of 1 year (standard market practice), proper Documentary Stamp Tax payment to BIR within 5 days after the end of the month of signing, and compliance with any condo corporation rules on subletting.
+            In the Philippines, residential lease agreements are governed by the Civil Code of the Philippines (Title VIII, Articles 1643–1688, Lease) and the Rent Control Act RA 9653 (for units with monthly rent ≤₱10,000 in the NCR and highly urbanized cities). Key requirements include documentary stamp tax paid to the BIR within 5 days after the end of the month of signing, and compliance with any condo corporation rules on subletting. A 1-year term is standard market practice, not a legal minimum.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[

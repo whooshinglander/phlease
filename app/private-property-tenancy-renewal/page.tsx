@@ -4,13 +4,12 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Condo & Residential Lease Renewal in Philippines — Complete Guide | PhLease',
-  description: 'Condo and residential lease renewal in Philippines: condo corporation rules, BIR stamping, 1 vs 2-year leases, agent commission. Plain English.',
-  keywords: 'lease renewal philippines, condo lease renewal philippines, tenancy renewal philippines, residential lease renewal, condo rental renewal, philippines tenancy renewal guide',
+  title: 'Condo & Private Property Tenancy Renewal Philippines | PhLease',
+  description: 'Renewing a condo or house-and-lot lease in the Philippines: condominium corporation and HOA rules, BIR stamp duty, foreign-owner tax, and 1 vs 2-year renewal norms.',
   alternates: { canonical: 'https://phlease.com/private-property-tenancy-renewal' },
   openGraph: {
-    title: 'Condo & Residential Lease Renewal in Philippines — Complete Guide',
-    description: 'Condo and residential lease renewal: condo corporation rules, BIR stamping, agent commission. Plain English.',
+    title: 'Condo & Private Property Tenancy Renewal in the Philippines',
+    description: 'Condominium corporation rules, BIR stamp duty, foreign-owner tax, and renewal norms for private property leases.',
     url: 'https://phlease.com/private-property-tenancy-renewal',
     siteName: 'PhLease',
     locale: 'en_PH',
@@ -20,36 +19,32 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    q: "How is renewing a condo lease different from renewing an residential lease?",
-    a: "For private property renewals in the Philippines, there is no central housing authority approval needed. The renewal is governed by the Civil Code and the existing lease terms. For condominium units, check the condo corporation's rules on tenant registration and renewal procedures. The renewal mechanics (new agreement, BIR DST payment, deposit handling) follow standard practice.",
+    q: 'How is renewing a condo lease different from renewing a house-and-lot lease?',
+    a: 'The contract mechanics are the same — the Civil Code governs both, and neither needs government approval. The difference is the building: a condominium unit is governed by the condominium corporation under RA 4720 (the Condominium Act), whose master deed, by-laws, and house rules may require tenant registration or set leasing conditions. A house in a subdivision answers to the homeowners association under PD 957. Check those rules before the new term, not after.',
   },
   {
-    q: "Does the MCST charge move-in or move-out fees again on a renewal?",
-    a: "No. MCST move-in/move-out fees, deposits for lift padding, and security registration are tied to a tenant physically moving in or out — not to the paperwork. If the same tenant is staying, none of that re-triggers. You only deal with MCST again when there's a change of occupant, when renovation works are planned, or when a tenant wants new car park decals or season parking. Tell your tenant the renewal doesn't reset their facility access either; existing gym/pool cards stay live.",
+    q: 'Does the condo administration charge move-in or move-out fees again on a renewal?',
+    a: 'No. Administration move-in/move-out charges, elevator-padding deposits, and security registration are tied to a physical move — not to paperwork. Same tenant staying means none of that re-triggers. You deal with the management office again when there is a change of occupant, renovation works, or new parking access. Tell your tenant the renewal does not reset their facility access.',
   },
   {
-    q: "I'm a foreign owner renting out my condo. What's this 22% withholding tax I keep hearing about?",
-    a: "For foreign landlords in the Philippines, rental income is subject to 15% final withholding tax (if the landlord is a non-resident foreign corporation) or graduated rates for individual non-residents. The tenant or property manager typically withholds the tax and remits it to the BIR. Consult a tax professional for your specific situation.",
+    q: 'I\'m a foreign owner renting out my condo. What tax applies to my rental income?',
+    a: 'If you are a non-resident foreign person — an individual not engaged in trade or business in the Philippines, or a foreign corporation — Philippine-source rental income is generally subject to a 25% final withholding tax on the gross rent, which the tenant or property manager withholds and remits to the BIR. If you become a Philippine tax resident, domestic income tax rules apply instead. Rates and filings are personal to your situation — confirm with a Philippine tax professional before renewal.',
   },
   {
-    q: "Are 1-year or 2-year private leases more common on renewal?",
-    a: "2-year is the default for private property in Philippines, and most renewals follow the original lease length. Tenants who plan to stay long-term prefer 2-year because it locks in rent and saves another round of stamp duty. Landlords prefer 2-year when the rental market is soft (locks in income) and 1-year when rents are rising (more frequent re-pricing). With MAS keeping rates higher into 2026, a lot of landlords are leaning toward 2-year renewals just to stabilise cash flow against the mortgage.",
+    q: 'Are 1-year or 2-year private leases more common on renewal?',
+    a: '1-year is the most common residential term, and most renewals follow the original length. Two-year leases appear more at the higher end of the condo market and for expat or corporate tenants who want rent stability. A longer term also means one fewer round of stamp duty. What fits depends on your rent trajectory: locking rent feels good when rents are flat and bad when they are rising.',
   },
   {
-    q: "Do I still need an agent for a renewal?",
-    a: "Most landlords don't, especially if the tenant is staying and terms barely change. Agent commission for a renewal is usually half a month's rent, sometimes less, and what you're paying for is the paperwork plus a buffer if anything goes sideways. If you and the tenant talk directly and you're comfortable handling the agreement and BIR stamping, DIY is fine. If the renewal involves rent changes, new occupants, or the tenant wants to renegotiate big chunks of the original lease, an agent or a lawyer earns their fee.",
+    q: 'Do I still need an agent for a renewal?',
+    a: 'Most landlords don\'t, especially if the tenant is staying and terms barely change. Agent commission for a renewal is usually half a month\'s rent, sometimes less, and what you are paying for is paperwork plus a buffer if anything goes sideways. If you and the tenant deal directly and you are comfortable with the agreement and BIR stamping, DIY is fine. If the renewal involves rent changes, new occupants, or renegotiated terms, an agent or lawyer earns their fee.',
   },
   {
-    q: "Does my tenant keep gym and pool access on renewal?",
-    a: "Yes, automatically. Facility access is tied to occupancy, not the tenancy document. As long as the tenant is still registered with the MCST as the unit's occupant, their season pass / facility card / pool wristband stays active through the renewal. If their access card has an expiry that falls during the new term, they renew it directly with the condo management office — that's a separate process from your tenancy renewal and doesn't involve you.",
+    q: 'Does my tenant keep gym and pool access on renewal?',
+    a: 'Facility access is tied to occupancy and the tenant\'s registration with the condominium corporation, not to the tenancy document. As long as the tenant remains registered as the unit\'s occupant, access normally continues through the renewal. If an access card expires inside the new term, the tenant renews it with the management office directly — separate from your tenancy paperwork.',
   },
   {
-    q: "The condo is talking about en-bloc. Can I still renew?",
-    a: "Yes, but disclose. Philippines en-bloc sales take 12-24 months from collective sale agreement to actual handover, so a 1 or 2-year renewal is usually fine. What you should do: write an en-bloc clause into the renewal letting either party terminate with 2-3 months notice if a Sale & Purchase Agreement is signed, with prorated rent and a full deposit return. Tenants accept this if they understand the timeline. Hiding it and getting hit with a forced termination later is how you end up in a small-claims dispute over their moving costs.",
-  },
-  {
-    q: "SRX or PropertyGuru says my unit could rent for $1,000 more. Should I push for that on renewal?",
-    a: "Treat the portal estimate as a ceiling, not a target. Those numbers are based on recent transacted leases and lean optimistic — they don't price in the cost of finding a new tenant, vacancy weeks, agent commission, or the small but real risk of getting a worse tenant. If the gap is under 10%, holding rent flat or asking for a 3-5% bump usually beats chasing the headline number. If the gap is 15%+ and your tenant won't budge, that's when re-listing makes sense. Run the numbers on net income after costs, not gross rent.",
+    q: 'The condo association changed its house rules mid-lease. Does that affect my renewal?',
+    a: 'Amendments to the master deed, by-laws, or house rules bind unit owners and their occupants as adopted, so a change during your term carries into the renewal — for example, new move-in schedules, pet rules, or short-term rental restrictions. At renewal, re-check the current rules with the management office and, where the rules changed materially, reflect them in the renewal or an updated annex so the contract and the building rules match.',
   },
 ]
 
@@ -66,12 +61,12 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Private Property Tenancy Renewal in Philippines — Condo, EC, Landed',
-  description: 'Private property rental renewal in Philippines: MCST bylaws, non-resident withholding tax, 1 vs 2-year leases, agent commission norms.',
+  headline: 'Condo & Private Property Tenancy Renewal in the Philippines',
+  description: 'Renewing a condo or subdivision lease: condominium corporation and HOA rules, BIR stamp duty, foreign-owner tax, and renewal norms.',
   url: 'https://phlease.com/private-property-tenancy-renewal',
   publisher: { '@type': 'Organization', name: 'PhLease', url: 'https://phlease.com' },
   datePublished: '2026-05-04',
-  dateModified: '2026-05-04',
+  dateModified: '2026-09-03',
 }
 
 const breadcrumbSchema = {
@@ -98,93 +93,89 @@ export default function PrivatePropertyRenewalPage() {
             Private Property Renewal
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-navy-800 mb-5 leading-tight">
-            Private Property Tenancy Renewal in Philippines
+            Condo &amp; Private Property Tenancy Renewal in the Philippines
           </h1>
           <p className="text-navy-600 text-base sm:text-lg leading-relaxed mb-3">
-            Condo, executive condo, landed, GCB — all of these fall under "private property" for renewal purposes, and the rules are different from Residential. There's no Residential to ask permission from, but the MCST is its own thing, and if you're a foreign owner there's a tax piece you really don't want to skip. This page is the version for landlords renewing a private lease.
+            Condo unit, townhouse, or house and lot — none of these need government approval to renew a lease. The contract side is governed by the Civil Code and whatever your original lease says. The building side is where private property gets its own rules: the condominium corporation or homeowners association, and if you are a foreign owner, a tax piece you really don&apos;t want to skip. This page is the version for landlords renewing a private lease.
           </p>
           <p className="text-navy-500 text-sm">
-            For the general overview, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For Residential units, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal page</Link> covers the approval flow.
+            For the general overview, see the <Link href="/tenancy-renewal" className="text-brand-700 hover:underline">tenancy renewal guide</Link>. For the standard residential walkthrough, the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal guide</Link> covers the full checklist.
           </p>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">What's the same as Residential</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">What&apos;s the same as any renewal</h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">A renewal agreement, signed by both parties</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Either a renewal addendum to the original tenancy or a fresh new tenancy. Same call as on residential — fresh agreement is cleaner, an addendum works if only dates and rent are changing. Letter of intent isn't binding until the actual document is signed and stamped.
+                Either a renewal addendum to the original tenancy or a fresh agreement. The addendum works if only dates and rent are changing; a fresh document is cleaner if anything substantial moved. Neither binds until signed and stamped.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
               <p className="font-semibold text-navy-800 mb-2">BIR stamp duty, same rate</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Documentary Stamp Tax — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000 of average annual rent. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 5 days after the end of the month of signing. Private property doesn't get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
+                Documentary Stamp Tax — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000 thereafter. File via <a href="https://www.bir.gov.ph" target="_blank" rel="noopener" className="text-brand-700 hover:underline">BIR eStamping</a> within 5 days after the end of the month of signing. Private property doesn&apos;t get a different rate — see <Link href="/stamp-duty-tenancy-renewal" className="text-brand-700 hover:underline">stamp duty examples</Link> for worked numbers.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">Rent negotiation works the same way</p>
+              <p className="font-semibold text-navy-800 mb-2">Rent negotiation — market rules, with one exception</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                No rent control in Philippines. Whatever the two of you agree to is the rent. Replacing a tenant still costs you a few weeks of vacancy plus possible commission, so there's still a real cost to pushing too hard.
+                Outside the Rent Control Act, whatever the two of you agree is the rent. Exception: units renting at ₱10,000/month or less (NCR and highly urbanized cities; ₱5,000 elsewhere) are capped at a 7% annual increase under RA 9653 while the same tenant stays. Replacing a tenant still costs you vacancy weeks plus possible commission, so there&apos;s a real cost to pushing too hard either way.
               </p>
             </div>
           </div>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">What's different</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">What&apos;s different on private property</h2>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <ul className="space-y-3 text-navy-600 text-sm">
-              <li><strong className="text-navy-800">No residential approval.</strong> You don't apply to residential, you don't need a subletting consent letter, you don't have a 3-year approval window to track. That whole layer is gone.</li>
-              <li><strong className="text-navy-800">MCST bylaws still apply.</strong> The Management Council Strata Titles runs the condo. Their bylaws cover noise, renovations, pets, parking, common-area use. These were in force when the tenant moved in and they continue through the renewal — you don't re-sign anything with the MCST.</li>
-              <li><strong className="text-navy-800">No fresh move-in fees on renewal.</strong> MCST move-in/move-out fees, lift padding deposits, and security registration only trigger on actual physical move events. Same tenant staying = no fresh fees.</li>
-              <li><strong className="text-navy-800">Car park decals, season parking, gym cards.</strong> All tied to the occupant, not the tenancy paperwork. Stay live across renewal automatically. If the tenant's card has an expiry inside the new term, they renew it directly with the condo management office.</li>
-              <li><strong className="text-navy-800">Longer leases are normal.</strong> 2-year is the default for condos, and 3-year isn't unusual at the higher end (GCB, large landed homes, expat-targeted leases). residential tenants tend to do 1-year because the population is more local; private property leans expat and corporate, where 2 years is the floor.</li>
-              <li><strong className="text-navy-800">Diplomatic clauses are common.</strong> Standard on expat-targeted condo leases, often kept on renewal even after years in Philippines. Worth re-confirming, but don't expect to remove it without pushback.</li>
-              <li><strong className="text-navy-800">Executive condos before minimum lease period.</strong> If your EC is still inside its 5-year Minimum Occupation Period, you can't rent out the whole unit — only spare rooms, with you as the owner-occupier. A renewal doesn't change that. After minimum lease period, normal private-property rules apply.</li>
+              <li><strong className="text-navy-800">No government approval layer.</strong> You don&apos;t apply to any agency to lease out your condo or house, and there is no approval window to track. The contract is between you and the tenant.</li>
+              <li><strong className="text-navy-800">The condominium corporation&apos;s rules still apply.</strong> Under RA 4720, your condo&apos;s master deed, by-laws, and house rules cover tenant registration, renovations, pets, parking, and common-area use. They were in force when the tenant moved in and continue through the renewal.</li>
+              <li><strong className="text-navy-800">Subdivision houses answer to the HOA.</strong> If your property is inside a subdivision, the homeowners association (PD 957) may have its own registration and conduct rules. Same principle: they carry through the renewal.</li>
+              <li><strong className="text-navy-800">No fresh move-in fees on renewal.</strong> Administration move-in/move-out charges and security registration trigger on actual physical moves. Same tenant staying = no fresh fees.</li>
+              <li><strong className="text-navy-800">Parking and facility access are tied to the occupant.</strong> Decals, season parking, and gym or pool access stay live across the renewal while the tenant remains registered with the administration. Card expiries inside the new term are handled with the management office directly.</li>
+              <li><strong className="text-navy-800">Diplomatic clauses are common.</strong> Standard on expat-targeted condo leases and often kept on renewal. Worth re-confirming at renewal, but don&apos;t expect to remove one without pushback.</li>
             </ul>
           </div>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-2xl font-bold text-navy-800 mb-4">Foreign owners — the 22% withholding tax</h2>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4">Foreign owners — tax on your rental income</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            This is the part most foreign landlords get wrong. If you're not a Philippines tax resident — meaning you're not in Philippines for 183+ days in the calendar year — your rental income is treated as Philippines-source income paid to a non-resident, and Non-Resident Withholding Tax (NRWT) kicks in at 22% of gross rent.
+            If you are not a Philippine tax resident — for individuals, generally fewer than 183 days in the country during the calendar year — your Philippine rental income is treated as income of a non-resident, and the standard treatment is a <strong className="text-navy-800">25% final withholding tax on gross rent</strong>. &quot;Final&quot; means the withholding is the tax: no deductions, no year-end reconciliation on that income.
           </p>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-4">
             <p className="font-semibold text-navy-800 mb-3">How it actually works</p>
             <ul className="space-y-2 text-navy-600 text-sm pl-5 list-disc">
-              <li>Tenant pays you 78% of the agreed rent each month.</li>
-              <li>Tenant withholds 22% and remits it to BIR by the 15th of the second month after payment.</li>
-              <li>You file a Philippines tax return as a non-resident landlord. After deducting allowable expenses (mortgage interest, MCST fees, property tax, repairs), your actual tax bill is usually lower than 22% of gross — you claim the difference as a refund.</li>
-              <li>The tenant's obligation to withhold is on the tenant, not on you. If they don't withhold, BIR can hold them liable for the unremitted tax. So this is a tenant exposure too — not just yours.</li>
+              <li>The tenant (or property manager) withholds 25% and remits it to the BIR — they are the withholding agent, not you.</li>
+              <li>You receive 75% of the agreed rent. Agreeing rent &quot;net of tax&quot; is what pushes the gross figure up — price it consciously.</li>
+              <li>The withholding obligation is on the payor. If they fail to withhold and remit, the BIR can hold them liable — so your tenant has their own reason to get this right.</li>
+              <li>If you become a Philippine tax resident in the meantime, domestic rules apply to your rental income instead of the 25% final tax. Tell the tenant in writing when that changes.</li>
             </ul>
           </div>
-          <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            On renewal, if you've become a Philippines tax resident in the meantime (you moved back, or you've been here 183+ days), the NRWT no longer applies and rent gets paid in full. Tell the tenant in writing so they stop withholding. If you're still non-resident, the renewal carries forward the same arrangement.
-          </p>
           <p className="text-navy-500 text-sm leading-relaxed">
-            Most foreign owners route this through a property agent or a Philippines tax agent who files the BIR submissions on their behalf. Worth the fee. Getting NRWT wrong is the single most common compliance failure on foreign-owned rentals here, and BIR does enforce it.
+            Treat this page as a map, not a filing instruction — residency classification, treaties, and corporation-versus-individual ownership all change the answer. Most foreign owners run it through a Philippine tax agent who handles the BIR submissions. Getting it wrong is one of the most common compliance failures on foreign-owned rentals, and the BIR does enforce it.
           </p>
         </section>
 
         <section className="max-w-3xl mx-auto px-4 pb-10">
           <h2 className="text-2xl font-bold text-navy-800 mb-4">When to use an agent on renewal</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Renewal commission norms in Philippines: half a month's rent for a renewal where the agent represents the landlord, sometimes negotiated down to a flat fee for straightforward renewals. New leases are full month, but renewals are lighter work and the market reflects that.
+            Renewal commission norms in the Philippines: half a month&apos;s rent where the agent represents the landlord, sometimes negotiated to a flat fee for straightforward renewals. New leases run a full month; renewals are lighter work and the market reflects that.
           </p>
           <p className="text-navy-600 text-sm leading-relaxed mb-3">DIY makes sense when:</p>
           <ul className="space-y-2 text-navy-600 text-sm mb-4 pl-5 list-disc">
             <li>Same tenant, same terms, just new dates and a small rent change</li>
-            <li>You're comfortable with the agreement template and BIR stamping flow</li>
+            <li>You&apos;re comfortable with the agreement template and BIR stamping flow</li>
             <li>You and the tenant talk directly and trust each other</li>
           </ul>
           <p className="text-navy-600 text-sm leading-relaxed mb-3">An agent earns their fee when:</p>
           <ul className="space-y-2 text-navy-600 text-sm pl-5 list-disc">
-            <li>You're a foreign owner and need NRWT handled cleanly</li>
+            <li>You&apos;re a foreign owner and need the withholding handled cleanly</li>
             <li>The tenant wants to renegotiate substantial terms (deposit, rent, occupants, clauses)</li>
-            <li>There's an en-bloc situation, sale plan, or planned reno that needs a proper clause</li>
+            <li>The building&apos;s rules changed in a way that affects occupancy and needs a proper clause</li>
             <li>You manage multiple units and the time saved across the portfolio justifies the fee</li>
           </ul>
         </section>
@@ -193,7 +184,7 @@ export default function PrivatePropertyRenewalPage() {
           <div className="bg-gradient-to-br from-brand-50 to-white border border-brand-200 rounded-2xl p-6 sm:p-8 text-center">
             <h2 className="text-2xl font-bold text-navy-800 mb-3">Generate your private property renewal</h2>
             <p className="text-navy-500 mb-6 max-w-xl mx-auto text-sm">
-              Renewal-ready agreement pre-filled for condo, EC, and landed leases. New dates, new rent, ready for BIR stamping. Free preview, ₱500 to download.
+              Renewal-ready agreement for condo and house-and-lot leases. New dates, new rent, ready for BIR stamping. Free preview, ₱500 to download.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/renew" className="inline-block bg-brand-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-brand-700 transition-colors">

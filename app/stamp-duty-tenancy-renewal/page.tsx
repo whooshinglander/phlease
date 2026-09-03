@@ -124,8 +124,8 @@ export default function StampDutyRenewalPage() {
             <ul className="space-y-2 text-navy-600 text-sm">
               <li>✓ <strong>Yes you need to stamp the renewal.</strong> Every renewal is a fresh stampable document.</li>
               <li>✓ <strong>Rate: Documentary Stamp Tax</strong> — PHP 6.00 for the first PHP 2,000 of annual rent, plus PHP 2.00 per PHP 1,000 thereafter.</li>
-              <li>✓ <strong>Tenant typically pays</strong> by Philippines convention (the renewal can specify otherwise).</li>
-              <li>✓ <strong>14-day filing window</strong> from signing. Late stamping incurs penalty of ₱500 (≤3 months late) or 4× duty (&gt;3 months late).</li>
+              <li>✓ <strong>Legally the lessor's tax</strong> — though many lease agreements put the cost on the tenant by agreement. Check what your contract says.</li>
+              <li>✓ <strong>Filed and paid within 5 days after the end of the month of signing.</strong> Late payment incurs a 25% surcharge plus 12% interest per annum.</li>
               <li>✓ <strong>Same rate for residential and condo</strong> — only rent and lease length change the duty.</li>
               <li>✓ File via BIR e-Stamping at <a href="https://www.bir.gov.ph" className="text-brand-700 hover:underline" target="_blank" rel="noopener">BIR eStamping</a>.</li>
             </ul>

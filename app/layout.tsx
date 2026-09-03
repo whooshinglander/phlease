@@ -65,7 +65,7 @@ const jsonLd = [
     description: 'Generate Philippines tenancy agreements for condo, apartment, house & lot, and room rental. Free preview, download from ₱500.',
     offers: {
       '@type': 'Offer',
-      price: '10',
+      price: '500',
       priceCurrency: 'PHP',
     },
     aggregateRating: {

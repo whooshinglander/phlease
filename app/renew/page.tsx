@@ -271,14 +271,14 @@ export default function RenewPage() {
           </p>
         </div>
 
-        {/* residential rental renewal info box */}
+        {/* low-rent (RA 9653) renewal info box */}
         <div className="mt-4 bg-blue-50 border border-blue-200 rounded-xl p-5">
-          <p className="text-sm font-semibold text-blue-800 mb-2">Residential rental renewal — what you need to know</p>
+          <p className="text-sm font-semibold text-blue-800 mb-2">Low-rent units (RA 9653) — what you need to know</p>
           <ul className="text-sm text-blue-700 space-y-1.5 leading-relaxed">
-            <li>• Update your Residential subletting record if you are subletting the whole flat — Residential approval must be current.</li>
+            <li>• Units renting at ₱10,000/month or less (NCR and highly urbanized cities) or ₱5,000 (other areas) are covered by the Rent Control Act — increases capped at 7% per year while the same tenant stays.</li>
             <li>• Stamp duty applies to the renewal period. Pay to BIR within 5 days after the end of the month of signing.</li>
-            <li>• Minimum renewal period for Residential whole-flat subletting is 6 months.</li>
-            <li>• Non-Malaysian tenants require Residential approval on record — check approval expiry before renewing.</li>
+            <li>• If the tenant keeps occupying after expiry with no written notice, the lease is impliedly renewed month-to-month under the Civil Code — sign a written renewal to avoid it.</li>
+            <li>• Condo tenants: check your corporation's by-laws on tenant re-registration before the new term starts.</li>
           </ul>
         </div>
       </main>

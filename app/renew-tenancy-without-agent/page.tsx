@@ -124,9 +124,9 @@ export default function RenewWithoutAgentPage() {
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
-              <p className="font-semibold text-navy-800 mb-2">3. If Residential: check your subletting approval window</p>
+              <p className="font-semibold text-navy-800 mb-2">3. If in a condo or subdivision: check the corporation's rules</p>
               <p className="text-navy-600 text-sm leading-relaxed">
-                Residential grants approval for up to 3 years. If your renewal extends past the approved end date, re-apply on the Residential portal before the new tenancy starts. Inside the window, no re-application needed but update Residential with the new dates. Skip this if you're on private property. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">Residential renewal page</Link>.
+                There is no government approval needed to renew a lease in the Philippines, but your condo corporation or homeowners association may have its own rules — tenant re-registration on renewal, minimum lease terms, or updated access and parking decals. Check the by-laws or the admin office before the new term starts. See the <Link href="/residential-tenancy-renewal-guide" className="text-brand-700 hover:underline">residential renewal guide</Link> for the full checklist.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5">
