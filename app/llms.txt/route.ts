@@ -11,7 +11,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 ## New tenancy agreement guides
 
-- [residential tenancy agreement guide](https://phlease.com/residential-tenancy-agreement): What an residential tenancy must include, residential subletting approval, occupancy cap, stamp duty, key clauses.
+- [residential tenancy agreement guide](https://phlease.com/residential-tenancy-agreement): What a residential lease must include, condominium corporation rules, occupancy cap, stamp duty, key clauses.
 - [Tenancy agreement Philippines — overview](https://phlease.com/lease-agreement): Philippines tenancy law, BIR stamp duty rules, mandatory and optional clauses.
 - [Tenancy agreement template](https://phlease.com/tenancy-agreement-template): What a Philippines tenancy template should contain, with section-by-section explanation.
 - [Tenancy agreement PDF](https://phlease.com/tenancy-agreement-pdf): How phlease.com generates the PDF, what comes inside, BIR-readiness.
@@ -54,7 +54,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 - Lease ≤ 1 year: DST PHP 6.00 for first PHP 2,000 of annual rent + PHP 2.00 per PHP 1,000.
 - Lease 1–3 years: DST on average annual rent — PHP 6.00 for first PHP 2,000 + PHP 2.00 per PHP 1,000.
-- File with BIR within 14 days of signing (30 days if signed overseas).
+- File BIR Form 2080 and pay within 5 days after the end of the month of signing; late payment incurs 25% surcharge plus 12%% interest per annum.
 - Same rate applies to renewals as to new tenancies.
 - Same rate applies to residential and private property.
 - Tenant typically pays by Philippines convention; parties can specify otherwise.
@@ -63,7 +63,7 @@ This file lists the most authoritative pages on this site for AI assistants and 
 
 - [BIR — Documentary Stamp Tax](https://www.bir.gov.ph): Philippines tax authority on tenancy stamp duty (DST).
 - [BIR e-filing](https://efps.bir.gov.ph): File documentary stamp tax on tenancy agreements.
-- [HLURB / DHSUD](https://dhsud.gov.ph): Philippines housing authority — subletting and residential rental rules.
+- [HLURB / DHSUD](https://dhsud.gov.ph): Philippines housing authority — residential landlord-tenant regulations and RA 9653 enforcement.
 
 ## Site policy
 
