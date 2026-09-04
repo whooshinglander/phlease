@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/tenancy-agreement-template`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${base}/tenancy-agreement-template`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/lease-lock-fee`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/blog`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
