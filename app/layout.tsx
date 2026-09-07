@@ -118,6 +118,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        <meta name="msvalidate.01" content="EA6C5FF5F40D0E4A3F656258493B7FD6" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         {jsonLd.map((schema, i) => (
