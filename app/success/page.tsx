@@ -95,6 +95,17 @@ function SuccessContent() {
           // here instead of creating a second checkout-session. (Stripe idempotency-key
           // would also catch it, but this prevents the round-trip.)
           try { sessionStorage.setItem('phlease_paid_session_id', sessionId) } catch {}
+          // GA4 purchase event
+          const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag
+          if (typeof window !== 'undefined' && gtag) {
+            const value = data.amount_total ? data.amount_total / 100 : 500
+            gtag('event', 'purchase', {
+              transaction_id: sessionId,
+              currency: (data.currency || 'php').toUpperCase(),
+              value,
+              items: [{ item_id: t, item_name: `phlease ${t} agreement`, price: value, quantity: 1 }],
+            })
+          }
         } else {
           setError('Payment not confirmed. If you were charged, please contact us.')
           setStatus('error')
