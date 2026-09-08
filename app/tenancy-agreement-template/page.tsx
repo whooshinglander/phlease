@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tenancy Agreement Template Philippines — Instant PDF',
-  description: 'Download a Philippines tenancy agreement template. Covers house & lot, condo, room rental. BIR stamp-duty ready, editable Word/PDF format.',
+  title: 'Tenancy Agreement Template Philippines — Free Preview, Editable PDF',
+  description: 'Tenancy agreement template for the Philippines — house & lot, condo, room rental. BIR stamp-duty ready, editable, preview free and download from ₱500.',
   keywords: 'tenancy agreement template Philippines free download, Philippines tenancy agreement template, rental agreement template Philippines, free tenancy agreement template Philippines, contract of lease template Philippines, tenancy agreement Philippines download, residential tenancy agreement template',
   alternates: { canonical: 'https://phlease.com/tenancy-agreement-template' },
   openGraph: {
-    title: 'Tenancy Agreement Template Philippines — Instant PDF',
-    description: 'Download a Philippines tenancy agreement template. Covers house & lot, condo, room rental. BIR stamp-duty ready, editable format.',
+    title: 'Tenancy Agreement Template Philippines — Free Preview, Editable PDF',
+    description: 'Philippines tenancy agreement template — house & lot, condo, room rental. BIR stamp-duty ready, editable, preview free, download from ₱500.',
     url: 'https://phlease.com/tenancy-agreement-template',
     siteName: 'PhLease',
     locale: 'en_PH',

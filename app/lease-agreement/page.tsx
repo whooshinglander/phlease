@@ -4,13 +4,13 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tenancy Agreement Philippines — Free Preview, PDF ₱500',
-  description: 'Generate a Philippines tenancy agreement in 5 minutes — Condo, apartment, house & lot or room rental. BIR-compliant, free to preview, clean PDF from ₱500. No sign-up.',
+  title: 'Contract of Lease Philippines — Lease Agreement Generator, PDF ₱500',
+  description: 'Generate a Contract of Lease (Civil Code, Arts. 1643–1688) for condo, apartment, house & lot or room rental in 5 minutes. BIR DST ready, free preview, clean PDF from ₱500. No sign-up.',
   keywords: 'tenancy agreement philippines pdf, tenancy agreement philippines, philippines tenancy agreement pdf, rental agreement philippines pdf, philippines rental agreement,  tenancy agreement, residential rental agreement, lease agreement philippines, tenancy contract philippines',
   alternates: { canonical: 'https://phlease.com/lease-agreement' },
   openGraph: {
-    title: 'Tenancy Agreement Philippines — Free Preview, PDF ₱500',
-    description: 'Generate a Philippines tenancy agreement PDF online. Condo, apartment, house & lot, room rental — BIR-compliant. Free to preview, download from ₱500.',
+    title: 'Contract of Lease Philippines — Lease Agreement Generator, PDF ₱500',
+    description: 'Generate a Philippines Contract of Lease PDF online. Condo, apartment, house & lot, room rental — BIR DST ready. Free to preview, download from ₱500.',
     url: 'https://phlease.com/lease-agreement',
     siteName: 'PhLease',
     locale: 'en_PH',
